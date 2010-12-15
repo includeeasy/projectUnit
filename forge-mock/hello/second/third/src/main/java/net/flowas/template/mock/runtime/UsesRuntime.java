@@ -15,23 +15,17 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-/**
- * 
- */
-package net.flowas;
+package net.flowas.template.mock.runtime;
 
-/**
- * @author Administrator
- *
- */
-public class Hello {
+import java.io.InputStream;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class UsesRuntime {
+	public void run() throws Exception {
+		Runtime rt = Runtime.getRuntime();
+		Process p = rt.exec("notepad");
+		InputStream in = p.getInputStream();
+		byte[] b = new byte[in.available()];
+		in.read(b);
+		System.out.println("standInfo:" + new String(b));
 	}
-
 }

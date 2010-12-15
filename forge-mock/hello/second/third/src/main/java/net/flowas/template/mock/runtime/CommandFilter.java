@@ -15,21 +15,8 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package luancher;
+package net.flowas.template.mock.runtime;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.tools.ant.Task;
-
-public class MyTask extends Task {   
-    private String msg;
-	public void execute() {
-       System.out.println("-------------------------");
-       System.out.println(msg);
-    }
-    // The setter for the "message" attribute
-    public void setMessage(String msg) {
-        this.msg = msg;
-    }
+public interface CommandFilter {
+  String[] exec(String command);
 }

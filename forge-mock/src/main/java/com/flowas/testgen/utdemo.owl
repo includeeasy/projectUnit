@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://flowas.com/ontology/utdemo.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://flowas.com/ontology/utdemo.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Command"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcreteForClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Editor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Template"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#jsr299"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conflictWhith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#include"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#body"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#help"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#import"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AspectJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Concordion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Encore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Groovy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerMock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivateNew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimpleTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StaticMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestGen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UTDemo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weld"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#com.flowas.testdemo.DOC:method(String)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eclipese.jdt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#test_fromXML"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#test_isolateDOC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#test_switchTechTo"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Command"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteForClass"/>
+        <Class IRI="#Template"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Editor"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generator"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specification"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#jsr299"/>
+        <Class IRI="#Specification"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#AspectJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#Concordion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Generator"/>
+        <NamedIndividual IRI="#Encore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Groovy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#JUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Java"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#PowerMock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Template"/>
+        <NamedIndividual IRI="#PrivateNew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Template"/>
+        <NamedIndividual IRI="#SimpleTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Template"/>
+        <NamedIndividual IRI="#StaticMethod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Generator"/>
+        <NamedIndividual IRI="#TestGen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Project"/>
+        <NamedIndividual IRI="#UTDemo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#jsr299"/>
+        <NamedIndividual IRI="#Weld"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConcreteForClass"/>
+        <NamedIndividual IRI="#com.flowas.testdemo.DOC:method(String)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Editor"/>
+        <NamedIndividual IRI="#eclipese.jdt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Command"/>
+        <NamedIndividual IRI="#test_fromXML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Command"/>
+        <NamedIndividual IRI="#test_isolateDOC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Command"/>
+        <NamedIndividual IRI="#test_switchTechTo"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#conflictWhith"/>
+        <NamedIndividual IRI="#Groovy"/>
+        <NamedIndividual IRI="#AspectJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#conflictWhith"/>
+        <NamedIndividual IRI="#Groovy"/>
+        <NamedIndividual IRI="#PowerMock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#include"/>
+        <NamedIndividual IRI="#UTDemo"/>
+        <NamedIndividual IRI="#Concordion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#include"/>
+        <NamedIndividual IRI="#UTDemo"/>
+        <NamedIndividual IRI="#JUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#include"/>
+        <NamedIndividual IRI="#UTDemo"/>
+        <NamedIndividual IRI="#AspectJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#include"/>
+        <NamedIndividual IRI="#UTDemo"/>
+        <NamedIndividual IRI="#PowerMock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#include"/>
+        <NamedIndividual IRI="#UTDemo"/>
+        <NamedIndividual IRI="#Weld"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongTo"/>
+        <NamedIndividual IRI="#test_fromXML"/>
+        <NamedIndividual IRI="#TestGen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongTo"/>
+        <NamedIndividual IRI="#test_isolateDOC"/>
+        <NamedIndividual IRI="#TestGen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongTo"/>
+        <NamedIndividual IRI="#test_switchTechTo"/>
+        <NamedIndividual IRI="#TestGen"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body"/>
+        <NamedIndividual IRI="#PrivateNew"/>
+        <Literal datatypeIRI="&xsd;string">		%DOC% dOC = PowerMock.createMockAndExpectNew(%DOC%.class);
+		PowerMock.expectPrivate(dOC, &quot;%method%&quot;, EasyMock.isA(String.class))
+				.andDelegateTo(new %DOC%() {
+					@Override
+					public %ReturnType% %method%(String arg) {
+						return &quot;Hello &quot; + arg;
+					}
+				});
+		PowerMock.replayAll();</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#import"/>
+        <NamedIndividual IRI="#PrivateNew"/>
+        <Literal datatypeIRI="&xsd;string">import junit.framework.Assert;
+import org.easymock.EasyMock;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.api.easymock.PowerMock;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+import com.flowas.testdemo.DOC;
+import com.flowas.testdemo.SUT;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body"/>
+        <NamedIndividual IRI="#SimpleTest"/>
+        <Literal datatypeIRI="&xsd;string">import org.junit.Before;
+import org.junit.Test;
+public class %Template% {
+	@Before
+	public void setUp() throws Exception {
+	}
+    @Test
+    public void hello() throws Exception {
+	}
+}
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body"/>
+        <NamedIndividual IRI="#StaticMethod"/>
+        <Literal datatypeIRI="&xsd;string">PowerMock.mockStaticPartial(DOC.class, &quot;staticMethod&quot;);</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body"/>
+        <NamedIndividual IRI="#com.flowas.testdemo.DOC:method(String)"/>
+        <Literal datatypeIRI="&xsd;string">		DOC dOC = PowerMock.createMockAndExpectNew(DOC.class);
+		PowerMock.expectPrivate(dOC, &quot;method&quot;, EasyMock.isA(String.class))
+				.andDelegateTo(new DOC() {
+					@Override
+					public String method(String arg) {
+						return &quot;Hello &quot; + arg;
+					}
+				});
+		PowerMock.replayAll();</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#import"/>
+        <NamedIndividual IRI="#com.flowas.testdemo.DOC:method(String)"/>
+        <Literal datatypeIRI="&xsd;string">import junit.framework.Assert;
+import org.easymock.EasyMock;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.api.easymock.PowerMock;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+import com.flowas.testdemo.DOC;
+import com.flowas.testdemo.SUT;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#help"/>
+        <NamedIndividual IRI="#test_switchTechTo"/>
+        <Literal>&#20999;&#25442;&#27979;&#35797;&#25216;&#26415;&#65292;&#27604;&#22914;&#20174;PowerMock&#20999;&#25442;&#21040;AspectJ</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongTo"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#conflictWhith"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#include"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongTo"/>
+        <ObjectProperty IRI="#include"/>
+    </InverseObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#body"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#help"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#import"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1469) http://owlapi.sourceforge.net -->
+
