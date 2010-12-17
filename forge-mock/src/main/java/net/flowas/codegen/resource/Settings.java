@@ -15,12 +15,19 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.codegen.project;
-
-enum EnumType{
-	technology
-}
-
-public enum GenEnum {
-  
+package net.flowas.codegen.resource;
+import java.util.List;
+public class Settings {		
+	public static List<String> addTo(List<String> list, String imports) {
+		if (null != imports && imports.contains("\n")) {
+			String[] pairs = imports.split("\n");
+			for (String imp : pairs) {
+				imp = imp.replace("import", "").replace(";", "").trim();
+				if (!list.contains(imp)) {
+					list.add(imp);
+				}
+			}
+		}
+		return list;
+	}   
 }

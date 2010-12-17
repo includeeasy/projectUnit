@@ -27,51 +27,21 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.jboss.seam.forge.project.Project;
-import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import com.flowas.codegen.project.ProjectGenerator;
-import com.flowas.codegen.project.model.ProjectOperation.UnzipFilter;
-import com.flowas.generic.utils.XmlUtils;
+import com.flowas.codegen.project.model.OperationUtils.UnzipFilter;
 
 @Named
 @ApplicationScoped
 public class ExcuteEngine {
 
 	@Inject
-	ProjectOperation operation;
+	OperationUtils operation;
 	
 	@Inject
-	Project project;
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		try {
-			ExcuteEngine engine = new ExcuteEngine();
-			Document doc = XmlUtils.getDocumentBuilder().parse(
-					ExcuteEngine.class.getResourceAsStream("component.xml"));
-			// Element elelis = XmlUtils.findFirstElement("//achieve/*",
-			// doc.getDocumentElement());
-			engine.project(doc.getDocumentElement());
-		} catch (SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	Project project;	
 
 	public void project(Element e) {
 		invoke_children(e);
@@ -160,7 +130,7 @@ public class ExcuteEngine {
 		String value = e.getAttribute("zip");
 		System.out.println(value);
 		if (value != null) {
-			InputStream file = ProjectGenerator.class
+			InputStream file = this.getClass()
 					.getResourceAsStream(value);
 			try {
 				if (value.endsWith(".zip")) {
@@ -186,7 +156,7 @@ public class ExcuteEngine {
 		String value = e.getAttribute("zip");
 		System.out.println(value);
 		if (value != null && value.endsWith(".zip")) {
-			InputStream file = ProjectGenerator.class
+			InputStream file = this.getClass()			
 					.getResourceAsStream(value);
 			try {
 				operation.unzip(file);
@@ -207,8 +177,8 @@ public class ExcuteEngine {
 		String value = e.getAttribute("zip");
 		System.out.println(value);
 		if (value != null && value.endsWith(".zip")) {
-			InputStream file = ProjectGenerator.class
-					.getResourceAsStream(value);
+			InputStream file = this.getClass()
+			.getResourceAsStream(value);
 			try {
 				operation.unzip(file);
 			} catch (IOException e1) {
@@ -228,8 +198,8 @@ public class ExcuteEngine {
 		String value = e.getAttribute("zip");
 		System.out.println(value);
 		if (value != null) {
-			InputStream file = ProjectGenerator.class
-					.getResourceAsStream(value);
+			InputStream file = this.getClass()
+			.getResourceAsStream(value);
 			try {
 				if (value.endsWith(".zip")) {
 					operation.unzip(file);
@@ -263,8 +233,8 @@ public class ExcuteEngine {
 		String value = e.getAttribute("zip");
 		System.out.println(value);
 		if (value != null && value.endsWith(".zip")) {
-			InputStream file = ProjectGenerator.class
-					.getResourceAsStream(value);
+			InputStream file = this.getClass()
+			.getResourceAsStream(value);
 			try {
 				operation.unzip(file,new MavenFilter(project));
 			} catch (IOException e1) {				

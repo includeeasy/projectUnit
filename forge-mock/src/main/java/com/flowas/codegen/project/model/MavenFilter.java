@@ -28,7 +28,7 @@ import org.jboss.seam.forge.project.Project;
 import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
 import org.jboss.seam.forge.project.facets.DependencyFacet;
 
-import com.flowas.codegen.project.model.ProjectOperation.UnzipFilter;
+import com.flowas.codegen.project.model.OperationUtils.UnzipFilter;
 
 public class MavenFilter implements UnzipFilter {
 	String file;

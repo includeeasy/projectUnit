@@ -1,3 +1,20 @@
+/**
+ * Copyright (C) 2010 http://flowas.net/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * You can write to flowas@gmial.com for more customer requirement.
+ */
 package com.flowas.testgen.model;
 
 import java.util.HashMap;
@@ -5,6 +22,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import net.flowas.codegen.resource.GenEnum;
+import net.flowas.codegen.resource.Settings;
 
 import org.semanticweb.HermiT.Configuration;
 import org.semanticweb.HermiT.Reasoner.ReasonerFactory;
@@ -21,7 +41,6 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
-import com.flowas.testgen.TestPlugin;
 
 public class ResourceRepository {
 	static OWLOntologyManager manager;
@@ -32,8 +51,8 @@ public class ResourceRepository {
 	public static void main(String[] args) {
 		System.out.println(getCommand());
 	}
-	public static Map<GeneEnum,Object> getTemplate(String name) {
-		HashMap<GeneEnum,Object> map=new HashMap<GeneEnum,Object>();
+	public static Map<GenEnum,Object> getTemplate(String name) {
+		HashMap<GenEnum,Object> map=new HashMap<GenEnum,Object>();
 		try {
 			if(null==reasoner){
 				init();
@@ -46,14 +65,14 @@ public class ResourceRepository {
         OWLDataProperty dataProperty = dFactory.getOWLDataProperty(IRI.create(iri + "body"));
         Set<OWLLiteral> bodyList = reasoner.getDataPropertyValues(model, dataProperty); 
 		for(OWLLiteral text:bodyList){
-			map.put(GeneEnum.BODY, text.getLiteral());
+			map.put(GenEnum.BODY, text.getLiteral());
 			//mod.setBody(text.getLiteral());
 		}
 		OWLDataProperty importProperty = dFactory.getOWLDataProperty(IRI.create(iri + "import"));
         Set<OWLLiteral> importList = reasoner.getDataPropertyValues(model, importProperty); 
 		for(OWLLiteral text:importList){
 			//mod.setImports(text.getLiteral());
-			map.put(GeneEnum.IMPORTS, text.getLiteral());
+			map.put(GenEnum.IMPORTS, text.getLiteral());
 		}        
         return map;
 	}
@@ -86,7 +105,7 @@ public class ResourceRepository {
 //		SimpleIRIMapper novelMapper = new SimpleIRIMapper(IRI.create(iri),
 //				IRI.create(file));
 //		manager.addIRIMapper(novelMapper);
-		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(TestPlugin.class.getResourceAsStream("utdemo.owl"));//.loadOntology(IRI.create(file));
+		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(Settings.class.getResourceAsStream("utdemo.owl"));//.loadOntology(IRI.create(file));
 		ReasonerFactory factory = new ReasonerFactory();
 		Configuration configuration = new Configuration();
 		configuration.throwInconsistentOntologyException = true;

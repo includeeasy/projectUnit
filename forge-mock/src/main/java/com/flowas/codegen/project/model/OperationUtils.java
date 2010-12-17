@@ -25,24 +25,22 @@ import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 
 import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
 import org.jboss.seam.forge.shell.Shell;
 
 @Named
 // @ApplicationScoped
-public class ProjectOperation {
+public class OperationUtils {
 	private final Project project;
 	private final Shell shell;
 
 	@Inject
-	public ProjectOperation(final Project project, final Shell shell) {
+	public OperationUtils(final Project project, final Shell shell) {
 		this.project = project;
 		this.shell = shell;
 	}

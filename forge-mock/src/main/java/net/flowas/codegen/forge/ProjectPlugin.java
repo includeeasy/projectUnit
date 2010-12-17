@@ -15,47 +15,61 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.codegen.project;
+package net.flowas.codegen.forge;
+
+import java.io.File;
+import java.io.IOException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 import org.jboss.seam.forge.shell.Shell;
 import org.jboss.seam.forge.shell.plugins.DefaultCommand;
 import org.jboss.seam.forge.shell.plugins.Help;
 import org.jboss.seam.forge.shell.plugins.Option;
 import org.jboss.seam.forge.shell.plugins.Plugin;
-import org.w3c.dom.Element;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 import com.flowas.codegen.project.model.ExcuteEngine;
+import com.flowas.codegen.project.model.OperationUtils;
+import com.flowas.generic.utils.XmlUtils;
 
-@Named("mock")
+
+@Named("project")
 @Help("Manage project's archive and some cinfigureration")
-public class MockPlugin implements Plugin {
+public class ProjectPlugin  implements Plugin {
 	@Inject
-	Shell shell;
+	Shell shell;	
+	@Inject	
+	OperationUtils operation;
 	@Inject
 	ExcuteEngine engine;
-
 	@DefaultCommand
-	public void run(@Option(name="class", description = "clasz") String clasz,
-			@Option(description = "file") String file) {
-		if (clasz != null) {
-			DocumentBuilder bu;
-			try {
-				bu = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-				Element ma = bu.newDocument().createElement("maven");
-				ma.setAttribute("zip", "/META-INF/resources/achieve/" + clasz
-						+ ".zip");
-				engine.maven(ma);
-			} catch (ParserConfigurationException e) {
-				e.printStackTrace();
+	public void run(
+			@Option final String command,
+			@Option(description = "ui") String useUI,
+			@Option(description = "file") String file){
+		if ("fromXML".equals(command)) {			
+			File testFile = operation.getFile(useUI, file);
+			if (null != testFile) {				
+				try {
+					Document doc = XmlUtils.getDocumentBuilder().parse(testFile);
+					engine.project(doc.getDocumentElement());
+				} catch (SAXException e) {					
+					e.printStackTrace();
+				} catch (IOException e) {					
+					e.printStackTrace();
+				}				
 			}
-
+			return;
+		}else if ("config".equals(command)) {			
+			//generator.config(key, value);			
+			return;
+		}else if ("remove".equals(command)) {			
+			//id		
+			return;
 		}
-
-	}
+		
+	}			
 }
