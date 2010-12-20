@@ -124,6 +124,9 @@
         <NamedIndividual IRI="#eclipese.jdt"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#java.lang.Runtime:exec(java.lang.String)"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#test_fromXML"/>
     </Declaration>
     <Declaration>
@@ -219,6 +222,10 @@
     <ClassAssertion>
         <Class IRI="#Editor"/>
         <NamedIndividual IRI="#eclipese.jdt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConcreteForClass"/>
+        <NamedIndividual IRI="#java.lang.Runtime:exec(java.lang.String)"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Command"/>
@@ -334,14 +341,14 @@ public class %Template% {
 					throws Throwable {
 				%DOC% sigleton = PowerMockito.mock(%DOC%.class);
 				PowerMockito.when(sigleton.%method%(Mockito.anyString()))
-						.thenReturn(&quot;haha&quot;);
-				PowerMockito.when(sigleton.otherMethod(Mockito.anyString()))
+						.thenReturn(null);
+				//PowerMockito.when(sigleton.otherMethod(Mockito.anyString()))
 						.thenCallRealMethod();
 				%DOC% spy = PowerMockito.spy(sigleton);
 				return spy;
 			}
 		};
-		PowerMockito.when(%DOC%.instance()).thenAnswer(answer);</Literal>
+		PowerMockito.when(%DOC%.%instanceMethod%()).thenAnswer(answer);</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#import"/>

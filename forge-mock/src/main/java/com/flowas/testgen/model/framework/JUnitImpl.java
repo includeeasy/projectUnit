@@ -1,13 +1,8 @@
 package com.flowas.testgen.model.framework;
 
-import java.io.ByteArrayInputStream;
 import java.util.Map;
 
 import javax.enterprise.inject.Default;
-
-import org.jboss.seam.forge.parser.JavaParser;
-import org.jboss.seam.forge.parser.java.JavaClass;
-import org.jboss.seam.forge.parser.java.JavaSource;
 
 import net.flowas.codegen.resource.GenEnum;
 

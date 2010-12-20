@@ -31,7 +31,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import net.flowas.codegen.resource.GenEnum;
-import net.flowas.codegen.resource.Settings;
+
 
 import org.jboss.seam.forge.parser.java.JavaClass;
 import org.jboss.seam.forge.project.Project;
@@ -41,6 +41,7 @@ import org.jboss.seam.forge.project.facets.DependencyFacet;
 import org.w3c.dom.Element;
 
 import com.flowas.codegen.project.model.ExcuteEngine;
+import com.flowas.testgen.model.MockUtils;
 import com.flowas.testgen.model.ResourceRepository;
 
 @ApplicationScoped
@@ -62,6 +63,7 @@ public class EventHandler {
 			clasz = Class.forName(event.getClassName());
 			String mbody = "";
 			String methodName = "none";
+			String instanceMethod = "instance";
 			List<String> importList = new ArrayList<String>();
 			for (Method m : clasz.getDeclaredMethods()) {
 				for (String mn : event.getMethodList()) {					
@@ -92,6 +94,7 @@ public class EventHandler {
 						templateName = "PrivateNew";
 					}else{
 						templateName = "Singleton";
+						instanceMethod=MockUtils.getInstanceMethod(clasz).getName();
 					}
 					// %DOC%/%method%/%ReturnType%
 					Map<GenEnum, Object> privatenew = ResourceRepository
@@ -101,9 +104,10 @@ public class EventHandler {
 							.replaceAll("%DOC%", clasz.getSimpleName())
 							.replace("%method%", methodName)
 							.replace("%ReturnType%",
-									m.getReturnType().getSimpleName());
+									m.getReturnType().getSimpleName())
+									.replace("%instanceMethod%", instanceMethod);
 					mbody += pbody;
-					Settings.addTo(importList,
+					MockUtils.addTo(importList,
 							(String) privatenew.get(GenEnum.IMPORTS));
 					// importList.addAll(privatenew.getImportList());
 				}
