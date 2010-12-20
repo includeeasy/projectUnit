@@ -61,14 +61,14 @@ public class EventHandler {
 		try {
 			clasz = Class.forName(event.getClassName());
 			String mbody = "";
+			String methodName = "none";
 			List<String> importList = new ArrayList<String>();
 			for (Method m : clasz.getDeclaredMethods()) {
-				for (String mn : event.getMethodList()) {
-					String name = mn;
+				for (String mn : event.getMethodList()) {					
 					if (mn.contains("(")) {
-						name = mn.split("\\(")[0];
+						methodName = mn.split("\\(")[0];
 					}
-					if (!name.equals(m.getName())) {
+					if (!methodName.equals(m.getName())) {
 						continue;
 					}
 					Class[] paraTypes = m.getParameterTypes();
@@ -88,8 +88,10 @@ public class EventHandler {
 					String templateName = "PrivateNew";
 					if (Modifier.isStatic(m.getModifiers())) {
 						templateName = "StaticMethod";
-					} else {
+					} else if(clasz.getDeclaredConstructor().getModifiers()!=Modifier.PRIVATE){
 						templateName = "PrivateNew";
+					}else{
+						templateName = "Singleton";
 					}
 					// %DOC%/%method%/%ReturnType%
 					Map<GenEnum, Object> privatenew = ResourceRepository
@@ -97,7 +99,7 @@ public class EventHandler {
 					String pbody = (String) privatenew.get(GenEnum.BODY);
 					pbody = pbody
 							.replaceAll("%DOC%", clasz.getSimpleName())
-							.replace("%method%", name)
+							.replace("%method%", methodName)
 							.replace("%ReturnType%",
 									m.getReturnType().getSimpleName());
 					mbody += pbody;
@@ -112,10 +114,18 @@ public class EventHandler {
 			for (org.jboss.seam.forge.parser.java.Method<JavaClass> m : cl
 					.getMethods()) {
 				if (m.hasAnnotation("org.junit.Before")) {
+					if(!m.getBody().contains(clasz.getSimpleName())
+							&& !m.getBody().contains(methodName)){
+						mbody=m.getBody()+mbody;
+					}
 					m.setBody(mbody);
 				}
 			}
 		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {		
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {			
 			e.printStackTrace();
 		}
 

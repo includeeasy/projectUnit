@@ -44,68 +44,12 @@ import com.flowas.testgen.model.event.TechEvent;
 @Default
 public class PowerMockImpl implements Technology {
 
-	@Inject
-	Project project;
-
-	@Inject
-	Event<DocEvent> docEvent;
-
-	@Inject
-	Event<TechEvent> techEvent;
-	
 	@Override
 	public void isolate(String testname, Map<String, Set<String>> docList,
 			Map<GenEnum, Object> template) {
-		String path = Packages.toFileSyntax(testname) + ".java";
-		JavaClass cl = null;		
-		try {
-			JavaResource javaSource = project.getFacet(JavaSourceFacet.class)
-					.getTestJavaResource(path);
-			if (javaSource.exists()) {
-				cl = (JavaClass) javaSource.getJavaSource();				
-			} else {
-				String body = (String) template.get(GenEnum.BODY);
-				String newName = testname;
-				if (testname.contains(".")) {
-					String[] array = newName.split("\\.");
-					newName = array[array.length - 1];					
-				}		
-				if (body != null) {
-					body = body.replace("%Template%", newName);
-					JavaSource<JavaClass> clo = JavaParser.parse(
-							JavaClass.class,
-							new ByteArrayInputStream(body.getBytes()));
-					cl = clo.getOrigin();									
-				} else {
-					cl = JavaParser.create(JavaClass.class);
-					cl.setPublic();
-				}
-				if (testname.contains(".")) {
-					cl.setPackage(testname.replace("." + newName, ""));	
-				}			
-			}
-		} catch (FacetNotFoundException e1) {
-			e1.printStackTrace();
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
-		}		
-		// dependent of component
-		String classname = (String) docList.keySet().toArray()[0];
-		DocEvent event = new DocEvent();
-		event.setClassName(classname);
-		event.setMethodList(docList.get(classname));
-		event.setUnderOperation(cl);
-		docEvent.fire(event);
-		// tech event
-		TechEvent tech=new TechEvent();
-		tech.setUnderOperation(cl);
-		tech.setName(GenEnum.POWERMOCK);
-		techEvent.fire(tech);
-		JavaSourceFacet java = project.getFacet(JavaSourceFacet.class);
-		try {
-			java.saveTestJavaClass(cl);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}	
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 }

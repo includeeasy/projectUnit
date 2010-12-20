@@ -17,7 +17,24 @@
  */
 package net.flowas.codegen.resource;
 import java.util.List;
-public class Settings {		
+public class Settings {	
+	private static GenEnum testFramework=GenEnum.JUNIT;
+	private static GenEnum mockFramework=GenEnum.POWERMOCK;
+	public static GenEnum getTestFramework() {
+		return testFramework;
+	}
+	public static void setTestFramework(GenEnum testFramework) {
+		Settings.testFramework = testFramework;
+	}
+    
+
+
+	public static GenEnum getMockFramework() {
+		return mockFramework;
+	}
+	public static void setMockFramework(GenEnum mockFramework) {
+		Settings.mockFramework = mockFramework;
+	}
 	public static List<String> addTo(List<String> list, String imports) {
 		if (null != imports && imports.contains("\n")) {
 			String[] pairs = imports.split("\n");

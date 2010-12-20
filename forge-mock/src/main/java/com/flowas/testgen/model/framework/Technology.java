@@ -23,5 +23,7 @@ import java.util.Set;
 import net.flowas.codegen.resource.GenEnum;
 
 public interface Technology {
- void isolate(String testname,Map<String, Set<String>> docList,Map<GenEnum, Object>  template);
+	void isolate(String testname, Map<String, Set<String>> docList,
+			Map<GenEnum, Object> template);
+	
 }
