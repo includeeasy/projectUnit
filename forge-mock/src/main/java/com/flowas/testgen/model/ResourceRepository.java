@@ -41,74 +41,97 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
-
 public class ResourceRepository {
 	static OWLOntologyManager manager;
 	static OWLReasoner reasoner;
 	static String iri = "http://flowas.com/ontology/utdemo.owl#";
-	//static String file = TestPlugin.class.getResource("utdemo.owl").toExternalForm();
+
+	// static String file =
+	// TestPlugin.class.getResource("utdemo.owl").toExternalForm();
 
 	public static void main(String[] args) {
-		System.out.println(getCommand());
+		System.out
+				.println(getTemplate("javax.pefrsistence.Persistence:createEntityManagerFactory(java.lang.String)"));
 	}
-	public static Map<GenEnum,Object> getTemplate(String name) {
-		HashMap<GenEnum,Object> map=new HashMap<GenEnum,Object>();
+
+	public static Map<GenEnum, Object> getTemplate(String name) {
+		HashMap<GenEnum, Object> map = new HashMap<GenEnum, Object>();
 		try {
-			if(null==reasoner){
+			if (null == reasoner) {
 				init();
-			}            
-        } catch (OWLOntologyCreationException ex) {
-            Logger.getLogger(ResourceRepository.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        OWLDataFactory dFactory = manager.getOWLDataFactory();
-        OWLNamedIndividual model = dFactory.getOWLNamedIndividual(IRI.create(iri + name));
-        OWLDataProperty dataProperty = dFactory.getOWLDataProperty(IRI.create(iri + "body"));
-        Set<OWLLiteral> bodyList = reasoner.getDataPropertyValues(model, dataProperty); 
-		for(OWLLiteral text:bodyList){
-			map.put(GenEnum.BODY, text.getLiteral());
-			//mod.setBody(text.getLiteral());
+			}
+
+			OWLDataFactory dFactory = manager.getOWLDataFactory();
+			OWLNamedIndividual model = dFactory.getOWLNamedIndividual(IRI
+					.create(iri + name));
+
+			OWLDataProperty dataProperty = dFactory.getOWLDataProperty(IRI
+					.create(iri + "body"));
+			Set<OWLLiteral> bodyList = reasoner.getDataPropertyValues(model,
+					dataProperty);
+			for (OWLLiteral text : bodyList) {
+				map.put(GenEnum.BODY, text.getLiteral());
+			}
+			OWLDataProperty importProperty = dFactory.getOWLDataProperty(IRI
+					.create(iri + "import"));
+			Set<OWLLiteral> importList = reasoner.getDataPropertyValues(model,
+					importProperty);
+			for (OWLLiteral text : importList) {
+				// mod.setImports(text.getLiteral());
+				map.put(GenEnum.IMPORTS, text.getLiteral());
+			}
+		} catch (OWLOntologyCreationException ex) {
+			Logger.getLogger(ResourceRepository.class.getName()).log(
+					Level.SEVERE, null, ex);
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+			System.out.println("Hermit error!");
 		}
-		OWLDataProperty importProperty = dFactory.getOWLDataProperty(IRI.create(iri + "import"));
-        Set<OWLLiteral> importList = reasoner.getDataPropertyValues(model, importProperty); 
-		for(OWLLiteral text:importList){
-			//mod.setImports(text.getLiteral());
-			map.put(GenEnum.IMPORTS, text.getLiteral());
-		}        
-        return map;
+		return map;
 	}
-	public static Map<String,String> getCommand() {
-		HashMap<String,String> map=new HashMap<String,String>();
+
+	public static Map<String, String> getCommand() {
+		HashMap<String, String> map = new HashMap<String, String>();
 		try {
-			if(null==reasoner){
+			if (null == reasoner) {
 				init();
-			}            
-        } catch (OWLOntologyCreationException ex) {
-            Logger.getLogger(ResourceRepository.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        OWLDataFactory dFactory = manager.getOWLDataFactory();
-        OWLNamedIndividual model = dFactory.getOWLNamedIndividual(IRI.create(iri + "TestGen"));
-        OWLObjectProperty objectProperty = dFactory.getOWLObjectProperty(IRI.create(iri + "include"));
-        NodeSet<OWLNamedIndividual> bodyList = reasoner.getObjectPropertyValues(model, objectProperty); 
-        OWLDataProperty helpProperty = dFactory.getOWLDataProperty(IRI.create(iri + "help"));
-        for(OWLNamedIndividual individ:bodyList.getFlattened()){
-        	Set<OWLLiteral> helpList=	reasoner.getDataPropertyValues(individ, helpProperty); 
-        	String help="";
-        	for(OWLLiteral text:helpList){
-        		help+=text.getLiteral();    			
-    		}
-        	map.put(individ.getIRI().getFragment().replace(iri, ""), help);
+			}
+		} catch (OWLOntologyCreationException ex) {
+			Logger.getLogger(ResourceRepository.class.getName()).log(
+					Level.SEVERE, null, ex);
 		}
-        return map;
+		OWLDataFactory dFactory = manager.getOWLDataFactory();
+		OWLNamedIndividual model = dFactory.getOWLNamedIndividual(IRI
+				.create(iri + "TestGen"));
+		OWLObjectProperty objectProperty = dFactory.getOWLObjectProperty(IRI
+				.create(iri + "include"));
+		NodeSet<OWLNamedIndividual> bodyList = reasoner
+				.getObjectPropertyValues(model, objectProperty);
+		OWLDataProperty helpProperty = dFactory.getOWLDataProperty(IRI
+				.create(iri + "help"));
+		for (OWLNamedIndividual individ : bodyList.getFlattened()) {
+			Set<OWLLiteral> helpList = reasoner.getDataPropertyValues(individ,
+					helpProperty);
+			String help = "";
+			for (OWLLiteral text : helpList) {
+				help += text.getLiteral();
+			}
+			map.put(individ.getIRI().getFragment().replace(iri, ""), help);
+		}
+		return map;
 	}
+
 	public static void init() throws OWLOntologyCreationException {
 		manager = OWLManager.createOWLOntologyManager();
-//		SimpleIRIMapper novelMapper = new SimpleIRIMapper(IRI.create(iri),
-//				IRI.create(file));
-//		manager.addIRIMapper(novelMapper);
-		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(Settings.class.getResourceAsStream("utdemo.owl"));//.loadOntology(IRI.create(file));
+		// SimpleIRIMapper novelMapper = new SimpleIRIMapper(IRI.create(iri),
+		// IRI.create(file));
+		// manager.addIRIMapper(novelMapper);
+		OWLOntology ontology = manager
+				.loadOntologyFromOntologyDocument(Settings.class
+						.getResourceAsStream("utdemo.owl"));// .loadOntology(IRI.create(file));
 		ReasonerFactory factory = new ReasonerFactory();
 		Configuration configuration = new Configuration();
-		configuration.throwInconsistentOntologyException = true;
+		configuration.throwInconsistentOntologyException = false;
 		reasoner = factory.createReasoner(ontology, configuration);
 	}
 }

@@ -76,9 +76,9 @@ public class TestPluginTest  extends SingletonAbstractShellTest{
 	@Test
 	public void testRun() {
 		//getShell().execute("mkdir hello/first");
-		getShell().execute("cd hello/first");
-		getShell().execute("set VERBOSE true");
-		getShell().execute("mock fromXML --file demo.xml");		
+		//getShell().execute("cd hello/first");
+		//getShell().execute("set VERBOSE true");
+		//getShell().execute("mock fromXML --file demo.xml");		
 	}
 
 }

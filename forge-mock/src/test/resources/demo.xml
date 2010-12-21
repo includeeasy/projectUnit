@@ -12,11 +12,16 @@
 	<system-under-test>
 	</system-under-test>
 	<depend-on-component>
+	    <!-- 
 		<class name="com.flowas.testdemo.DOC">
 			<method>method(String)</method>
-		</class>
+		</class>-->
+		
 		<class name="java.lang.Runtime">
 		    <method>exec(java.lang.String)</method>
 		</class>
+		<class name="javax.persistence.Persistence">
+		    <method>createEntityManagerFactory(java.lang.String)</method>
+		</class>-->
 	</depend-on-component>
 </root>

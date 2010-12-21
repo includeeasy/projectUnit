@@ -65,8 +65,8 @@ public class EventHandler {
 			String methodName = "none";
 			String instanceMethod = "instance";
 			List<String> importList = new ArrayList<String>();
-			for (Method m : clasz.getDeclaredMethods()) {
-				for (String mn : event.getMethodList()) {					
+			for (String mn : event.getMethodList()) {			   
+			   for (Method m : clasz.getDeclaredMethods()) {					
 					if (mn.contains("(")) {
 						methodName = mn.split("\\(")[0];
 					}
@@ -96,20 +96,27 @@ public class EventHandler {
 						templateName = "Singleton";
 						instanceMethod=MockUtils.getInstanceMethod(clasz).getName();
 					}
-					// %DOC%/%method%/%ReturnType%
-					Map<GenEnum, Object> privatenew = ResourceRepository
-							.getTemplate(templateName);
-					String pbody = (String) privatenew.get(GenEnum.BODY);
-					pbody = pbody
-							.replaceAll("%DOC%", clasz.getSimpleName())
-							.replace("%method%", methodName)
-							.replace("%ReturnType%",
-									m.getReturnType().getSimpleName())
-									.replace("%instanceMethod%", instanceMethod);
+					String concreteTemplate=event.getClassName()+":"+mn;
+					Map<GenEnum, Object> privateConcrete = ResourceRepository
+					.getTemplate(concreteTemplate);
+					String pbody = (String) privateConcrete.get(GenEnum.BODY);
+					String importText=(String) privateConcrete.get(GenEnum.IMPORTS);
+					System.out.println("pb:"+pbody);
+					if(pbody==null){
+						// %DOC%/%method%/%ReturnType%
+						Map<GenEnum, Object> privatenew = ResourceRepository
+								.getTemplate(templateName);
+						pbody = (String) privatenew.get(GenEnum.BODY);
+						pbody = pbody
+								.replaceAll("%DOC%", clasz.getSimpleName())
+								.replace("%method%", methodName)
+								.replace("%ReturnType%",
+										m.getReturnType().getSimpleName())
+										.replace("%instanceMethod%", instanceMethod);
+						importText=(String) privatenew.get(GenEnum.IMPORTS);
+					}					
 					mbody += pbody;
-					MockUtils.addTo(importList,
-							(String) privatenew.get(GenEnum.IMPORTS));
-					// importList.addAll(privatenew.getImportList());
+					MockUtils.addTo(importList,importText);					
 				}
 			}
 			for (String imp : importList) {
@@ -118,10 +125,10 @@ public class EventHandler {
 			for (org.jboss.seam.forge.parser.java.Method<JavaClass> m : cl
 					.getMethods()) {
 				if (m.hasAnnotation("org.junit.Before")) {
-					if(!m.getBody().contains(clasz.getSimpleName())
-							&& !m.getBody().contains(methodName)){
-						mbody=m.getBody()+mbody;
-					}
+					if(!(m.getBody().contains(clasz.getSimpleName())
+							&& m.getBody().contains(methodName))){
+						mbody=m.getBody()+mbody;						
+					}					
 					m.setBody(mbody);
 				}
 			}
@@ -142,6 +149,19 @@ public class EventHandler {
 	 */
 	public void onDocDependent(@Observes DocEvent event) {
 		if ("java.lang.Runtime".equals(event.getClassName())) {
+			DocumentBuilder bu;
+			try {
+				bu = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+				Element ma = bu.newDocument().createElement("maven");
+				ma.setAttribute("zip",
+						"/META-INF/resources/achieve/" + event.getClassName()
+								+ ".zip");
+				engine.maven(ma);
+			} catch (ParserConfigurationException e) {
+				e.printStackTrace();
+			}
+		}
+		if ("javax.persistence.Persistence".equals(event.getClassName())) {
 			DocumentBuilder bu;
 			try {
 				bu = DocumentBuilderFactory.newInstance().newDocumentBuilder();
