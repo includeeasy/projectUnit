@@ -11,12 +11,10 @@
 	<test-class>net.flowas.demo.MyTest</test-class>
 	<system-under-test>
 	</system-under-test>
-	<depend-on-component>
-	    <!-- 
+	<depend-on-component>	    
 		<class name="com.flowas.testdemo.DOC">
-			<method>method(String)</method>
-		</class>-->
-		
+			<method>method(java.lang.String)</method>
+		</class>		
 		<class name="java.lang.Runtime">
 		    <method>exec(java.lang.String)</method>
 		</class>
