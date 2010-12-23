@@ -100,6 +100,9 @@
         <NamedIndividual IRI="#PrivateNew"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PublicNew"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SimpleTest"/>
     </Declaration>
     <Declaration>
@@ -193,6 +196,10 @@
     <ClassAssertion>
         <Class IRI="#Template"/>
         <NamedIndividual IRI="#PrivateNew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Template"/>
+        <NamedIndividual IRI="#PublicNew"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Template"/>
@@ -322,6 +329,33 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import com.flowas.testdemo.DOC;
 import com.flowas.testdemo.SUT;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body"/>
+        <NamedIndividual IRI="#PublicNew"/>
+        <Literal datatypeIRI="&xsd;string">Answer&lt;%DOC%&gt; answer%DOC% = new Answer&lt;%DOC%&gt;() {
+			@Override
+			public %DOC% answer(InvocationOnMock invocation)
+					throws Throwable {
+				%constructorText%
+				%DOC% spy = PowerMockito.spy(mock%DOC%);
+				PowerMockito.when(spy.%method%())
+						.thenReturn(false);				
+				return spy;
+			}
+		};
+		PowerMockito.whenNew(%DOC%.class).withArguments(Mockito.anyString()).thenAnswer(answer%DOC%);</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#import"/>
+        <NamedIndividual IRI="#PublicNew"/>
+        <Literal datatypeIRI="&xsd;string">import org.junit.runner.RunWith;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body"/>

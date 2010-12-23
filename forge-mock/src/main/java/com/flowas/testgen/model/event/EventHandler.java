@@ -17,6 +17,7 @@
  */
 package com.flowas.testgen.model.event;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
@@ -31,7 +32,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import net.flowas.codegen.resource.GenEnum;
-
 
 import org.jboss.seam.forge.parser.java.JavaClass;
 import org.jboss.seam.forge.project.Project;
@@ -64,9 +64,10 @@ public class EventHandler {
 			String mbody = "";
 			String methodName = "none";
 			String instanceMethod = "instance";
+			String constructorText = "";
 			List<String> importList = new ArrayList<String>();
-			for (String mn : event.getMethodList()) {			   
-			   for (Method m : clasz.getDeclaredMethods()) {					
+			for (String mn : event.getMethodList()) {
+				for (Method m : clasz.getDeclaredMethods()) {
 					if (mn.contains("(")) {
 						methodName = mn.split("\\(")[0];
 					}
@@ -87,22 +88,28 @@ public class EventHandler {
 					if (flag) {
 						continue;
 					}
+					Constructor constructor = MockUtils
+							.getFirstConstructor(clasz);
 					String templateName = "PrivateNew";
 					if (Modifier.isStatic(m.getModifiers())) {
 						templateName = "StaticMethod";
-					} else if(clasz.getDeclaredConstructor().getModifiers()!=Modifier.PRIVATE){
-						templateName = "PrivateNew";
-					}else{
+					} else if (constructor != null) {
+						templateName = "PublicNew";
+						constructorText = MockUtils
+								.getConstructorText(constructor);
+						MockUtils.prepareFor(cl, event.getClassName());
+					} else {
 						templateName = "Singleton";
-						instanceMethod=MockUtils.getInstanceMethod(clasz).getName();
+						instanceMethod = MockUtils.getInstanceMethod(clasz)
+								.getName();
 					}
-					String concreteTemplate=event.getClassName()+":"+mn;
+					String concreteTemplate = event.getClassName() + ":" + mn;
 					Map<GenEnum, Object> privateConcrete = ResourceRepository
-					.getTemplate(concreteTemplate);
+							.getTemplate(concreteTemplate);
 					String pbody = (String) privateConcrete.get(GenEnum.BODY);
-					String importText=(String) privateConcrete.get(GenEnum.IMPORTS);
-					System.out.println("pb:"+pbody);
-					if(pbody==null){
+					String importText = (String) privateConcrete
+							.get(GenEnum.IMPORTS);					
+					if (pbody == null) {
 						// %DOC%/%method%/%ReturnType%
 						Map<GenEnum, Object> privatenew = ResourceRepository
 								.getTemplate(templateName);
@@ -112,11 +119,13 @@ public class EventHandler {
 								.replace("%method%", methodName)
 								.replace("%ReturnType%",
 										m.getReturnType().getSimpleName())
-										.replace("%instanceMethod%", instanceMethod);
-						importText=(String) privatenew.get(GenEnum.IMPORTS);
-					}					
+								.replace("%instanceMethod%", instanceMethod)
+								.replace("%constructorText%", constructorText);
+						importText = (String) privatenew.get(GenEnum.IMPORTS);
+					}
 					mbody += pbody;
-					MockUtils.addTo(importList,importText);					
+					MockUtils.addTo(importList, importText);
+					MockUtils.addTo(importList, event.getClassName());
 				}
 			}
 			for (String imp : importList) {
@@ -125,21 +134,18 @@ public class EventHandler {
 			for (org.jboss.seam.forge.parser.java.Method<JavaClass> m : cl
 					.getMethods()) {
 				if (m.hasAnnotation("org.junit.Before")) {
-					if(!(m.getBody().contains(clasz.getSimpleName())
-							&& m.getBody().contains(methodName))){
-						mbody=m.getBody()+mbody;						
-					}					
-					m.setBody(mbody);
+					if (!(m.getBody().contains(clasz.getSimpleName()) && m
+							.getBody().contains(methodName))) {
+						mbody = m.getBody() + mbody;
+					}
+					m.setBody(mbody);					
 				}
 			}
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		} catch (SecurityException e) {		
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {			
+		} catch (SecurityException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	/**
