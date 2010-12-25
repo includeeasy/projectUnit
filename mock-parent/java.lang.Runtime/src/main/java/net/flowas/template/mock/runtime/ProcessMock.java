@@ -62,8 +62,8 @@ public class ProcessMock extends Process {
 				if(result[1]== null){
 					result[1]="";
 				}
-				errorStrean = new ByteArrayInputStream(result[0].getBytes());
-				standStrean = new ByteArrayInputStream(result[1].getBytes());
+				errorStrean = new ByteArrayInputStream(result[1].getBytes());
+				standStrean = new ByteArrayInputStream(result[0].getBytes());
 			    return;
 			}
 		}
