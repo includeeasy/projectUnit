@@ -42,7 +42,7 @@
 			<version>1.2.4</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/org.semanticweb.HermiT.jar</systemPath>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.jboss.seam.forge</groupId>
 			<artifactId>forge-test-harness</artifactId>
@@ -51,4 +51,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jboss.maven.plugins</groupId>
+				<artifactId>maven-jdocbook-plugin</artifactId>
+				<version>2.2.3</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
