@@ -12,8 +12,8 @@
 	<system-under-test>
 	</system-under-test>
 	<depend-on-component>	    
-		<class name="com.flowas.testdemo.DOC">
-			<method>method(java.lang.String)</method>
+		<class name="java.io.File">
+			<method>exists()</method>
 		</class>		
 		<class name="java.lang.Runtime">
 		    <method>exec(java.lang.String)</method>
