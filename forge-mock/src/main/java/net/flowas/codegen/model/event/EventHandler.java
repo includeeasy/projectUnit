@@ -15,7 +15,7 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.testgen.model.event;
+package net.flowas.codegen.model.event;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -31,7 +31,10 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import net.flowas.codegen.model.ExcuteEngine;
+import net.flowas.codegen.model.MockUtils;
 import net.flowas.codegen.resource.GenEnum;
+import net.flowas.codegen.resource.ResourceRepository;
 
 import org.jboss.seam.forge.parser.java.JavaClass;
 import org.jboss.seam.forge.project.Project;
@@ -40,9 +43,6 @@ import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
 import org.jboss.seam.forge.project.facets.DependencyFacet;
 import org.w3c.dom.Element;
 
-import com.flowas.codegen.project.model.ExcuteEngine;
-import com.flowas.testgen.model.MockUtils;
-import com.flowas.testgen.model.ResourceRepository;
 
 @ApplicationScoped
 public class EventHandler {

@@ -15,15 +15,8 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.testgen.model.framework;
+package net.flowas.codegen.model.framework;
 
-import java.util.Map;
-import java.util.Set;
+public class AspectJImpl {
 
-import net.flowas.codegen.resource.GenEnum;
-
-public interface Technology {
-	void isolate(String testname, Map<String, Set<String>> docList,
-			Map<GenEnum, Object> template);
-	
 }

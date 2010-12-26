@@ -15,11 +15,13 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.codegen.project.model;
+package net.flowas.codegen.model;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.List;
+
+import net.flowas.codegen.model.OperationUtils.UnzipFilter;
 
 import org.apache.maven.model.Dependency;
 import org.apache.maven.model.Model;
@@ -28,7 +30,6 @@ import org.jboss.seam.forge.project.Project;
 import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
 import org.jboss.seam.forge.project.facets.DependencyFacet;
 
-import com.flowas.codegen.project.model.OperationUtils.UnzipFilter;
 
 public class MavenFilter implements UnzipFilter {
 	String file;

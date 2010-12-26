@@ -29,6 +29,10 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import net.flowas.codegen.model.ExcuteEngine;
+import net.flowas.codegen.model.TestGen;
+import net.flowas.codegen.resource.ResourceRepository;
+
 import org.jboss.seam.forge.project.Project;
 import org.jboss.seam.forge.shell.Shell;
 import org.jboss.seam.forge.shell.plugins.DefaultCommand;
@@ -37,9 +41,6 @@ import org.jboss.seam.forge.shell.plugins.Option;
 import org.jboss.seam.forge.shell.plugins.Plugin;
 import org.w3c.dom.Element;
 
-import com.flowas.codegen.project.model.ExcuteEngine;
-import com.flowas.testgen.model.ResourceRepository;
-import com.flowas.testgen.model.TestGen;
 
 @Named("mock")
 @Help("Manage project's archive and some cinfigureration")

@@ -1,4 +1,4 @@
-package com.flowas.testgen.model;
+package net.flowas.codegen.model;
 
 import java.io.File;
 import java.lang.reflect.Constructor;

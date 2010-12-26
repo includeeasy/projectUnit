@@ -15,7 +15,7 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.codegen.project.model;
+package net.flowas.codegen.model;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

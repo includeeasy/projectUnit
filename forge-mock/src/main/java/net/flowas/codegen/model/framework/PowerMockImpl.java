@@ -15,7 +15,7 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.testgen.model.framework;
+package net.flowas.codegen.model.framework;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileNotFoundException;
@@ -27,6 +27,8 @@ import javax.enterprise.event.Event;
 import javax.enterprise.inject.Default;
 import javax.inject.Inject;
 
+import net.flowas.codegen.model.event.DocEvent;
+import net.flowas.codegen.model.event.TechEvent;
 import net.flowas.codegen.resource.GenEnum;
 
 import org.jboss.seam.forge.parser.JavaParser;
@@ -38,8 +40,6 @@ import org.jboss.seam.forge.project.facets.JavaSourceFacet;
 import org.jboss.seam.forge.project.resources.builtin.JavaResource;
 import org.jboss.seam.forge.project.util.Packages;
 
-import com.flowas.testgen.model.event.DocEvent;
-import com.flowas.testgen.model.event.TechEvent;
 
 @Default
 public class PowerMockImpl implements Technology {

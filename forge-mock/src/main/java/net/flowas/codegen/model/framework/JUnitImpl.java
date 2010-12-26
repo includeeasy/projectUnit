@@ -1,12 +1,12 @@
-package com.flowas.testgen.model.framework;
+package net.flowas.codegen.model.framework;
 
 import java.util.Map;
 
 import javax.enterprise.inject.Default;
 
 import net.flowas.codegen.resource.GenEnum;
+import net.flowas.codegen.resource.ResourceRepository;
 
-import com.flowas.testgen.model.ResourceRepository;
 @Default
 public class JUnitImpl implements TestFramework{
 	public String getSample(String testname) {

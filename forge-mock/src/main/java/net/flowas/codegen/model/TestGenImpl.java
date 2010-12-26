@@ -15,7 +15,7 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.testgen.model;
+package net.flowas.codegen.model;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -30,6 +30,9 @@ import java.util.Set;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
 
+import net.flowas.codegen.model.event.DocEvent;
+import net.flowas.codegen.model.event.TechEvent;
+import net.flowas.codegen.model.framework.TestFramework;
 import net.flowas.codegen.resource.Settings;
 
 import org.jboss.seam.forge.parser.JavaParser;
@@ -46,9 +49,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import com.flowas.generic.utils.XmlUtils;
-import com.flowas.testgen.model.event.DocEvent;
-import com.flowas.testgen.model.event.TechEvent;
-import com.flowas.testgen.model.framework.TestFramework;
 
 //@Default
 public class TestGenImpl implements TestGen {

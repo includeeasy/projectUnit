@@ -15,7 +15,7 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.codegen.project.model;
+package net.flowas.codegen.model;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,12 +26,13 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import net.flowas.codegen.model.OperationUtils.UnzipFilter;
+
 import org.jboss.seam.forge.project.Project;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.flowas.codegen.project.model.OperationUtils.UnzipFilter;
 
 @Named
 @ApplicationScoped

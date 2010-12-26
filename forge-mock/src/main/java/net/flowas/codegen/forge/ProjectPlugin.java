@@ -23,6 +23,9 @@ import java.io.IOException;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import net.flowas.codegen.model.ExcuteEngine;
+import net.flowas.codegen.model.OperationUtils;
+
 import org.jboss.seam.forge.shell.Shell;
 import org.jboss.seam.forge.shell.plugins.DefaultCommand;
 import org.jboss.seam.forge.shell.plugins.Help;
@@ -31,8 +34,6 @@ import org.jboss.seam.forge.shell.plugins.Plugin;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-import com.flowas.codegen.project.model.ExcuteEngine;
-import com.flowas.codegen.project.model.OperationUtils;
 import com.flowas.generic.utils.XmlUtils;
 
 

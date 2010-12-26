@@ -1,4 +1,4 @@
-package com.flowas.testgen.model.event;
+package net.flowas.codegen.model.event;
 
 import java.util.Map;
 

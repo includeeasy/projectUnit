@@ -15,7 +15,7 @@
  *
  * You can write to flowas@gmial.com for more customer requirement.
  */
-package com.flowas.testgen.model;
+package net.flowas.codegen.resource;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,8 +23,6 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import net.flowas.codegen.resource.GenEnum;
-import net.flowas.codegen.resource.Settings;
 
 import org.semanticweb.HermiT.Configuration;
 import org.semanticweb.HermiT.Reasoner.ReasonerFactory;
