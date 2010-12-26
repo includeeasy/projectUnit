@@ -77,12 +77,14 @@ public class MockPlugin implements Plugin {
 				codeGen.isolateDOC(testFile);
 			}
 			return;
-		} else if ("fromXML".equals(command)) {
-			project.getProjectRoot().getFullyQualifiedName();
+		} else if ("fromXML".equals(command)) {			
 			File testFile = getFile(useUI, file);
 			if (null != testFile) {
 				codeGen.fromXML(testFile);
 			}
+			return;
+		} else if ("editXML".equals(command)) {			
+			shell.println("Not implemented yet!");
 			return;
 		} else if (clasz != null) {
 			DocumentBuilder bu;
