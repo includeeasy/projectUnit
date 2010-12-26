@@ -1,3 +1,0 @@
-mvn site:stage
-mvn assembly:assembly
-license:format
