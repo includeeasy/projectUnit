@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : rule.xml
+    Created on : 2011年1月12日, 下午9:15
+    Author     : Administrator
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <define name="stateChangeInfo">
+        <sequece>
+            <type>resource</type>
+            <sequece min="3">
+                <type>stateType</type>
+                <type>cstate || role || dstate</type>
+                <type>cstate || role || dstate</type>
+                <terminate>
+                    <maxContextLenth>500</maxContextLenth>
+                </terminate>
+            </sequece>
+            <terminate>
+                <utilNext>
+                    <type>resource</type>
+                </utilNext>
+            </terminate> 
+        </sequece>
+    </define>    
+    <display>
+        <column>
+            <type>resource</type>      
+            <type  condition="stateType=role" position="last">role</type>
+            <type  condition="stateType=peer" position="last" alias="peer">role</type> 
+            <type>cstate</type>
+            <type  condition="stateType=disk" position="last">dstate</type>
+            <type  condition="stateType=pdsk" position="last">dstate</type>            
+        </column>
+        <row>
+            <phrase type="resource">drbd0</phrase> 
+            <phrase type="resource" alias="r_nagios">drbd1</phrase>
+            <phrase type="resource">drbd2</phrase>
+            <phrase type="resource">drbd3</phrase>
+            <phrase type="resource">drbd4</phrase>
+        </row>
+    </display>
+</root>

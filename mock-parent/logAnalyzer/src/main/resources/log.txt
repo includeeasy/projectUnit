@@ -1,0 +1,4 @@
+drbd1 role(Primary->Secondary) disk(Inconsistance->Diskless)
+drbd0 pdsk(Inconsistance->Diskless) peer(Primary->Secondary) 
+drbd0 conn(StandAllone->StandAllone) pdsk(Inconsistance->Diskless)
+drbd2 peer(Primary->Primary) disk(Inconsistance->Diskless)

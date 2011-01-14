@@ -1,0 +1,14 @@
+Connected cstate
+StandAllone cstate
+Diskless dstate
+Inconsistance dstate
+Primary role
+Secondary role
+role stateType
+disk stateType
+conn stateType
+pdsk stateType
+peer stateType
+drbd0 resource
+drbd1 resource
+drbd2 resource
