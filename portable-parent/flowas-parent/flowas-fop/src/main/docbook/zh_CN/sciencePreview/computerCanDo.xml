@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+  <title>计算机的能力</title>
+
+  <section>
+    <title>分析一个汉语句子的语法结构</title>
+
+    <para>以下是用到斯坦福大学的自然语言解析工具包将”俄国 希望 伊朗 没有 制造 核武器 计划 。”解析为一颗语法树：<figure>
+        <title>语法树</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/image001.jpg"></imagedata>
+          </imageobject>
+        </mediaobject>
+      </figure></para>
+      <para>
+      “S”表示一个句子，一句话可以分成名词短语和动词短语</para><para>
+“NP”表示名词短语</para><para>
+“VP”表示动词短语
+      </para>
+  </section>
+  <section>
+    <title>阅读、理解和检索助手</title>
+    <sect1>人物关系图绘制和相关咨询</sect1>
+    <sect1>Google的神奇罗盘——联想</sect1>
+    <sect1>百度的框计算</sect1>
+  </section>
+  <section>
+   <title>写不错英语的写作输入器</title>
+  </section>
+</chapter>

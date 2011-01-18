@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>Gamma Function</title>
+	<info>
+		<abstract>
+			<para>当一个善于发问的学生了解了第一、二、三级运算以后，他可能很快去思考第四级运（the forth leval of operation - power tower 幂塔）的形式。事实上，幂塔可与另外一函数 建立转化关系，从而求出它的解析式.。</para>
+		</abstract>
+		<keywordset>
+		 <keyword>幂塔</keyword>
+		 <keyword>函数变换</keyword>
+		 <keyword>解析式</keyword>
+		</keywordset>
+		<issuenum>O0174.6</issuenum>
+	</info>
+	<section>
+		<title>定义</title>
+		<para>幂塔[1]运算的定义为</para>
+	</section>
+</chapter>

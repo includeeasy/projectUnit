@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../../xsd/docbook.xsd ">
+	<title>经济生根发芽</title>
+	<info>
+		<title>职业情况</title>
+		<abstract>
+			<para>学习性知识，推行新技术，举行小会议锻炼演讲能力</para>
+		</abstract>
+	</info>
+	<section>
+		<title>工作机会突然降临</title>
+		<para>这里的人体力充沛，像鸡一样可以睡在树枝上</para>
+	</section>
+	<section>
+		<title>才华渐显</title>
+		<note>
+			<title>员工生活会 </title>
+			<para>个人兴趣爱好，看电影、爬山，骑自行车(全铝的，diy的最便宜的2000元)，宇杰显得无话说，嘟囔道：我喜欢骑自行车，和别人不一样，什么都能骑坏，包括外带和钢圈。还有我喜欢写程序，给几个开源项目贡献代码和经常给大家发邮件，不过没人看。
+			</para>
+			<para>回顾与展望、总部出差、意见建议</para>
+			<para>《光阴荏苒 长安永屹》flash短片欣赏</para>
+		</note>
+	</section>
+	<section>
+	 <title>程序员之痛</title>
+	 <para>技术不断更新，不停的学习，而且学之无用</para>
+	</section>
+</chapter>

@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book version="5.0" xml:lang="zh_cn" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<info version="5.0" xml:lang="zh_cn" xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="info.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>科学与文明</title>
+	<authorgroup>
+		<author>
+			<personname>
+				<honorific>Mr</honorific>
+				<firstname>Norman</firstname>
+				<surname>Walsh</surname>
+				<othername role="mi">D</othername>
+			</personname>
+			<affiliation>
+				<shortaffil>ATI</shortaffil>
+				<jobtitle>Senior Application Analyst</jobtitle>
+				<orgname>ArborText, Inc.</orgname>
+				<orgdiv>Application Developement</orgdiv>
+			</affiliation>
+		</author>
+		<author>
+		    <personname>
+		     <surname>刘</surname>
+		     <firstname>建宏</firstname>
+		    </personname>			
+			<address>
+				<city>西安</city>
+				<street>科技路</street>
+				<postcode>719000</postcode>
+				<country>中国</country>
+			</address>
+			<email>flowas@gmail.com</email>
+		</author>
+	</authorgroup>
+	<copyright>
+		<year>2010</year>
+		<holder>生活实验室</holder>
+	</copyright>
+	<pubdate>2010</pubdate>
+	<cover><mediaobject>
+			<imageobject>
+				<imagedata fileref="resources/images/sci_lit.jpg"/>
+			</imageobject>
+</mediaobject>
+	</cover>
+</info>
+	<glossary version="5.0" xml:lang="zh_cn" xml:base="glossary.xml">
+	<glossentry>
+		<glossterm>语义网</glossterm>
+		<glossdef>
+			<para> tbc                  
+                </para>
+		</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>面向代理编程</glossterm>
+		<glossdef>
+			<para> tbc                  
+                </para>
+			<example>
+				<title>NetLogo</title>
+				<para>
+					最好用的aop仿真创作平台，可用于角色游戏
+                    </para>
+			</example>
+		</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>科学美</glossterm>
+		<glossdef>
+			<example>
+				<title>MathML和 SVG</title>
+				<para>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="resources/boxes.svg"/>
+						</imageobject>
+					</inlinemediaobject>
+
+					<!-- <inlinemediaobject> <imageobject> <imagedata fileref="pic.svg" 
+						/> </imageobject> </inlinemediaobject> -->
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="resources/example.mml"/>
+						</imageobject>
+					</inlinemediaobject>
+				</para>
+			</example>
+		</glossdef>
+	</glossentry>
+</glossary>
+	<toc/>
+	<!-- -->
+	<part version="5.0" xml:lang="zh_cn" xml:base="novel_body.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>小说主体</title>	
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../../xsd/docbook.xsd " xml:base="chapters/out_of_woman_s_commercialization.xml">
+	<title>摆脱女人商品化世界——走出家门</title>
+	<info>
+		<title>写作方案</title>
+		<abstract>
+			<para>（方案一）原本该继续读初中的秋叶被家人和邻居看作是能出力能嫁人卖钱的时候了，父亲一边找女婿索取钱物一边又在紧锣密鼓的实施他豪华宅院的计划，这时的秋叶已经认识到读书的重要性，讲文明的必要性，家乡的落后和自己肩负的使命…
+				（方案二）她看着有水的大坝不能养鱼，可以湿润的旱田没人去利用，本该休息的冬天却有人用砍柴烧火的方法驱逐室外的寒冷和加热冻土修房，人们弃过人高的稠密芦苇不用而整天挖不如手掌大的荠菜，城里送来的高科技产品被村民扔进垃圾桶，满村的儿童弃学务农的习俗，这些无不让秋叶感到酸楚难忍。
+				（方案三）生活在落后山区的秋叶，吃苦耐劳、聪慧热情，母亲以务农为业，父亲常年以砖为伴，二老都不认得字，所以寄希望于秋叶身上。
+			</para>
+		</abstract>
+	</info>
+	<section>
+	 <title>浪迹天涯</title>
+	 <para>这里的人体力充沛，像鸡一样可以睡在树枝上</para>
+	</section>
+	<section>
+	 <title>素材</title>
+	 <para>一、父亲按照城市的房屋结构规划了一座豪华宅院，房顶上装有太阳能热水器，室内布置家庭影院，卫浴系统，房子对面不远处是娱乐场所，这样的豪宅在农村是绝对少见的，也是人间的天堂，它具有城乡两种不同环境的优点：城市房屋的精美装饰，完善的功能，舒适的生活，农村房屋的安静，空气清新，鸟语花香。
+ 
+ 
+ 
+二、秋叶家的地理特征：这里是一条河流的发源地，位于黄土高原，向源头再往前的几十里没有泉水的存在，所以，这里的泉水的流量很大，水是村很高的石崖中间流出来的，石崖上边是一个土坝，下边是一个水坝，水坝很大很深，但没有大鱼存在；石崖前面是梯田，低于泉水高度的梯田都变为种菜的园子，高于泉水的梯田都是荒草地
+ 
+三、因为贫穷落后，家乡的儿童在读小学时一般每天都要抽出半天的时间来干家务活，而且这些活非常累且收获微薄，喂一年的样也只能卖一百多一点，花半天时间抬水浇地也只能让几棵种子发芽或救活几棵禾苗。其他的孩子觉得这些都很正常，但秋叶却认为这是在浪费生命，她心理有说不出的酸楚。
+ 
+ 
+ 
+ 
+ 
+	 </para>
+	</section>
+</chapter>	
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../../xsd/docbook.xsd " xml:base="chapters/golden_phoenix_from_mountains.xml">
+	<title> 大山里飞出的"金凤凰" </title>
+	<info>
+		<title>一个乡村女教师的梦想与挑战</title>
+	</info>
+
+	<section>
+		<title>落榜教书</title>
+		<para>天阴沉沉的 。</para>
+		<para>叶子懒洋洋的起身, 倚在床边,
+			没有像往常一样去看书，只是那么呆呆地坐着，脑中却像放电影似的过目着最近发生在她身上的一件件事情！的确，往事历历在目，往事难忘，怎能忘？
+		</para>
+		<para>昔日，她是一个勤奋的好学、聪颖开朗的女孩，可谓人见人爱。也许是造化弄人吧，一直学习优异的她在中考中的表现却出乎所有人的意料——她落榜了，因差３分而落榜了。从此，开朗的她变得沉默不语了，然而家里的变故更让她心痛欲绝，父亲因她的落榜而一天到晚扳着铁青的脸，母亲也整日愁眉不展．叶子暗暗思讨着："以后的求学路该怎么走呀？如何才能说服倔强耿直的父亲呢？如何．．．．．"太多的如何让她无所适从，不知所措。然而，祸不单行！父亲常常把家里仅有的积蓄——庄稼人的血汗钱埋在粮食堆里，而母亲并不知道。所以，有一次母亲买豆子时，无意中把钱也一起给卖了，这不是要了她父亲的命吗？自然，当父亲知道此事后，免不了雷霆大怒，气急败坏之下，竟然动手打叶子和她的母亲，弱小的她们却怒不敢言，只能忍气吞声。而利欲熏心的父亲似乎发了疯，竟不近人情地要把叶子嫁出去，目的只为了得到让人惊的目瞪口呆的财礼。"这还是嫁女儿吗？这比卖还贵呢？"母亲在一边干着急着，"这简直就是把孩子往火炕里推呀！不行，我得劝劝，"母亲正准备去，又转念一想："他还能听劝吗？不就是想要钱吗？得想法子把钱给弄回来，这事就结了！"于是，母亲拖亲戚拜领导，能做的都做了，希望给女儿找条光明路。上天眷顾，希望的曙光终于开启在叶子的天空上了。有一个乡镇中学的附属小学正缺
+			一个教师，叶子便填了这个缺。薪水是一学期1000 元，另设有奖金，条件是每个人的平均成绩超过65分的，每分奖20元。</para>
+		<para>事情到此告了一个段落。现在，叶子认为自己是幸运的！她转眼看了一下书桌上那一擂书，她正在做着一些事情，为了圆梦，"也许我还有希望"叶子这样想着。于是，她除了兢兢业业地教学认认真真的授课外，还在自学着一些课程，她不想在让父亲主宰她的命运，她还年轻，她有自己的抱负、自己的梦想，惟独使自己变得更智慧才是捷径，才是出路！她明白这一点，所以她很努力，为了走出家，走出大山，走向美好的新生活！
+		</para>
+		<para>正因为叶子的教导有方，所以她带的学生个个积极向上，勤奋好学。她大胆地改革，使课堂气愤十分活跃，学生也学得很有效率
+			。同时，她还鼓励学生参加丰富多彩的社会活动，培养大家生活的基本能力。叶子，又变成了一个人见人欢迎的乡村女教师！   </para>
+		<para>说她教导有方是有因可循的。听，叶子在讲课了，黑板上赫然写着"商不变性质"。</para>
+	</section>
+	<section>
+	    <title>本文的创作过程</title>
+		<procedure>			
+			<step>
+				<para>小说的策划者写了一个短小片段，写明了主要人物和事件</para>
+			</step>
+			<step>
+				<para>有相关经历者撰写真实的记实性的文章</para>
+			</step>
+			<step>
+				<para>改编部分情节使得一些实用的信息（科技内容）融入其中</para>
+			</step>
+			<step>
+				<para>写作水平好一点的文学工作者修改语言表达</para>
+			</step>
+		</procedure>
+	</section>
+</chapter>
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../../xsd/docbook.xsd " xml:base="chapters/intimate_contact_with_the_city.xml">
+	<title>与城市亲密接触</title>
+	<info>
+		<title>突发成长</title>
+	</info>
+
+	<section>
+		<title>免费听高级技术专家的课</title>
+		<para>天阴沉沉的 。</para>
+		<para>叶子懒洋洋的起身, 倚在床边,
+			没有像往常一样去看书，只是那么呆呆地坐着，脑中却像放电影似的过目着最近发生在她身上的一件件事情！的确，往事历历在目，往事难忘，怎能忘？
+		</para>
+		<para>昔日，她是一个勤奋的好学、聪颖开朗的女孩，可谓人见人爱。也许是造化弄人吧，一直学习优异的她在中考中的表现却出乎所有人的意料——她落榜了，因差３分而落榜了。从此，开朗的她变得沉默不语了，然而家里的变故更让她心痛欲绝，父亲因她的落榜而一天到晚扳着铁青的脸，母亲也整日愁眉不展．叶子暗暗思讨着："以后的求学路该怎么走呀？如何才能说服倔强耿直的父亲呢？如何．．．．．"太多的如何让她无所适从，不知所措。然而，祸不单行！父亲常常把家里仅有的积蓄——庄稼人的血汗钱埋在粮食堆里，而母亲并不知道。所以，有一次母亲买豆子时，无意中把钱也一起给卖了，这不是要了她父亲的命吗？自然，当父亲知道此事后，免不了雷霆大怒，气急败坏之下，竟然动手打叶子和她的母亲，弱小的她们却怒不敢言，只能忍气吞声。而利欲熏心的父亲似乎发了疯，竟不近人情地要把叶子嫁出去，目的只为了得到让人惊的目瞪口呆的财礼。"这还是嫁女儿吗？这比卖还贵呢？"母亲在一边干着急着，"这简直就是把孩子往火炕里推呀！不行，我得劝劝，"母亲正准备去，又转念一想："他还能听劝吗？不就是想要钱吗？得想法子把钱给弄回来，这事就结了！"于是，母亲拖亲戚拜领导，能做的都做了，希望给女儿找条光明路。上天眷顾，希望的曙光终于开启在叶子的天空上了。有一个乡镇中学的附属小学正缺
+			一个教师，叶子便填了这个缺。薪水是一学期1000 元，另设有奖金，条件是每个人的平均成绩超过65分的，每分奖20元。</para>
+		<para>事情到此告了一个段落。现在，叶子认为自己是幸运的！她转眼看了一下书桌上那一擂书，她正在做着一些事情，为了圆梦，"也许我还有希望"叶子这样想着。于是，她除了兢兢业业地教学认认真真的授课外，还在自学着一些课程，她不想在让父亲主宰她的命运，她还年轻，她有自己的抱负、自己的梦想，惟独使自己变得更智慧才是捷径，才是出路！她明白这一点，所以她很努力，为了走出家，走出大山，走向美好的新生活！
+		</para>
+		<para>正因为叶子的教导有方，所以她带的学生个个积极向上，勤奋好学。她大胆地改革，使课堂气愤十分活跃，学生也学得很有效率
+			。同时，她还鼓励学生参加丰富多彩的社会活动，培养大家生活的基本能力。叶子，又变成了一个人见人欢迎的乡村女教师！   </para>
+		<para>说她教导有方是有因可循的。听，叶子在讲课了，黑板上赫然写着"商不变性质"。</para>
+	</section>
+	<section>
+	    <title>思想转化为产品异常容易</title>
+		<procedure>			
+			<step>
+				<para>电子城</para>
+			</step>
+			<step>
+				<para>有相关经历者撰写真实的记实性的文章</para>
+			</step>
+			<step>
+				<para>改编部分情节使得一些实用的信息（科技内容）融入其中</para>
+			</step>
+			<step>
+				<para>写作水平好一点的文学工作者修改语言表达</para>
+			</step>
+		</procedure>
+	</section>
+</chapter>
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../../xsd/docbook.xsd " xml:base="chapters/drift_sojourn.xml">
+	<title>漂流寄居</title>
+	<info>
+		<title>写作方案</title>
+		<abstract>
+			<para>（方案一）原本该继续读初中的秋叶被家人和邻居看作是能出力能嫁人卖钱的时候了，父亲一边找女婿索取钱物一边又在紧锣密鼓的实施他豪华宅院的计划，这时的秋叶已经认识到读书的重要性，讲文明的必要性，家乡的落后和自己肩负的使命…
+				（方案二）她看着有水的大坝不能养鱼，可以湿润的旱田没人去利用，本该休息的冬天却有人用砍柴烧火的方法驱逐室外的寒冷和加热冻土修房，人们弃过人高的稠密芦苇不用而整天挖不如手掌大的荠菜，城里送来的高科技产品被村民扔进垃圾桶，满村的儿童弃学务农的习俗，这些无不让秋叶感到酸楚难忍。
+				（方案三）生活在落后山区的秋叶，吃苦耐劳、聪慧热情，母亲以务农为业，父亲常年以砖为伴，二老都不认得字，所以寄希望于秋叶身上。
+			</para>
+		</abstract>
+	</info>
+	<section>
+	 <title>与同学合谋</title>
+	 <para>留恋学校生活，偷学</para>
+	</section>
+	<section>
+	 <title>得过且过</title>
+	 <para>这里的人体力充沛，像鸡一样可以睡在树枝上</para>
+	</section>
+	<section>
+	 <title>杂役</title>
+	 <para>一、父亲按照城市的房屋结构规划了一座豪华宅院，房顶上装有太阳能热水器，室内布置家庭影院，卫浴系统，房子对面不远处是娱乐场所，这样的豪宅在农村是绝对少见的，也是人间的天堂，它具有城乡两种不同环境的优点：城市房屋的精美装饰，完善的功能，舒适的生活，农村房屋的安静，空气清新，鸟语花香。
+ 
+ 
+ 
+二、秋叶家的地理特征：这里是一条河流的发源地，位于黄土高原，向源头再往前的几十里没有泉水的存在，所以，这里的泉水的流量很大，水是村很高的石崖中间流出来的，石崖上边是一个土坝，下边是一个水坝，水坝很大很深，但没有大鱼存在；石崖前面是梯田，低于泉水高度的梯田都变为种菜的园子，高于泉水的梯田都是荒草地
+ 
+三、因为贫穷落后，家乡的儿童在读小学时一般每天都要抽出半天的时间来干家务活，而且这些活非常累且收获微薄，喂一年的样也只能卖一百多一点，花半天时间抬水浇地也只能让几棵种子发芽或救活几棵禾苗。其他的孩子觉得这些都很正常，但秋叶却认为这是在浪费生命，她心理有说不出的酸楚。
+ 
+ 
+ 
+ 
+ 
+	 </para>
+	 
+	</section>
+</chapter>
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../../xsd/docbook.xsd " xml:base="chapters/economic_boost.xml">
+	<title>经济生根发芽</title>
+	<info>
+		<title>职业情况</title>
+		<abstract>
+			<para>学习性知识，推行新技术，举行小会议锻炼演讲能力</para>
+		</abstract>
+	</info>
+	<section>
+		<title>工作机会突然降临</title>
+		<para>这里的人体力充沛，像鸡一样可以睡在树枝上</para>
+	</section>
+	<section>
+		<title>才华渐显</title>
+		<note>
+			<title>员工生活会 </title>
+			<para>个人兴趣爱好，看电影、爬山，骑自行车(全铝的，diy的最便宜的2000元)，宇杰显得无话说，嘟囔道：我喜欢骑自行车，和别人不一样，什么都能骑坏，包括外带和钢圈。还有我喜欢写程序，给几个开源项目贡献代码和经常给大家发邮件，不过没人看。
+			</para>
+			<para>回顾与展望、总部出差、意见建议</para>
+			<para>《光阴荏苒 长安永屹》flash短片欣赏</para>
+		</note>
+	</section>
+	<section>
+	 <title>程序员之痛</title>
+	 <para>技术不断更新，不停的学习，而且学之无用</para>
+	</section>
+</chapter>		
+</part>
+	<part xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="idea.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>想法建议</title>
+	<info>
+		<title>几个富豪之间的较量</title>
+	</info>
+	<partintro>
+		<title>每个人都从小时候的一无所有到大富豪</title>
+		<info/>
+		<section>
+			<title>张丽的诱惑</title>
+			<para>也好有个照应</para>
+		</section>
+	</partintro>
+
+	<chapter>
+		<title>校园合租</title>
+		<info>
+			<abstract>
+				<para>走出塑造人物形象的小圈子，给文学注入科学内涵、艺术因素和先进思想，使读者能从多种角度欣赏科学美，理解科学原理，重用艺术成果，参考高明之举。文体中涉及的知识、智慧、思想、艺术、广告应具有可欣赏的艺术性，娱乐的趣味性、引用的必要性、语言的简明性、可参考的真实模仿性、可发展和利用的科学性和实践指导性。您可以在文中加入一些有趣的好玩的科学知识，使人回味无穷的艺术图画，具有挑战性的先进思想，生动有趣的探索过程描写等。
+				</para>
+			</abstract>
+		</info>
+		<section>
+			<title>概念</title>
+			<para>以表达科学内容为目的小说称为科普小说。</para>
+			<para>如果把一个科学活动的动人事迹写成一部小说,并把意义深远的科学原理用最通俗的语言表达清楚，那么，这样的小说应该是最基本最真实的科普小说。但事实上，为了达到表达对象与情节的双重效果，我们就不得不周密规划表达对象并进行人工制造“情节”。
+			</para>
+		</section>
+		<section>
+			<title>表达对象</title>
+			<para>
+				表达对象是人类长期生活所得的精华,它一般是集体智慧的结晶，主要分为如下几类：
+				<simplelist>
+					<member>（1）科学美</member>
+					<member>（2）创意效果</member>
+					<member>（3）突破思维定势的斗争</member>
+					<member>（4）科学创造过程</member>
+					<member>（5）科技、商品</member>
+					<member>（6）广告、政策</member>
+					<member>（7）智谋、金点子</member>
+					<member>（8）发现进步的因素：灵感、执着、技巧、果断</member>
+				</simplelist>
+			</para>
+		</section>
+	</chapter>
+	<chapter>
+		<title>突破性做法</title>
+		<section>
+			<title>盛大999元电子书</title>
+			<para>带动读者阅读，以流量收费，并自负作者一定比例稿酬，形成一个知识产权资金链</para>
+			<!-- 
+			<para>如果说盛大电子书Bambook以998元内测时，大家仅仅觉得那是内测价，但是现在盛大将以999元正式销售其Bambook的确出乎许多人的意料，包括我。那么，盛大以这种价格销售电子书阅读器，将会对国内电子书产业产生什么样的影响？
+
+				一、正式售价出台，定位千元以内
+
+				8月23日中午，一则重大消息出台，盛大电子书产品Bambook最终零售价确定为999元，同时盛大宣布正式启动Bambook上市排队预订系统。这款产品计划于9月28日正式推出，届时其软件版本也会做相应升级。
+
+				请注意，仅仅在十几天前，即8月6日，盛大才宣布旗下电子书产品Bambook内测价定为998元，将向市场限量投放3500台，获得邀请码的用户才能申请参与内测。当时，还有许多厂商质疑盛大对外公布的1800元成本是否真实。而且，当时盛大称Bambook正式售价和上市时间将根据内测情况决定。
+
+				但是，刚刚内测才十几天，就停止了内测，而且公布其正式售价只有比内测高1元的999元，的确出乎许多人的意料，包括我。无论如何，盛大做到了一点：让一款配置较高的电子书阅读器定在了千元以内。
+
+				现在还很难确定盛大仅靠十几天时间的内测是否达到了内测的目标，不过估计他们的感觉应该比较好，不然不会这么快就停止内测申请，我只看到他们的公告中称“由于对用户的热情估计不足，我们被迫提前终止了内测申请”。
+
+				不知道是不是盛大在有意炒作或饥饿营销，尽管Bambook目前仅有一款产品，但盛大对外宣称其现在仍处于全面断货阶段，且解释说因上市初期产能有限，消费者需要在上市排队系统中进行预订，盛大将根据出货量依次供给。看来下去，搞不好盛大会搞出如苹果iPhone和iPad前几晶销售时的火爆排除场面。
+
+				二、产业受到震动，对手何去何从？
+
+				在盛大即将以999元正式推出其Bambook电子书阅读器的同时，感觉国内电子书产业受到一片震动，毕竟999元这个定价让整个产业链相关企业不得不考虑下一步的市场策略。
+
+				对于元太等电子墨水纸厂家而言，要做好两手准备。一方面要考虑尽可能降低电子墨水屏的成本，以满足盛大及其他电子书阅读器厂商的降价趋势；另一方面要考虑扩大生产线，以应对可能由降价所带动的国内电子书阅读器的销量增加。
+
+				对单一生产电子书阅读器的厂商而言，它们可能是最着急的，然而它们最需要找准定位。第一要抛弃过去想通过硬件终端获得大幅利润的想法，这个利润肯定要下降；第二要想办法进一步提高产品的特色及总体成本，在顺应降价潮流的同时彰显自己阅读器的特色；第三要尽早地与内容集成商合作，通过一定的分成比例，与内容集成商一起分享利益。
+
+				对于与盛大类似的对手而言，应以积极的心态推动国内电子书产业发展。汉王等企业在部分程度上与盛大类似，既有内容也有终端，但其终端相比其他对手介入得更早。此时，需要调整心态的是，竞争对手的出现是迟早的事，而竞争也许更有利于自己的发展，因为它迫使你在竞争格局中进行更多的创新。
+
+				总的看来，盛大以999元销售其电子书应该将对国内电子书产业产生一定程度的影响或震动，不同类型的企业应该审时度势，根据企业自身的特点与优势，积极进行应对。
+
+				可以以更积极的心态看待盛大之举。也许因为盛大此次的低价电子书的推出，将大大拉动国内电子书产业的发展，至少可能会大幅拉动电子书阅读器终端的需求量，从这个角度讲，这对所有产业链上的企业都是有利的。
+
+				三、用户一片热闹，三种消费层次
+
+				如果从消费者角度看待盛大999元电子书阅读器Bambook一事，应该说这种低价策略对整个消费者群体而言是有利的，因为对电子书望而生畏及观望的人会减少，进而也许会提高国内民众整体的阅读率。
+
+				不过，如果看看有关盛大这则新闻后面的评论，你会发现有三种消费层次的群体，它们对电子书的了解程度、需求程度及心理价位各不相同。
+
+				首先是第一类消费群体，他们对电子书阅读需求强烈，在看到电子书阅读器能以千元以下销售时欣喜若狂，会在第一时间下预订，而且说不定会在正式销售日时加入昼夜排队的队伍。
+
+				其次是第二类消费群体，他们对电子书阅读器有需求，但可有可无，并且觉得目前的电子书阅读器偏贵，在看到千元以下的阅读器产生后，他们觉得价钱可以接受了，准备购买的可能性大增。
+
+				最后是第三类消费群体，他们原来对电子书阅读不大熟悉，对阅读器价格也不大了解，猛地听起来觉得千元左右的阅读器还是贵了，他们可能会继续等等降价，等到合适的价位再说。
+
+				显然，盛大的低价策略对第一、二类消费群体影响较大，对第三类消费群体只起到了一个唤醒的作用。如果第三类消费非要觉得千元还贵并询问何时再降价时，那么我只能粗略地估计，明年可能阅读器价格会在500-800元左右，而后年可能在300-500元左右。
+
+				总之，盛大将以999元低价销售其电子书带来的最大影响，应该是对国内电子书消费市场的一次较大的激活，这会对电子书产业链上的各类企业带来影响，也会对消费者带来直接的利益。但是，也许只有整个电子书消费市场的激活及扩大才能让所有企业受益，当然更希望更多的消费者能共享电子书阅读的便利，并希望电子书能让国人更爱读书。
+			</para>
+			-->
+			<para>盛大999元的电子书Bambook涉嫌十大忽悠</para>
+		</section>		
+		<section>
+			<title>宗旨</title>
+			<para>描述生活在痛苦中的人们的苦恼并且讨论相应的出路</para>
+			<para>题目一、一个白痴变成超级牛人的过程，为何他会有如此大的动力和爆发力？</para>
+			<para>题目二、轮船开到新疆的准格尔盆地说要经历的动荡？</para>
+		</section>
+		<section>
+			<title>可能的故事</title>
+			<para>宇杰和唐莉之从小是亲密好友，共同奋斗、患难与共，为了实现理想，两人不得不借助外界情感。</para>
+			<para>在大学时候，唐莉之因才华过人而被布林看重，埃里森开着帆船从西安到曼哈顿打通商路，此时的宇杰却四处寄居找不到工作。</para>
+			<para>后来宇杰实现的郭开等人的梦想，把中国变成了真正的强国！</para>
+		</section>
+	</chapter>
+</part>
+	<part xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="design.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>小说设计</title>
+	<info>
+		<title>迫于生活成本的行动</title>
+	</info>
+	<partintro>
+		<title>包含开发过程</title>
+		<info/>
+		<section>
+			<title>t</title>
+			<para>f</para>
+		</section>
+	</partintro>
+	<glossary>
+		<title>词汇表</title>
+		<info/>		
+		<bibliography>
+			<bibliodiv>
+			    <title>网页</title>
+				<biblioentry>					
+					<publisher>
+						<publishername>百度百科</publishername>						
+					</publisher>
+					<title>科学小说</title>					
+				</biblioentry>
+			</bibliodiv>
+		</bibliography>
+	</glossary>
+	<chapter>
+		<title>科普文学的理论系统</title>
+		<info>
+			<abstract>
+				<para>走出塑造人物形象的小圈子，给文学注入科学内涵、艺术因素和先进思想，使读者能从多种角度欣赏科学美，理解科学原理，重用艺术成果，参考高明之举。文体中涉及的知识、智慧、思想、艺术、广告应具有可欣赏的艺术性，娱乐的趣味性、引用的必要性、语言的简明性、可参考的真实模仿性、可发展和利用的科学性和实践指导性。您可以在文中加入一些有趣的好玩的科学知识，使人回味无穷的艺术图画，具有挑战性的先进思想，生动有趣的探索过程描写等。
+				</para>
+			</abstract>
+		</info>		
+		<section>
+			<title>概念</title>
+			<para>以表达科学内容为目的小说称为科普小说。</para>
+			<para>如果把一个科学活动的动人事迹写成一部小说,并把意义深远的科学原理用最通俗的语言表达清楚，那么，这样的小说应该是最基本最真实的科普小说。但事实上，为了达到表达对象与情节的双重效果，我们就不得不周密规划表达对象并进行人工制造“情节”。
+			</para>
+		</section>
+		<section>
+			<title>表达对象</title>
+			<para>
+				表达对象是人类长期生活所得的精华,它一般是集体智慧的结晶，主要分为如下几类：
+				<simplelist>
+					<member>（1）科学美</member>
+					<member>（2）创意效果</member>
+					<member>（3）突破思维定势的斗争</member>
+					<member>（4）科学创造过程</member>
+					<member>（5）科技、商品</member>
+					<member>（6）广告、政策</member>
+					<member>（7）智谋、金点子</member>
+					<member>（8）发现进步的因素：灵感、执着、技巧、果断</member>
+				</simplelist>
+			</para>
+		</section>
+	</chapter>
+	<chapter>
+		<title>小说中故事发展的线索</title>
+		<section>
+			<title>技术发展线索</title>
+			<para>砖厂自动化的梦想——&gt;打水搭架的启发——&gt;把水送往高处的装置：使用杠杆原理——&gt;使用水管的装置（不可行的原始方案）——&gt;用挤压原理实现的装置——&gt;装置改用滚动原理——&gt;用速度调节装置解决形状不规则的问题——&gt;用类活塞结构简化装置——&gt;用SiCl4代替机械结构——&gt;起草专利文件——&gt;认识零部件的名称和销售处——&gt;取得专利权——&gt;解决权利漏洞——&gt;开发软件支持系统——&gt;产权应用——&gt;将技术转化为生产力——&gt;服务社会——&gt;助力人工智能发展。
+			</para>
+		</section>
+		<section>
+			<title>科学发现线索</title>
+			<para>从校长那里偷学“开平方”——&gt;初探第四级运算——&gt;发现“勾股定理”——&gt;撰写宇宙循环论——&gt;发表数学论文——&gt;解氢原子方程——&gt;发现“求和公式”——&gt;扩展微积分到它的超集：微变论——&gt;突破了幂塔运算的“不可计算性”——&gt;发现课本上“双缝干涉”的错误结论
+			</para>
+		</section>
+		<section>
+			<title>思想认识线索</title>
+			<para>读书的用途:识字认账与学习科学文化知识的矛盾——&gt;学习方法：写生字与博览群书的矛盾——&gt;读书的动机：找份好工作与个人兴趣爱好的矛盾——&gt;学习目标:好的考试成绩与实现梦想、报效祖国的矛盾——&gt;学习途径：题海战术与实际应用的矛盾——&gt;选择专业：大众计算机与软件工程的矛盾。
+			</para>
+		</section>
+		<section>
+			<title>情感线索</title>
+			<para>邻居11岁定亲——&gt;逼婚——&gt;紧急觅知音——&gt;巧遇才子——&gt;初恋——&gt;再寻知己</para>
+		</section>
+	</chapter>
+</part>
+	<part xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="village_aspects.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>农村问题</title>
+	<info>
+		<title>热门关键词</title>
+		<keywordset>
+			<keyword>进城</keyword>
+			<keyword>退耕还林</keyword>
+			<keyword>煤矿入股</keyword>			
+			<keyword>种植养鱼</keyword>			
+		</keywordset>
+	</info>
+	<partintro>
+		<title>文明与勤劳的矛盾</title>
+		<info>
+			<abstract>
+				<para>修房子，没人住了，请人照看家</para>
+				<para>孩子有远大的抱负和理想，可家里人总是希望孩子早点结婚，过上幸福的生活，孩子大了，去了城里，家里的豪宅白给人家住都没人！几十年的心血啊，一平米卖不到50元呀！</para>
+			</abstract>
+		</info>
+		<section>
+			<title>政策呀</title>
+			<para>这里的资源浪费了，那里国家里项目了</para>
+		    </section>
+	</partintro>
+	<chapter>
+	 <title>打猎，抓蝎子，高抽站</title>
+	 <para>山清水秀，有家的幸福感，可是没有可以上班的大公司啊</para>
+	</chapter>		
+</part>
+	  
+	<part xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="city_aspects.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>城市问题</title>
+	<info>
+		<title>热门关键词</title>
+		<keywordset>
+			<keyword>逃离北上广</keyword>
+			<keyword>央企凶猛</keyword>
+			<keyword>遏制</keyword>
+			<keyword>空置房（晒黑灯）</keyword>
+			<keyword>从了吧</keyword>
+			<keyword>限购令</keyword>
+			<keyword>撤村并点</keyword>
+			<keyword>总理劝租</keyword>
+			<keyword>打赌</keyword>
+			<keyword>保障房</keyword>
+			<keyword>蜗居</keyword>
+		</keywordset>
+	</info>
+	<partintro>
+		<title>探讨流动人在城市的生存问题</title>
+		<info>
+			<abstract>
+				<para>该怎么办呢？总理说了不算总经理说了算</para>
+			</abstract>
+		</info>
+		<section>
+			<title>迫于生活成本的行动</title>
+			<para>不论能力有多高，都是无力住上舒适的房屋的，所以很多技术牛人就有了回乡下的冲动，我这里不写蜗居的续集，而是以另一种科学的假想来激发读者的科学思想，借鉴《西藏之水就中国》的思路，设想西部繁荣后的中国人的生活变化。</para>
+		    <para>另外还加入了一些科幻素材，利用核能批量制造大都市，在这种情况下的城市表现出惊人的爆发力！</para>
+		</section>
+	</partintro>
+	<glossary>
+		<title>词汇表</title>
+		<bibliography>
+			<title>参考资料</title>
+			<bibliodiv>
+				<title>图书</title>
+				<biblioentry>
+					<authorgroup>
+						<author>
+							<personname>
+								<firstname>李伶</firstname>
+							</personname>
+						</author>
+					</authorgroup>
+					<copyright>
+						<year>2005-2010</year>
+						<holder>李伶</holder>
+					</copyright>
+					<publisher>
+						<publishername>华文出版社</publishername>
+					</publisher>
+					<title>西藏之水救中国</title>
+				</biblioentry>
+			</bibliodiv>
+			<bibliodiv>
+				<title>期刊</title>
+				<biblioentry>
+					<abbrev>Walsh97</abbrev>
+					<biblioset relation="journal">
+						<title>我国千万富豪逾六成涉足房地产</title>
+						<publisher>
+							<publishername>福布斯</publishername>
+						</publisher>
+					</biblioset>
+				</biblioentry>
+				<biblioentry>					
+					<biblioset relation="journal">
+						<title>大型强子对撞机制造"黑洞"失败 弦理论或遭重挫</title>
+						<publisher>
+							<publishername>大众科学</publishername>
+						</publisher>
+					</biblioset>
+				</biblioentry>
+			</bibliodiv>
+		</bibliography>
+	</glossary>
+	<chapter>
+		<title>住房难</title>
+		<subtitle>80%是女方要求购买</subtitle>
+		<sect1>
+		    <title>涨时代</title>
+			<para>。</para>
+		</sect1>
+	</chapter>
+	<chapter>
+		<title>成家难</title>
+		<subtitle>相亲，混吃混合，非诚勿扰</subtitle>
+		<sect1>
+			<title>中国有几个适龄女孩?女孩到底想要什么？</title>
+			<qandaset>
+			    <qandaentry>
+			     <question>
+			      <para>为什么很多优秀男孩找不到老婆？</para>
+			     </question>
+			     <answer>
+			      <para>不愿意当钱包</para>
+			     </answer>
+			      <answer>
+			      <para>不是银行</para>
+			     </answer>
+			      <answer>
+			      <para>不是地王</para>
+			     </answer>
+			      <answer>
+			      <para>不够阳光，爱情经验不足</para>
+			     </answer>
+			    </qandaentry>
+				<qandaentry>
+					<question>
+						<para>女孩的期望男孩有什么？</para>
+					</question>
+					<answer>
+						<para>居者有其屋（至少100平米的单元房）</para>
+					</answer>
+					<answer>
+						<para>有个和睦的家（本地大户人家）</para>
+					</answer>
+					<answer>
+						<para>行动要方便（至少有一辆三菱以上的车吧）</para>
+					</answer>
+					<answer>
+						<para>能够丰衣足食（每月孩子上学得安排三千，两个人日常生活五千，亲戚朋友结婚送礼两千，我不希望我看上一件衣服也舍不得买）
+						</para>
+					</answer>
+				</qandaentry>
+				<qandaentry>
+					<question>
+						<para>女孩嘴里说出的要求是什么？</para>
+					</question>
+					<answer>
+						<para>有事业心（但是不能忙事业）</para>
+					</answer>
+					<answer>
+						<para>要是潜力股（现在的年轻人都有想法，一般实现不了）</para>
+					</answer>
+					<answer>
+						<para>要有能力（现在靠关系混日子，能力只能被人利用，女孩极度讨厌窝囊废）</para>
+					</answer>
+				</qandaentry>
+
+				<qandaentry>
+					<question>
+						<para>女孩可以为男孩提供什么？</para>
+					</question>
+					<answer>
+						<para>漂亮是资本</para>
+					</answer>
+					<answer>
+						<para>温柔贤惠是美德</para>
+					</answer>
+					<answer>
+						<para>能不能上班量力而为，挣钱是给予男人的礼物</para>
+					</answer>
+				</qandaentry>
+			</qandaset>			
+		</sect1>
+		<sect1>
+		 <title>短片</title>
+		 <subtitle>我可以陪着你，监督你，赞美你，安慰你……</subtitle>
+		 <para>
+		   老婆：我可以有男朋友，你不能干涉我。  
+老公：行，我也交个女朋友。  
+老婆：不行！  
+老公：凭什么你行我不行呀。  
+老婆：我交男朋友，你做不到的人家能做到，我就不会老挑你的毛病了，有利于家庭幸福。你交女朋友，我心眼儿小，吃醋和你吵叫，不 利于家庭安定。
+老公：那我也心眼儿小。  
+老婆：一个男人，和女人一样心眼儿小，亏你好意思说！  
+老公:   。。。。。。
+
+关于婚外恋
+老婆：现在电视里老演婚外恋，你说，你会有婚外恋吗？  
+老公：不会.  
+老婆：为什么？  
+老公：有你一个我就够后悔的了，决不能再要第二个！！  
+然后---
+
+关于睡觉（一）  
+老公：你那么小人，怎么占那么大地儿！  
+老婆：那当然，我得翻身，还得伸懒腰呢！  
+老公:   。。。。。
+
+关于睡觉（二）
+老婆：咱们盖那个双人被吧。  
+老公：别！那到第二天早上就全裹你身上了。我什么也盖不着。还是自己盖自己的吧，心里踏实。  
+老婆：哼，你就是自己盖，到明天早上照样也得被我裹走！  
+老公:   。。。。。
+
+关于起床
+老公：起床了，起床了，你不说今天要早起开会嘛.  
+老婆：别吵我，我再睡一会。  
+老公：快起来吧，会迟到了。  
+老婆：你别碰我！我还要睡啦！！  
+。。。  
+老婆：呀！都迟到了！你怎么不叫我呢？！  
+老公:   。。。。。。
+
+关于吃饭
+老婆：老公，咱们到那里吃饭啊，吃什么？  
+老公：你想吃什么？  
+老婆：什么都让我决定啊，那我还要你干什么？随便，你说吃什么就吃什么  
+老公：那我们去XXX吃XXX吧  
+老婆：大怒，又吃这个啊，你能不能有点创意，每次这样我生气的都想发火。
+
+关于真话
+老婆：你看，那女孩多好看。  
+老公：好看什么啊。  
+老婆：你什么意思！你为什么不和我保持一致！  
+老公：好看好看。  
+。。。  
+老公：哎，你别走啊，怎么不理我了？
+
+关于孩子  
+老婆：咱们要个孩子吧。  
+老公：行.  
+老婆：那你喜欢咱们的孩子吗？  
+老公：喜欢。  
+老婆：那不行！你就得喜欢我一个人！  
+老公：好，好，我就喜欢你一个人。  
+老婆：那我的孩子你凭什么不喜欢阿！  
+老公：咱还是别要孩子了。
+
+关于离婚  
+老婆：咱们要是离了婚，房子归我，我的钱我也得拿走。  
+老公：那我的钱呢？  
+老婆：你的钱都是我的钱，你有什么钱!  
+老婆：还有，离婚后你每月的收入也得给我80%。嗯，如果你再结婚了，那就给我60%就成了。  
+老公：老婆，我决不跟你离婚！
+
+关于男女平等  
+老公：都说男女平等，咱们家是不是也得平等平等？  
+老婆：行啊。你们男的欺负女的欺负了好几千年。等我们也欺负了你们欺负几千年，才是真正的平等呢。别急，再过几千年，咱们家就平等了。
+
+关于幸福  
+老婆：你娶了我是不是特别幸福啊？  
+老公：没觉得。你又不讲理，又不干活，还老折腾人，我怎么幸福啊。  
+老婆：这就是你的幸福啊。我不讲理，才能反衬出你的宽容大度；我不干活，就培养出了你，所谓艺多不压身，让你能力强还不好吗；我 折腾人，你的生活才充满了多彩多姿，你看，你的婚姻生活就不像别人家那么单调吧。
+
+关于讲理 
+老公：你不讲理。  
+老婆：和你我从来就没讲过理，家就不是讲理的地方。再说你是男的，还比我大28个月呢，你就得让着我。
+
+关于钱  
+老公：以后我挣的钱，按比例给你吧，我挣的多时留得也多一点，这样我较会有积极性。
+老婆：好。  
+老公：那我给你百分之多少？  
+老婆：百分之一百二。  
+老公:   。。。。。
+
+关于主意
+老婆：咱们出去玩吧。  
+老公：好，你说去哪就去哪。  
+老婆：我要有主意还和你说！  
+老公：我出的主意你从来都不同意呀。  
+老婆：我不同意的那叫什么主意啊，那叫敷衍！你得不停的有主意，直到我满意为止。  
+老公:   。。。。。。
+
+关于中心
+老婆：我在我们家一直是中心，在你们家也得以我为中心。  
+老公：那我在我们家也一直是中心。  
+老婆：可我这中心比你那中心重要。  
+老公：为什么？  
+老婆：因为我是千金，你只是个小子。
+
+关于心情  
+老婆：我一干活心情就不好了，会降低咱们的婚姻质量的。  
+老公：我干活心情也会不好啊。  
+老婆：不行，你得心里承受能力比我强。因为你拳头比我大，心脏也比大！
+
+关于买衣服  
+老婆：这衣服好看吗？  
+老公：好看。  
+老婆：你就敷衍我，想让我赶快买完了赶快回家，  
+。。。  
+老婆：那衣服好看吗？  
+老公：不好看。  
+老婆：你就舍不得给我买！  
+老公:   。。。。。
+
+关于拿东西
+老婆：这个袋子你也拿着吧。  
+老公：我都拿着四个袋子了，你什么都不拿，好意思吗？  
+老婆：那我还挽着你呢！你有100多斤呢，我拿的东西比你拿的东西重了。  
+老公:   。。。。。。
+
+关于吃东西
+老婆：这个话梅我吃了一半，挺好吃的，剩下的给你吃吧。  
+老公：我不爱吃话梅。  
+老婆：不行，你就爱吃！你是不是嫌弃我吃过的！  
+老公：这鱼挺好吃的，来。  
+老婆：你得脏筷子碰过，谁吃！  
+老公：那你吃过一半我还吃呢，我不嫌弃你，你怎么嫌弃我？  
+老婆：那就对了。我嫌弃你说明我比你干净。我比你干净你凭什么嫌我？！  
+老公:   。。。。。
+
+关于喝水
+老婆：老公，我要喝水！  
+老公：我给你倒去。哎，这水杯不就在你手边嘛，没看见？  
+老婆：看见了，我就是想让你递给我。  
+老公:   。。。。。。
+
+关于打电话
+老婆：你为什么不给我打电话？！  
+老公：倒打一耙！今天不是说好你给我打电话的嘛。结果我等了一天，还是我打给你的。
+老婆：我是说过，可我又改主意了。张爱玲说：女人有改主意的权利。  
+老公：那你改主意没跟我说呀！  
+老婆：我说了，我心里说的，谁让你和我的心灵不相通的。  
+老公:   。。。。。。
+
+关于洗碗
+老公：一会你洗碗？  
+老婆：好。  
+老公：那怎么还不动啊？  
+老婆：我头疼。  
+老公：懒死了，不让你洗碗你也不头疼。  
+老婆：真的！一想到洗碗我就头疼。
+
+关于散步  
+老婆：咱们一直散步到那条马路吧。  
+老公：到那儿太远了，一会儿该走不回来了。  
+老婆：没事，你背我回来。  
+老公:   。。。。。。
+
+关于干家务
+老公：咱们把家务分分工吧。  
+老婆：好。首先，脏活累活得男人干吧。如擦地/刷马桶/擦桌子。。。  
+老公：这对。  
+老婆：男主外，女主内。和外人打交道的得你干吧，买菜/交水费/取报纸和牛奶。  
+老公：这。。。行！  
+老婆：你是学理工的，我是学文科的，带电的东西得你干吧，像洗衣机/电冰箱/电饭锅/电熨斗。。。  
+老公：行,行，那你干什么？  
+老婆：别着急啊，厨房里油烟那么大，可毁皮肤了，做饭也得你干吧。  
+老公：你就告诉我你干什么吧.  
+老婆：我也有很多要干的呀。我可以陪着你，监督你，赞美你，安慰你。。。
+老公:   。。。。。
+
+关于爱情
+老婆：“你爱我吗？”  
+老公：“噢！”  
+老婆：“噢是什么意思？”  
+老公：“爱”  
+老婆：“爱谁？”  
+老公：“你”  
+老婆：“不行，你说全了”  
+老公：“好”  
+老婆：“你快说呀！今天不说完，别想睡觉”  
+老公：“我爱你”  
+老婆：“这可是你自愿说的哦！我可没有逼你！”  
+		 </para>
+		</sect1>
+	</chapter>
+	<chapter>
+		<title>蜗居</title>
+		<subtitle>80%是女方要求购买</subtitle>
+		<sect1>
+		  <title>变化</title>
+			<para>今年热词有了新的变化,“蜗居”、“蚁族”、“丈母娘房”等流行语纷纷让位于“央企退市”、“房产税”、“限购令”等政策性强的字眼
+			</para>
+		</sect1>
+	</chapter>
+	<chapter>
+		<title>空置率与房地产税</title>
+		<subtitle>80%是女方要求购买</subtitle>
+		<sect1>
+		   <title>媒体统计</title>
+			<para>市场上有多大比例的房子是被用作投资或投机的?媒体曾用“零水电”、“晒黑灯”等方法粗略计算出了房屋空置率，并认为空置的房子就极有可能是被用作投资或投机的。但究竟有多少空置房，至今没有一个权威的说法。
+				9月初，国家统计局首次明确表示进行空置房调查。随后，北京、天津、上海、广州、深圳5个试点城市启动空置房调查。在5城市空置房调查启动后不久，有相关人士透露，由于空置房没有统一标准，难以得出空置率。近日，国家统计局新闻发言人称将对人口普查中获得的住房信息进行采集和分析。
+				空置房的存在让人们想起了一年来几乎没有消停过的房产税，是否应该征收呢?赞同者认为，房产税的出台将改变我国当前税收“重交易，轻持有”的现状，将是遏制楼市投机、平抑房价最“给力”的手段;反对者则认为，当前民众税负已经很重，加征房产税将加重人们的负担。
+				当人们还在为房产税该不该征而争论不休时，财政部官员及有关专家学者近期频繁在公开场合表态，甚至给出了时间表，开征房产税似已板上钉钉。如果征税是大势所趋，那么对征收时机和具体方法的科学论证就显得尤为重要。如果时机和税率把握得不好，准备工作做得不充分，扩征房产税不仅难以打压高房价，反而会造成税负转嫁，从而进一步推高房价。
+			</para>
+		</sect1>
+	</chapter>
+	<chapter>
+		<title>飘流</title>
+		<section>
+		    <title>构思</title>
+			<figure>
+				<title>故事结构</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="resources/images/novelStruct.jpg"/>
+					</imageobject>
+
+				</mediaobject>
+			</figure>
+			<para>
+				其实走这一圈都是一步一个坚实的脚印，有想法没钱还得学本领赚钱，有了钱才能实现理想
+				构想：那一步一步的想，首先有一个农村的穷孩子
+				，他有抱负，需要去大城市实现梦想。
+				可实际上几年下来他连1平米的房子都买不起（第二个方框）
+				于是他走到荒无人烟的西藏（第三个方框）
+				在那里他做了很多实验，可以用低成本实现西藏雅鲁藏布江水流到新疆，可是目前中国政府不同意彻底改造西部，
+				于是他就做了一些小业务：
+				写小说：小说中假设政府同意改造西部，会发生什么就是发挥空间了
+				小说中指导农民实现小规模科技应用。
+				追求 8:19:33
+				最后，你的疲惫也是我的疲惫，从榆林到北京再到天津，直至回西安，很想稳定，很想成家。不论是我们有缘也好，或者是做朋友也好，你一样可以成为我心中重要的一个人。
+			</para>
+		</section>
+	</chapter>
+</part>
+	<part xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="personRoles.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>人物设计</title>
+	<chapter>
+		<title>女配角</title>
+		<table frame="all">
+			<title>形象设计</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>紫晴/紫越</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/ziqin.bmp" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>长相靓丽，家庭富裕，在晚期爱上男主角</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>男配角</title>
+		<table frame="all">
+			<title>形象设计</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>宇杰</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/zhanghan.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>沧桑，大手，眼睛深邃</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>女主角，丑才女</title>
+		<table frame="all">
+			<title>知道男主角想干什么并且预先做好准备的女人</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>唐荔枝</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/choucainv.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>缺少营养，有眼袋，不过吃好了就会变成大美女</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>军旅作家</title>
+		<table frame="all">
+			<title>作家提出建设“大西线”调水工程引发大讨论</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>李林</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/xizangzhishui.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								李伶
+								1940年10月生于江苏省句容市白兔镇唐庄村。1961年参军，2001年4月光荣退休。原为第二炮兵政治部文艺创作室主任。中国作家协会会员。三次荣立三等功。著有长篇小说《鸳鸯谷》、长篇纪实文学《杨虎城的密使》、《青山垂虹》、《狼烟》、《惊世鼙鼓》、《西安事变的序曲》，报告文学集《悲壮的女性》，电视剧本《泽国晨钟》等。2005年出版的《西藏之水救中国》引起了国内外强烈反响和崇高评价，2010年出版新版《西藏之水救中国》。
+								选题追求：我写人不知，人知我不写。
+								座右铭：怕刺，采不到玫瑰花！
+                            </para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>北京朔天咨询开发公司董事长</title>
+		<table frame="all">
+			<title>大西线调水:“原生态”和“后生态”哪个更重要?</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>郭开</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/guokai.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								郭开是元代著名天文学家和水利专家郭守敬之后，今年73岁的他已满头银发，眉毛胡子全都发白了。在郭开的名片上，写着诸多头衔：朔天运河大西线发起人、总设计师；著名作家、教授、经济师；中华朔天运河筹委会副主任兼秘书长；北京朔天咨询开发公司董事长。由于郭开既不是科班出生，又不是水利部的官员，因此一直被称为“水利边缘人”，而媒体在称其为水利专家的同时也常常在前面加上“民间”二字。可能是因为出生于水利之家，郭开从小对水就情有独钟。1947年参加地下党工作的同时，郭开获得了清华大学土木系水利班旁听生的名额，这对后来研究治水奠定了理论基础。“文革”期间，郭开被打成反动派关进了牛棚，在牛棚内的一堆旧书中，他发现了著名地质学家翁文灏的英文版《中国地理》，书中提出了西藏水系的“三大拐弯”理论，即应该利用我国西南高、西北和华北低的地形特点，把每年白白流出境外的西南诸河水源调到严重缺水的西北地区。而这一提议后来还被写入孙中山的《建国大纲》。“三大拐弯”理论让郭开很受启发，于是产生这样一个奇特的想法：是否可以引雅鲁藏布江水，串怒江、澜沧江、金沙江、雅砻江、大渡河，过阿坝分水岭入黄河，从而解决整个西北与华北缺水的问题。平反后，他开始请教中科院和水利部的各路专家，不断地修正初始想法。曾随四野打仗的军旅生涯也磨练了郭开的坚强意志，近几十年来他的足迹踏遍了大江南北，为考察水系自费走遍大半个中国。
+                            </para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>麻袋麻袋买房的煤老板</title>
+		<table frame="all">
+			<title>能源开发者</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>村民</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/meilaoban.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								朋友的一个同事是山东人，撞了大运成了山西煤老板的女婿，于是乎一夜之间过上了有车有房的日子。虽有近墨者黑的说法，但这句话到了这里就不好用了。多少人想和山西煤老板攀亲啊！山西岳父确实有钱，把在北京置办豪宅当成了一种享受。隔三差五就买个3套2套的，人家这叫投资，煤老板也是老板，当然知道房子的保值增值性。 
+
+煤老板房子越买越多，自然不能让女儿女婿再租房。于是乎，岳父大人就把其中的两套住房送给了女儿女婿。说来也巧，2套房子，一套在东三环，一套在西三环，都是寸土寸金的黄金宝地。所以对于那些苦于无钱买房的80后们，找个山西煤老板当岳父或公公未尝不是成功之路，帮你买房就会帮你在事业上打点一切。至少让你少奋斗10年。虽说吃软饭的名声不好听，可是总比让房愁死强。 
+
+北京有许多价格较高的房子被外地人买走，其间山西人占了很大的比例——这成为北京坊间的一个话题。据分析，许多煤老板对暴富完全没有任何心理准备，一朝有了钱，往往不知该如何处置。加之他们以前太穷，所以希望通过大量消费来显示他们的价值。曾有人说“房地产造富最猛，煤炭业富豪最多”，当煤老板再和房产勾搭上，那岂不是富得又快又猛有多？我们在羡慕山西煤老板出手大方之时，不免想到山西煤老板买房的理财经，也总结出山西煤老板买房的一些特点</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>房产富豪</title>
+		<table frame="all">
+			<title>曾经的中国首富</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>李嘉诚</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/lijiacheng.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								李嘉诚，汉族，现任长江实业集团有限公司董事局主席兼总经理。1928年出生于广东潮州，1940年为躲避日本侵略者的压迫，全家逃难到香港。1958年，李嘉诚开始投资地产市场。1979年，“长江”购入老牌英资商行——“和记黄埔”，李嘉诚因而成为首位收购英资商行的华人。所获荣誉：1981年获选为“香港风云人物”、1981年获委任为太平绅士、1989年获英女皇颁发的CBE勋衔、1992年被聘为港事顾问、95年-97年任特区筹备委员会委员、被评选为93年度香港“风云人物”、1999年亚洲首富等。</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>google创始人</title>
+		<table frame="all">
+			<title>年薪一美元的老板</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>拉里-佩奇，右为谢尔盖-布林</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/googlecreator.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								两位Google创始人，左为拉里-佩奇，右为谢尔盖-布林。时光回到1998年，互联网的狂热达到了颠峰，网络正处于“信息爆炸”状态，唯一的问题是怎样去查找信息。此刻，两名不为人所知的年轻的计算机专业研究生，在斯坦福大学的宿舍里经常一待就是一通宵，他们是拉里·佩奇和谢尔盖·布林。他们想出了在互联网上寻找信息的方法，并决定放弃学业，将想法商业化。1998年9月，布林从一位斯坦福校友那里顺利地拿到了第一笔投资：10万美元。依靠这10万美元，在朋友的一个车库里，布林和佩奇开始了谷歌的征程。</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</chapter>
+	<chapter>
+		<title>超级牛人</title>		
+		<table frame="all">
+			<title>计算机+音乐+物理 三个博士后学位</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>李宋</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/DrLISong.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>1976年8月生，中国湖南人，中共党员。物理博士后（上海交通大学，2005—2006），数理音乐家，计算机专家，管理专家；多米索发明人，多米索演奏家，多米索集团董事长。</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>		
+		<sect1>
+			<title>成长经历</title>
+			<para>1、用会说话的主板一手提拔起技嘉公司（著名主板厂商）；</para>
+			<para>2、在中国知识产权交易中心做CEO;</para>
+			<para>3、由于觉得任职不能体现自己交叉学科的优势，毅然辞职成立Splay艺术中心。</para>
+		</sect1>
+		<sect1>
+			<title>故事</title>
+			<para>1、因为穷所以烦恼，只能去中科院讲课挣钱，然后租房子写软件，集结社会人士包括我在内为他推广软件，声称人人都能成为音乐专家，因为我们是以娱乐为目的的，所以他必须安排我们去KTV和中央电视台等一般人不敢想的地方去。
+			</para>
+			<para>2、因为老大不小想追求亚洲小姐大赛冠军的妹妹也就是我同事，结果我同事说“我是找老公呢还是找爹呢”，我想不明白他这样的人为什么找不到老婆？其实他有价值1000万的房子和很多名车（不用自己开，call一下就会有朋友把自己的车开来为其效劳），更奇怪的是我那同事觉着我实在，就直言“建宏，我想在你那住几天，就几天！”。
+			</para>
+			<para>3、他给员工的工资是3000-30万/月却没人愿意留下来，走的人都选择800元的工资。 </para>
+		</sect1>
+	</chapter>
+	<chapter>
+		<title>甲骨文创始人</title>
+		<table frame="all">
+			<title>换了十几家公司，还是一事无成的大富豪</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>劳伦斯·埃里森</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/ailisen.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								人物介绍
+　　“读了三个大学，没得到一个学位文凭”
+　　，出生在1944年的曼哈顿。埃里森从小由舅舅一家抚养，在芝加哥犹太区的中下层长大。当时的贫富差别没有现在这么大。学生时代的埃里森并没有显示出优秀的素质和成绩，在学校他有些孤僻，喜欢独来独  
+  
+往。
+高中毕业
+　　1962年埃里森高中毕业，进入伊利诺斯大学就读，二年级时离开学校。后来《商业周刊》曾报导过他离开的原因，说是因为平均成绩不及格，埃里森不置可否。过了一个夏天他又进入芝加哥大学，同时还在西北大学学习。历经三个大学，最终埃里森却没得到任何一张大学文凭。
+开始外出工作
+　　1966年埃里森离开家乡，来到加州的伯克莱，准备就读研究生，同时开始工作。他学习了电脑编程，主要是为IBM开发大型电脑。他并非想投身高科技，只不过想赚点生活费。他给一些大公司开发应用程序，那时的软件开发意味着：挂上磁带，备份数据，工作单调，也没什么挑战性，远不能和现在的程序员相比。
+　　关于学位埃里森认为：“大学学位是有用的，我想每个人都应该去获得一个或者更多，但遗憾的是我在大学没有得到学位。我从来没有上过一堂计算机课，虽然我还是成了程序员，我完全是从书本自学编程的。”</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<sect1>
+			<title>百科名片</title>
+			<para>拉里·埃里森(Larry
+				Ellision)是世界上最大数据库软件公司的老板，他的产品遍布全世界。他是陌生的人，但谁都似乎无法离开他。埃里森在32岁以前还一事无成。读了三个大学，没得到一个学位文凭,换了十几家公司，老婆也离他而去。开始创业时只有1200美元,却使得Oracle公司连续12年销售额每年翻一番,成为世界上第二大软件公司,他自己也成为硅谷首富。但世人知道，这期间他经历了多么漫长的人生奋斗历程。
+			</para>
+		</sect1>
+	</chapter>
+	<chapter>
+		<title>AMD CEO</title>
+		<table frame="all">
+			<title>跟随Intel 40年的竞争者</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>梅耶尔</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/meyer.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								AMD公司CEO德克·梅耶尔（Dirk Meyer）周三在巴塞罗那一个行业会议上表示：“AMD不对外出售，但我们乐意听取任何对于我们股东来说感兴趣的建议。”甲骨文CEO拉里·埃里森（Larry Ellison）上个月表示，他的公司希望实施更多的收购以支持它的技术，而一家芯片公司可能是合适的目标。</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>		
+	</chapter>
+	<chapter>
+		<title>维基解密</title>
+		<table frame="all">
+			<title>人民的英雄，政府的敌人</title>
+			<tgroup cols="2" align="left" colsep="1" rowsep="1">
+				<tbody>
+					<row>
+						<entry>
+							<figure>
+								<title>朱利安·阿桑奇</title>
+								<mediaobject>
+									<imageobject>
+										<imagedata fileref="resources/images/asangqi.jpg" depth="8cm" width="5cm"/>
+									</imageobject>
+								</mediaobject>
+							</figure>
+						</entry>
+						<entry>
+							<para>
+								朱利安·阿桑奇被称为“黑客罗宾汉”，作为“维基解密”的创始人，朱利安·阿桑奇认为，透露公共治理机构的秘密文件和信息，对大众来说是件有益的事。9万多份驻阿美军秘密文件的泄密让他足以成为创造历史的人物。39岁（2010年）的阿桑奇，因涉嫌在瑞典强奸及性侵犯2名女性，被通缉，2010年12月7日他向伦敦警方自首，随即被押送到威斯敏斯特地方法院出席引渡聆讯，保释申请被驳回。</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<section>
+		 <title>通过揭秘来调节几个富豪之间的爱情关系</title>
+		 <para>
+		  煤老板没电脑不上网，阿桑奇取不到秘密，美女喜欢梅耶尔，但是他的秘密揭露出来就出现经营危机。
+		 男主角有才无钱，偏偏又跟地王竞争，阿桑奇也调节，盗取地王的秘密，揭他的老底，让美女依赖于男主角。 
+		 </para>
+		</section>		
+	</chapter>
+</part>
+	
+</book>

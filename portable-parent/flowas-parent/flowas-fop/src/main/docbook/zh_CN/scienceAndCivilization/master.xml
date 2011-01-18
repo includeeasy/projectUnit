@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn">
+	<xi:include href="info.xml" />
+	<xi:include href="glossary.xml" />
+	<toc />
+	<!-- -->
+	<xi:include href="novel_body.xml" />
+	<xi:include href="idea.xml" />
+	<xi:include href="design.xml" />
+	<xi:include href="village_aspects.xml" />
+	  
+	<xi:include href="city_aspects.xml" />
+	<xi:include href="personRoles.xml" />
+	
+</book>

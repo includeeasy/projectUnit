@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" mode="display">
+  <mrow>
+    <mi>f</mi>
+    <mo stretchy='false'>(</mo>
+    <mi>x</mi>
+    <mo stretchy='false'>)</mo>
+    <mo>=</mo>
+    <msup>
+      <mi>h</mi>
+      <mrow>
+        <mi>f</mi>
+        <mo stretchy='false'>(</mo>
+        <mi>x</mi>
+        <mo>-</mo>
+        <mn>1</mn>
+        <mo stretchy='false'>)</mo>
+      </mrow>
+    </msup>
+    <mo>-</mo>
+    <mn>1</mn>
+  </mrow>
+</math>

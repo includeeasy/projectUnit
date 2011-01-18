@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn">
+	<xi:include href="info.xml" />
+	<xi:include href="glossary.xml" />
+	<toc />
+	<xi:include href="xu.xml" />
+	<xi:include href="power_tower.xml" />
+	<xi:include href="level_operation.xml" />	
+	<xi:include href="summation_formula.xml" />
+	<xi:include href="innovative_study.xml" />
+	<xi:include href="hydrogen_atom.xml" />
+	<xi:include href="fourier_transform.xml" />
+	<xi:include href="persistenceEvolution.xml" />
+	<xi:include href="bigsystem.xml" />	
+	<xi:include href="computerCanDo.xml" />	
+	<xi:include href="gamma_function.xml" />
+	<xi:include href="carbon_nanotube.xml" />		
+</book>

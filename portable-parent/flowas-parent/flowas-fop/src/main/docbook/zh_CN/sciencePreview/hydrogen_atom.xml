@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>氢原子方程中电子轨道的奇异解</title>
+	<info>
+		<abstract>
+			<para>由一个质子和一个电子组成，在量子力学的发展中占有重要的地位，因为这个系统可以解析求解。对于类氢离子               同样可以解析求解。</para>
+		</abstract>
+		<keywordset>
+			<keyword>薛定谔方程</keyword>
+			<keyword>不能严格导出，是一个假设</keyword>
+			<keyword>正确性为大量成功应用所验证</keyword>
+		</keywordset>		
+	</info>
+	<section>
+		<title>定义</title>
+		<para>
+			<figure>
+				<title>氢原子中电子的波动图象</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/hydrogen_atom/slide0010_image032.png"
+							depth="4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>
+				</mediaobject>
+				<simplelist>
+					<member>（a）n=6是电子的驻波； </member>
+					<member>（b）n不等整数，波本身互相干涉而被破坏。</member>
+				</simplelist>
+			</figure>
+		</para>
+	</section>
+</chapter>

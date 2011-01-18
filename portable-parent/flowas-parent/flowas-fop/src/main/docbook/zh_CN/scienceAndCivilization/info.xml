@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>科学与文明</title>
+	<authorgroup>
+		<author>
+			<personname>
+				<honorific>Mr</honorific>
+				<firstname>Norman</firstname>
+				<surname>Walsh</surname>
+				<othername role='mi'>D</othername>
+			</personname>
+			<affiliation>
+				<shortaffil>ATI</shortaffil>
+				<jobtitle>Senior Application Analyst</jobtitle>
+				<orgname>ArborText, Inc.</orgname>
+				<orgdiv>Application Developement</orgdiv>
+			</affiliation>
+		</author>
+		<author>
+		    <personname>
+		     <surname>刘</surname>
+		     <firstname>建宏</firstname>
+		    </personname>			
+			<address>
+				<city>西安</city>
+				<street>科技路</street>
+				<postcode>719000</postcode>
+				<country>中国</country>
+			</address>
+			<email>flowas@gmail.com</email>
+		</author>
+	</authorgroup>
+	<copyright>
+		<year>2010</year>
+		<holder>生活实验室</holder>
+	</copyright>
+	<pubdate>2010</pubdate>
+	<cover><mediaobject>
+			<imageobject>
+				<imagedata fileref="resources/images/sci_lit.jpg"></imagedata>
+			</imageobject>
+</mediaobject>
+	</cover>
+</info>

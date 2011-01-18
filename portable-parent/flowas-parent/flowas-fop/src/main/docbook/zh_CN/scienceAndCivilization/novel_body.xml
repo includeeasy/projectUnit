@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn">
+	<title>小说主体</title>	
+	<xi:include href="chapters/out_of_woman_s_commercialization.xml" />	
+	<xi:include href="chapters/golden_phoenix_from_mountains.xml" />
+	<xi:include href="chapters/intimate_contact_with_the_city.xml" />
+	<xi:include href="chapters/drift_sojourn.xml" />
+	<xi:include href="chapters/economic_boost.xml" />		
+</part>

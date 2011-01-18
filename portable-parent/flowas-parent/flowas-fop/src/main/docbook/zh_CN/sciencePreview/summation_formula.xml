@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>推导求和公式</title>
+	<info>
+		<abstract>
+			<para>当一个善于发问的学生了解了第一、二、三级运算以后，他可能很快去思考第四级运（the forth leval of operation - power tower 幂塔）的形式。事实上，幂塔可与另外一函数 建立转化关系，从而求出它的解析式.。</para>
+		</abstract>
+		<keywordset>
+		 <keyword>幂塔</keyword>
+		 <keyword>函数变换</keyword>
+		 <keyword>解析式</keyword>
+		</keywordset>
+		<issuenum>O0174.6</issuenum>
+	</info>
+	<section>
+		<title>定义</title>
+		<para>幂塔[1]运算的定义为</para>
+	</section>
+	<section>
+	 <title>鉴赏求和公式</title>
+	 <para>一个出于读者意料的公式——能解决所有求和问题的公式必然会引起读者一系列的心理反应：知道了这个公式以后，真的不用学习其它求和技巧了吗？既然有如此好的公式，那为什么又不为人所知呢？然而它只能在数值上近似，并不能给出最简求和表达式。这个公式的真正魅力在于，表达式中存在一个特殊数列（Bn贝努里数）以及它的易于发现性，只要谁迷恋于通用求和法并作些简单的演算，就有可能发现，在千差万别的求和表达式中，出人意料地存在着一系列永不变的常数Bn，或直接发现此公式。</para>
+	</section>
+	<section>
+	 <title>Bernoulli numbers摘录</title>
+	 <para>The Bernoulli numbers <inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="images/summation_formula/image056.gif" />
+						</imageobject>
+					</inlinemediaobject>are a sequence of signed rational numbers that can be defined by the identity
+                                <mediaobject>
+									<imageobject>
+										<imagedata fileref="images/summation_formula/image057.gif" />
+									</imageobject>
+								</mediaobject> 
+
+The Bernoulli number  can be defined by the contour integral 
+  <mediaobject>
+									<imageobject>
+										<imagedata fileref="images/summation_formula/image058.gif" />
+									</imageobject>
+								</mediaobject> 
+
+The Bernoulli numbers are given by the double sum 
+  <mediaobject>
+									<imageobject>
+										<imagedata fileref="images/summation_formula/image059.gif" />
+									</imageobject>
+								</mediaobject> 
+(27)
+
+
+where <inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="images/summation_formula/image060.gif" />
+						</imageobject>
+					</inlinemediaobject> is a binomial coefficient.
+　 
+An asymptotic expansion for the even Bernoulli numbers is
+       <mediaobject>
+									<imageobject>
+										<imagedata fileref="images/summation_formula/image061.gif" />
+									</imageobject>
+								</mediaobject> 
+
+	 </para>
+	</section>
+</chapter>

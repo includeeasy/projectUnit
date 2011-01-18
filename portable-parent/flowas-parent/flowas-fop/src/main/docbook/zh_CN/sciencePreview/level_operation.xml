@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>等级运算</title>
+	<info>
+		<abstract>
+			<para>
+				深入阅读“等级运算”针对不同能力级别的人有不同的效果：
+				<simplelist>
+					<member>小学生：可以得到启发，会去想很多深奥的东西，对后续的学习研究可以认识到一种直接的路线。</member>
+					<member> 初中生：可以完成30%的创新，得到基本的数学模型和思想。</member>
+					<member>高中生：可以完成60%的创新，可以推导出关键的计算方法，并且思想认识上可以得到一些转变。</member>
+					<member>大学生：可以利用网络和计算机系统完成大规模计算和验证，并且将知识规范化发布。</member>
+					<member>数学家：可能完成文章中为解决的计算问题。</member>
+				</simplelist>
+			</para>
+		</abstract>
+		<keywordset>
+			<keyword>不可能的计算</keyword>
+			<keyword>强制分割计算单位</keyword>
+			<keyword>解析式</keyword>
+		</keywordset>		
+	</info>
+	<section>
+		<title>引言</title>
+		<para>我们知道第一级运算为加法和减法，加法表示为
+        a+b                                                  (1)
+第二级运算为乘法和除法，乘法表示为
+</para>
+	</section>
+</chapter>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>农村问题</title>
+	<info>
+		<title>热门关键词</title>
+		<keywordset>
+			<keyword>进城</keyword>
+			<keyword>退耕还林</keyword>
+			<keyword>煤矿入股</keyword>			
+			<keyword>种植养鱼</keyword>			
+		</keywordset>
+	</info>
+	<partintro>
+		<title>文明与勤劳的矛盾</title>
+		<info>
+			<abstract>
+				<para>修房子，没人住了，请人照看家</para>
+				<para>孩子有远大的抱负和理想，可家里人总是希望孩子早点结婚，过上幸福的生活，孩子大了，去了城里，家里的豪宅白给人家住都没人！几十年的心血啊，一平米卖不到50元呀！</para>
+			</abstract>
+		</info>
+		<section>
+			<title>政策呀</title>
+			<para>这里的资源浪费了，那里国家里项目了</para>
+		    </section>
+	</partintro>
+	<chapter>
+	 <title>打猎，抓蝎子，高抽站</title>
+	 <para>山清水秀，有家的幸福感，可是没有可以上班的大公司啊</para>
+	</chapter>		
+</part>

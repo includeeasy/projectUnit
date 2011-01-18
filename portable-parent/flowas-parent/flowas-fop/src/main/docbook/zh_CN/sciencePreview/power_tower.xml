@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>幂塔运算</title>
+	<info>
+		<abstract>
+			<para>
+				当一个善于发问的学生了解了第一、二、三级运算以后，他可能很快去思考第四级运（the forth leval of
+				operation -
+				power tower 幂塔）的形式。事实上，幂塔可与另外一函数
+				<inlinemediaobject>
+					<imageobject>
+						<imagedata fileref="resources/definitionEquetion.mml" />
+					</imageobject>
+				</inlinemediaobject>
+				建立转化关系，从而求出它的解析式.。
+			</para>
+		</abstract>
+		<keywordset>
+			<keyword>幂塔</keyword>
+			<keyword>函数变换</keyword>
+			<keyword>解析式</keyword>
+		</keywordset>
+		<issuenum>O0174.6</issuenum>
+	</info>
+	<section>
+		<title>定义</title>
+		<para>幂塔[1]运算的定义为</para>
+	</section>
+	<section>
+		<title>检索信息的动机</title>
+		<para>
+			我们学习基本运算法的顺序是“加减”、“乘除”、“乘方和开方”，相信很多主动学习的人思考过继续高级的“运算”--第四级运算法，以下是推导这种运算的一般步骤：
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/powertower/image008.gif"
+						depth="9.4cm" width="14.5cm">
+					</imagedata>
+				</imageobject>
+			</mediaobject>
+			如果发现这个结论的人是小学生，那么成功的喜悦会激励他从小开始科研事业，如果他有电脑，那么可以借助电脑鉴定自己的成果--是否已经有相关内容？如果他有老师，那么老师为了帮学生解决问题也可能去查阅相关资料。如果发现这个结论的人是大学生，那么他为了争取学分会发表论文，其中收集“参考文献”的途径一般是通过“搜索引擎”，我们的“科学视化搜索引擎”将尽可能地迎合这些人的需求。大家想想看，他们理想的检索方法是什么样的？他们最容易想到的检索“关键词”是什么？
+		</para>
+		<para>
+			<figure>
+				<title>幂塔的形象设计</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/image128.gif"
+							depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>
+				</mediaobject>
+			</figure>
+		</para>
+	</section>
+</chapter>

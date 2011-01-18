@@ -1,0 +1,40 @@
+package net.flowas.projectunit.sitespec;
+
+import static org.junit.Assert.*;
+
+import java.io.IOException;
+
+import javax.inject.Inject;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPathExpressionException;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.jboss.arquillian.api.Deployment;
+import org.jboss.arquillian.junit.Arquillian;
+import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.spec.JavaArchive;
+import org.junit.runner.RunWith;
+import org.xml.sax.SAXException;
+
+//@RunWith(Arquillian.class)
+public class AlignHelperTest {
+	@Deployment
+	public static JavaArchive createDeployment() {
+		return ShrinkWrap.create(JavaArchive.class, "test.jar").addClasses(
+				AlignHelper.class);
+	}
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Inject
+	AlignHelper alignHelper;
+	@Test
+	public void testLoadContext() throws Exception, IOException, SAXException, ParserConfigurationException {
+		//Assert.assertNotNull(alignHelper.loadContext("//body/links/item"));
+	}
+
+}

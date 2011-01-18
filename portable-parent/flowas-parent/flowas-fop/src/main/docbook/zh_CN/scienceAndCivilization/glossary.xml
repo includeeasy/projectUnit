@@ -1,0 +1,46 @@
+<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn">
+	<glossentry>
+		<glossterm>语义网</glossterm>
+		<glossdef>
+			<para> tbc                  
+                </para>
+		</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>面向代理编程</glossterm>
+		<glossdef>
+			<para> tbc                  
+                </para>
+			<example>
+				<title>NetLogo</title>
+				<para>
+					最好用的aop仿真创作平台，可用于角色游戏
+                    </para>
+			</example>
+		</glossdef>
+	</glossentry>
+	<glossentry>
+		<glossterm>科学美</glossterm>
+		<glossdef>
+			<example>
+				<title>MathML和 SVG</title>
+				<para>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="resources/boxes.svg" />
+						</imageobject>
+					</inlinemediaobject>
+
+					<!-- <inlinemediaobject> <imageobject> <imagedata fileref="pic.svg" 
+						/> </imageobject> </inlinemediaobject> -->
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="resources/example.mml" />
+						</imageobject>
+					</inlinemediaobject>
+				</para>
+			</example>
+		</glossdef>
+	</glossentry>
+</glossary>

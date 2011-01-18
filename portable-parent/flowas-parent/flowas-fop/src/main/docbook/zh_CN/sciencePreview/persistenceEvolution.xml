@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>数据存储的不断变革</title>
+	<info>
+		<abstract>
+			<para>计算机是如何存储信息的呢？在这里我们用一张图给您一个直观的印象：</para>
+		    <para>主要描述软件开发中的核心重要思想——模型驱动开发、快速应用开发、分布式系统等的基本原理。</para>
+		</abstract>
+	</info>
+	<section>
+		<title>直接在应用程序中使用数据库操作语言</title>
+		<para>在一些应用系统中,如asp网页和jdbc连接等直接在应用程序中使用sql语句，如下</para>
+	</section>
+</chapter>

@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2010/10/novelStruct.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2010/10/novelStruct.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#story"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#next"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#大量居民迁移到西部"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#实施再造中国工程"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#幸福工程造福人类"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#新型大都市崛起"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#混混烈烈的爱情在晚年开花"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#湿润的黄土高坡"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#考察“大西线”调水方案"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#被迫西迁至西藏过野生生活"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#被邀请到中南海"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#进入大都市-无立足之地"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#首席设计师终于有自己的一套房子"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#大量居民迁移到西部"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#实施再造中国工程"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#幸福工程造福人类"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#新型大都市崛起"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#混混烈烈的爱情在晚年开花"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#湿润的黄土高坡"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#考察“大西线”调水方案"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#被迫西迁至西藏过野生生活"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#被邀请到中南海"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#进入大都市-无立足之地"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#story"/>
+        <NamedIndividual IRI="#首席设计师终于有自己的一套房子"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#大量居民迁移到西部"/>
+        <NamedIndividual IRI="#新型大都市崛起"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#实施再造中国工程"/>
+        <NamedIndividual IRI="#大量居民迁移到西部"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#幸福工程造福人类"/>
+        <NamedIndividual IRI="#湿润的黄土高坡"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#新型大都市崛起"/>
+        <NamedIndividual IRI="#首席设计师终于有自己的一套房子"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#混混烈烈的爱情在晚年开花"/>
+        <NamedIndividual IRI="#幸福工程造福人类"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#湿润的黄土高坡"/>
+        <NamedIndividual IRI="#进入大都市-无立足之地"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#考察“大西线”调水方案"/>
+        <NamedIndividual IRI="#被邀请到中南海"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#被迫西迁至西藏过野生生活"/>
+        <NamedIndividual IRI="#考察“大西线”调水方案"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#被邀请到中南海"/>
+        <NamedIndividual IRI="#实施再造中国工程"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#进入大都市-无立足之地"/>
+        <NamedIndividual IRI="#被迫西迁至西藏过野生生活"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#next"/>
+        <NamedIndividual IRI="#首席设计师终于有自己的一套房子"/>
+        <NamedIndividual IRI="#混混烈烈的爱情在晚年开花"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#next"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

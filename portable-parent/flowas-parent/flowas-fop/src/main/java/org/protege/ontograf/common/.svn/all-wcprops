@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/protege/!svn/ver/19864/protege4/plugins/org.protege.ontograf/src/org/protege/ontograf/common
+END
+GraphController.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/protege/!svn/ver/19027/protege4/plugins/org.protege.ontograf/src/org/protege/ontograf/common/GraphController.java
+END
+ProtegeInputEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/protege/!svn/ver/19863/protege4/plugins/org.protege.ontograf/src/org/protege/ontograf/common/ProtegeInputEventHandler.java
+END
+ProtegeGraphModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/protege/!svn/ver/19864/protege4/plugins/org.protege.ontograf/src/org/protege/ontograf/common/ProtegeGraphModel.java
+END

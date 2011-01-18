@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>小说设计</title>
+	<info>
+		<title>迫于生活成本的行动</title>
+	</info>
+	<partintro>
+		<title>包含开发过程</title>
+		<info />
+		<section>
+			<title>t</title>
+			<para>f</para>
+		</section>
+	</partintro>
+	<glossary>
+		<title>词汇表</title>
+		<info />		
+		<bibliography>
+			<bibliodiv>
+			    <title>网页</title>
+				<biblioentry>					
+					<publisher>
+						<publishername>百度百科</publishername>						
+					</publisher>
+					<title>科学小说</title>					
+				</biblioentry>
+			</bibliodiv>
+		</bibliography>
+	</glossary>
+	<chapter>
+		<title>科普文学的理论系统</title>
+		<info>
+			<abstract>
+				<para>走出塑造人物形象的小圈子，给文学注入科学内涵、艺术因素和先进思想，使读者能从多种角度欣赏科学美，理解科学原理，重用艺术成果，参考高明之举。文体中涉及的知识、智慧、思想、艺术、广告应具有可欣赏的艺术性，娱乐的趣味性、引用的必要性、语言的简明性、可参考的真实模仿性、可发展和利用的科学性和实践指导性。您可以在文中加入一些有趣的好玩的科学知识，使人回味无穷的艺术图画，具有挑战性的先进思想，生动有趣的探索过程描写等。
+				</para>
+			</abstract>
+		</info>		
+		<section>
+			<title>概念</title>
+			<para>以表达科学内容为目的小说称为科普小说。</para>
+			<para>如果把一个科学活动的动人事迹写成一部小说,并把意义深远的科学原理用最通俗的语言表达清楚，那么，这样的小说应该是最基本最真实的科普小说。但事实上，为了达到表达对象与情节的双重效果，我们就不得不周密规划表达对象并进行人工制造“情节”。
+			</para>
+		</section>
+		<section>
+			<title>表达对象</title>
+			<para>
+				表达对象是人类长期生活所得的精华,它一般是集体智慧的结晶，主要分为如下几类：
+				<simplelist>
+					<member>（1）科学美</member>
+					<member>（2）创意效果</member>
+					<member>（3）突破思维定势的斗争</member>
+					<member>（4）科学创造过程</member>
+					<member>（5）科技、商品</member>
+					<member>（6）广告、政策</member>
+					<member>（7）智谋、金点子</member>
+					<member>（8）发现进步的因素：灵感、执着、技巧、果断</member>
+				</simplelist>
+			</para>
+		</section>
+	</chapter>
+	<chapter>
+		<title>小说中故事发展的线索</title>
+		<section>
+			<title>技术发展线索</title>
+			<para>砖厂自动化的梦想——>打水搭架的启发——>把水送往高处的装置：使用杠杆原理——>使用水管的装置（不可行的原始方案）——>用挤压原理实现的装置——>装置改用滚动原理——>用速度调节装置解决形状不规则的问题——>用类活塞结构简化装置——>用SiCl4代替机械结构——>起草专利文件——>认识零部件的名称和销售处——>取得专利权——>解决权利漏洞——>开发软件支持系统——>产权应用——>将技术转化为生产力——>服务社会——>助力人工智能发展。
+			</para>
+		</section>
+		<section>
+			<title>科学发现线索</title>
+			<para>从校长那里偷学“开平方”——>初探第四级运算——>发现“勾股定理”——>撰写宇宙循环论——>发表数学论文——>解氢原子方程——>发现“求和公式”——>扩展微积分到它的超集：微变论——>突破了幂塔运算的“不可计算性”——>发现课本上“双缝干涉”的错误结论
+			</para>
+		</section>
+		<section>
+			<title>思想认识线索</title>
+			<para>读书的用途:识字认账与学习科学文化知识的矛盾——>学习方法：写生字与博览群书的矛盾——>读书的动机：找份好工作与个人兴趣爱好的矛盾——>学习目标:好的考试成绩与实现梦想、报效祖国的矛盾——>学习途径：题海战术与实际应用的矛盾——>选择专业：大众计算机与软件工程的矛盾。
+			</para>
+		</section>
+		<section>
+			<title>情感线索</title>
+			<para>邻居11岁定亲——>逼婚——>紧急觅知音——>巧遇才子——>初恋——>再寻知己</para>
+		</section>
+	</chapter>
+</part>

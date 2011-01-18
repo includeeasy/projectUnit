@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
+	<title>傅里叶级数与音乐优美度判断</title>
+	<info>
+		<abstract>
+			<para>我的的求知过程实质上是对知识的创新与利用的过程。由于对数学的浓厚兴趣和自发钻研的热情，从接触数学开始，它的一个个神秘的迷团就开始了显露真相：</para>
+		</abstract>
+		<keywordset>
+		 <keyword>幂塔</keyword>
+		 <keyword>函数变换</keyword>
+		 <keyword>解析式</keyword>
+		</keywordset>
+		<issuenum>O0174.6</issuenum>
+	</info>
+	<section>
+		<title>定义</title>
+		<para>幂塔[1]运算的定义为</para>
+	</section>
+</chapter>
