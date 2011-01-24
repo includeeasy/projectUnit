@@ -1,5 +1,6 @@
-<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn">
+<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
 	<glossentry>
 		<glossterm>语义网</glossterm>
 		<glossdef>
@@ -43,4 +44,25 @@
 			</example>
 		</glossdef>
 	</glossentry>
+	<bibliography>
+		<title>参考资料</title>
+		<bibliodiv>
+			<title>网页</title>
+			<biblioentry>
+				<biblioset relation='journal'>
+					<title>美国的车库文化</title>
+					<publisher>
+						<publishername>新浪博客</publishername>
+						<address>
+							<uri>http://blog.sina.com.cn/s/blog_5332ab1d0100gisc.html</uri>
+						</address>
+					</publisher>
+				</biblioset>
+				<biblioset>
+				 <title>The sound of science</title>
+				 <publishername>http://lhcsound.hep.ucl.ac.uk</publishername>
+				</biblioset>
+			</biblioentry>
+		</bibliodiv>
+	</bibliography>
 </glossary>
