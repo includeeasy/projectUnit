@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:s="urn:java:ee" xmlns:r="urn:java:net.flowas.projectunit.sitespec">
+	<r:AlignHelper>
+		<s:Named />
+	</r:AlignHelper>
 	<r:SiteManager>
 		<s:modifies />
-		<r:linksElement>#{alignHelper.loadContext("//body/links/item")}</r:linksElement>
+		<r:linksElement>#{alignHelper.loadContext("//body/links/item")}
+		</r:linksElement>
 	</r:SiteManager>
 </beans>

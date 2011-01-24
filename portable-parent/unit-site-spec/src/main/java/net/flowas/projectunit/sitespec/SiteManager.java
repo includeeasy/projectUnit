@@ -13,7 +13,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 @Named
-public class SiteManager {	
+public class SiteManager {
 	public Element linksElement;
 
 	public void setLinksElement(Element linksElement) {
@@ -25,7 +25,20 @@ public class SiteManager {
 		List<Element> list = new ArrayList<Element>();
 		NodeList nodes = linksElement.getChildNodes();
 		for (int i = 0; i < nodes.getLength(); i++) {
-			Node node = nodes.item(i);			
+			Node node = nodes.item(i);
+			if (node instanceof Element) {
+				list.add((Element) node);
+			}
+		}
+		return list;
+	}
+
+	public List<Element> getChildren() throws ParserConfigurationException,
+			SAXException, IOException {
+		List<Element> list = new ArrayList<Element>();
+		NodeList nodes = linksElement.getChildNodes();
+		for (int i = 0; i < nodes.getLength(); i++) {
+			Node node = nodes.item(i);
 			if (node instanceof Element) {
 				list.add((Element) node);
 			}
