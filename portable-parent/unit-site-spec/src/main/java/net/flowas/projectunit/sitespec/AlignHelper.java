@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Enumeration;
-
-import javax.inject.Named;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -32,7 +30,6 @@ import org.xml.sax.SAXException;
  */
 public class AlignHelper {
 	public static final String SITE_FILE = "META-INF/site/site.xml";
-	public static final String HEADER = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
 	public Element loadContext(String xpath) throws IOException, SAXException,
 			ParserConfigurationException, XPathExpressionException, TransformerConfigurationException, TransformerException, TransformerFactoryConfigurationError {
 		DocumentBuilder builder = DocumentBuilderFactory.newInstance()

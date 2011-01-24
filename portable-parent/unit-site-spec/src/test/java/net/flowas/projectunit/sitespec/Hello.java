@@ -27,7 +27,7 @@ public class Hello {
 			//System.out.println(alignHelper.loadContext("//body/links/item"));
 			Assert.assertNotNull(alignHelper.loadContext("//body/links/item"));
 			System.out.println("-----");
-			System.out.println(site.getLinks().get(0));
+			System.out.println(site.getLinks().size());
 		} catch (XPathExpressionException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
