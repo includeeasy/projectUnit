@@ -31,7 +31,7 @@
   <body>
     <head/>
     <links>
-     <item name="help" href="/pages/help.xhtml"></item>
+     <item name="help" href="/pages/help.xhtml" alt="jsf"></item>
     </links>
     <breadcrumbs/>
     <menu alt="" border="" height="" img="" inherit="" inheritAsRef="false" name="" position="left" ref="" width=""/>

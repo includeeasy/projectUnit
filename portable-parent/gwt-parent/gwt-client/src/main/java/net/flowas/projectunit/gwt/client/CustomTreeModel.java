@@ -8,6 +8,7 @@ import com.google.gwt.http.client.RequestCallback;
 import com.google.gwt.http.client.RequestException;
 import com.google.gwt.http.client.Response;
 import com.google.gwt.http.client.URL;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.TreeViewModel;
 
@@ -38,9 +39,26 @@ public class CustomTreeModel implements TreeViewModel {
 					if (200 == response.getStatusCode()) {
 						String text = response.getText();
 						if (text.contains(",")) {
-							String[] pair = text.split(",");
-							for (String value : pair) {
-								dataProvider.getList().add(value);
+							String[] menus = text.split(",");
+							for (String value : menus) {
+								if (value.contains(":")) {
+									String[] pairs = value.split(":");
+									for (String pairText : pairs) {
+										System.out.println(pairText);
+										if (pairText.contains("=")) {
+											String[] pair = pairText.split("=");
+											if (pair[0].equals("id")) {
+												dataProvider.getList().add(
+														pair[1]);
+											} else if (pair[0].equals("name")) {
+												// dataProvider.getList().add(pair[1]);
+											} else {
+												//
+											}
+										}
+									}
+								}
+								// dataProvider.getList().add(value);
 							}
 						} else {
 							dataProvider.getList().add(text);
@@ -64,7 +82,38 @@ public class CustomTreeModel implements TreeViewModel {
 	// Check if the specified value represents a leaf node. Leaf nodes
 	// cannot be opened.
 	public boolean isLeaf(Object value) {
-		// The maximum length of a value is ten characters.
-		return value.toString().length() > 15;
+		// The maximum length of a value is ten characters.		
+		String url = TREE_URL + value.toString();
+		url = URL.encode(url);
+		// Send request to server and catch any errors.
+		final StringBuffer sb=new StringBuffer();
+		RequestBuilder builder = new RequestBuilder(RequestBuilder.GET, url);
+
+		try {
+			Request request = builder.sendRequest(null, new RequestCallback() {
+
+				@Override
+				public void onError(Request arg0, Throwable arg1) {
+					// TODO Auto-generated method stub
+
+				}
+
+				@Override
+				public void onResponseReceived(Request arg0, Response arg1) {
+					if(arg1.getText()==null || arg1.getText().equals("")){
+						sb.append("true");
+					}
+
+				}
+			});
+		} catch (RequestException e) {
+			e.printStackTrace();
+		}
+		if(sb.toString().contains("true")){
+			return true;
+		}else{
+			return false;
+		}
+		//return value.toString().contains("isleaf=true");
 	}
 }
