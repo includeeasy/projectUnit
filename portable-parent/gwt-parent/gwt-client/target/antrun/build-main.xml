@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="../unit-gwt/src/main/resources/META-INF/resources/gwtunit">
+    <fileset dir="target/gwt-client-1.0-SNAPSHOT/gwtunit"/>
+  </copy>
+</target>
+</project>

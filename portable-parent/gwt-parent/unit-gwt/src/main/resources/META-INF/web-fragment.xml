@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-fragment id="WebFragment_ID" version="3.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd">
+	<display-name>gwt-web</display-name>
+	<name>gwt_web</name>
+	<servlet>
+		<servlet-name>treedata</servlet-name>
+		<servlet-class>net.flowas.projectunit.gwt.server.TreeData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>treedata</servlet-name>
+		<url-pattern>/gwtunit/tree</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>jsondata</servlet-name>
+		<servlet-class>net.flowas.projectunit.gwt.server.JsonData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jsondata</servlet-name>
+		<url-pattern>/gwtunit/jsondata</url-pattern>
+	</servlet-mapping>
+</web-fragment>

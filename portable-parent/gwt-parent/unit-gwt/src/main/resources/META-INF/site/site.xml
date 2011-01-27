@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<body>
+		<head />
+		<links>
+			<item name="gwt" href="/EditTable.html"  alt="html"></item>
+		</links>
+		<menu alt="" border="" height="" img="" inherit="" inheritAsRef="false"
+			name="" position="left" ref="" width="" />
+	</body>
+	<custom>
+		<tree>
+			<treeitem id="root" name="Root">
+				<treeitem id="nodeinfo" name="Info">
+					<treeitem id="clc" name="Clc Node" />
+					<treeitem id="omm" name="Omm Node" />
+				</treeitem>
+				<treeitem id="switcher" name="Switcher">
+					<treeitem id="s1" name="S1 Node" />
+					<treeitem id="s2" name="S2 Node" />
+				</treeitem>
+			</treeitem>
+		</tree>
+	</custom>
+</project>
