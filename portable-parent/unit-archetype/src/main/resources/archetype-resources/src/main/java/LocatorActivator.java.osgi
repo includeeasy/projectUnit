@@ -1,0 +1,26 @@
+package ${package};
+
+import java.util.Map;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+
+import com.huawei.locator.shared.ResourceManager;
+
+public class LocatorActivator  implements BundleActivator {
+
+	@Override
+	public void start(BundleContext context) throws Exception {		
+		// TODO Ìí¼Ó´Ê¿â
+		Map<String, String> dictionary = null;
+		ResourceManager.addToDictionary(dictionary);
+	}
+
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		// TODO Çå³ý´Ê¿â
+		Map<String, String> dictionary = null;
+		ResourceManager.removeFromDictionary(dictionary);
+	}
+  
+}

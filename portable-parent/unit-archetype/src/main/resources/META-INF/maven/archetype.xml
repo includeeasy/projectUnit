@@ -1,0 +1,9 @@
+<archetype>
+  <id>locator-archetype</id> 
+  <resources>
+   <resource>pom.xml</resource>
+   <resource>src/main/resources/META-INF/site/decoration-1.0.1.xsd</resource>
+   <resource>src/main/resources/META-INF/site/site.xml</resource>
+   <resource>src/main/resources/META-INF/ontologies/webmeta.owl</resource>
+  </resources> 
+</archetype>

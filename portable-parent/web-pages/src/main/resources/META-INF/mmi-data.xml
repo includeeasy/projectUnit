@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mmi:mmi xmlns:mmi="http://www.w3.org/2008/04/mmi-arch" version="1.0"> 
+   <mmi:statusResponse automaticUpdate="true" status="alive" 
+       source="someURI" target="someOtherURI" requestID="request-3" context="aToken"/> 
+   
+</mmi:mmi>

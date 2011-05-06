@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.prime.com.tr/ui"
+        xmlns:h="http://java.sun.com/jsf/html">
+<body>
+<ui:composition template="./web-pages/template/welcome.xhtml">
+	<ui:define name="top">
+                top
+                <h:outputText value="#{pageControl.text}" escape="false"/>
+            </ui:define>
+	<ui:define name="left">
+		<p:menu>
+			<p:submenu label="Mail">
+				<p:menuitem value="Gmail" url="http://www.google.com" />
+				<h:outputText value="#{pageControl.getRegion('menu-item')}"/>
+			</p:submenu>
+			<p:submenu label="Videos">
+				<p:menuitem value="Youtube" url="http://www.youtube.com" />
+				<p:menuitem value="Break" url="http://www.break.com" />
+				<p:menuitem value="Metacafe" url="http://www.metacafe.com" />
+			</p:submenu>
+			<p:submenu  id="techshow"  label="技术演示">
+				<p:menuitem value="Facebook" url="http://www.facebook.com" />
+				<p:menuitem value="MySpace" url="http://www.myspace.com" />
+			</p:submenu>
+		</p:menu>
+             <h:outputText value="#{pageControl.getRegion('menu-item')}"  escape="false"/>
+              first:#{first.say}<br/>
+	</ui:define>
+	<ui:define name="content">
+		<!--[if !IE]> -->
+		<object type="application/x-shockwave-flash"
+			data="#{request.contextPath}/web-pages/swf/pageflip.swf" width="700"
+			height="450"> <!-- <![endif]--> <!--[if IE]>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+  width="300" height="135">
+  <param name="movie" value="movie.swf" />
+<!--><!--dgx-->
+			<param name="loop" value="true" />
+			<param name="menu" value="false" />
+
+			<p>This is <b>alternative</b> content.</p>
+		</object>
+		<!-- <![endif]-->
+	</ui:define>
+
+	<ui:define name="bottom">
+                bottom
+            </ui:define>
+
+</ui:composition>
+
+</body>
+</html>

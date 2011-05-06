@@ -1,0 +1,16 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Maven Quickstart Archetype
+
+
+
+mvn archetype:create                                    \
+  -DarchetypeGroupId=com.huawei               \
+  -DarchetypeArtifactId=locator-archetype          \
+  -DarchetypeVersion=0.0.1-SNAPSHOT                \
+  -DgroupId=<my.groupid>                                \
+  -DartifactId=<my-artifactId>
+
