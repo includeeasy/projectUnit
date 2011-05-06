@@ -23,87 +23,84 @@ package net.flowas.codegen.forge;
 
 import java.io.FileNotFoundException;
 
-import javax.inject.Named;
-
-import org.jboss.seam.forge.parser.JavaParser;
-import org.jboss.seam.forge.parser.java.JavaClass;
-import org.jboss.seam.forge.project.Facet;
-import org.jboss.seam.forge.project.PackagingType;
-import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.project.constraints.RequiresFacets;
-import org.jboss.seam.forge.project.constraints.RequiresPackagingTypes;
-import org.jboss.seam.forge.project.dependencies.Dependency;
-import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
-import org.jboss.seam.forge.project.facets.DependencyFacet;
-import org.jboss.seam.forge.project.facets.JavaSourceFacet;
-import org.jboss.seam.forge.project.facets.ResourceFacet;
+import org.jboss.forge.parser.JavaParser;
+import org.jboss.forge.parser.java.JavaClass;
+import org.jboss.forge.project.Facet;
+import org.jboss.forge.project.Project;
+import org.jboss.forge.project.dependencies.Dependency;
+import org.jboss.forge.project.dependencies.DependencyBuilder;
+import org.jboss.forge.project.facets.DependencyFacet;
+import org.jboss.forge.project.facets.JavaSourceFacet;
+import org.jboss.forge.project.facets.ResourceFacet;
+import org.jboss.forge.shell.plugins.Alias;
+import org.jboss.forge.shell.plugins.RequiresFacet;
 
 /**
  * @author <a href="mailto:lincolnbaxter@gmail.com">Lincoln Baxter, III</a>
  */
-@Named("flowas.mock")
-@RequiresFacets({ JavaSourceFacet.class, ResourceFacet.class, DependencyFacet.class })
-@RequiresPackagingTypes({ PackagingType.JAR, PackagingType.WAR })
-public class MockFacet implements Facet
-{
-   private static final Dependency dep =
-            DependencyBuilder.create("org.powermock:powermock-api-mockito:test:basic");
-   private Project project;  
-   @Override
-   public Facet install()
-   {
-      if (!isInstalled())
-      {
-         DependencyFacet deps = project.getFacet(DependencyFacet.class);
-         if (!deps.hasDependency(dep))
-         {
-            deps.addDependency(dep);
-         }
+@Alias("flowas.mock")
+@RequiresFacet({ JavaSourceFacet.class, ResourceFacet.class,
+		DependencyFacet.class })
+//@RequiresPackagingTypes({ PackagingType.JAR, PackagingType.WAR })
+public class MockFacet implements Facet {
+	private static final Dependency dep = DependencyBuilder
+			.create("org.powermock:powermock-api-mockito:1.4.8:test");
+	private Project project;
 
+	@Override
+	public boolean install() {
+		if (!isInstalled()) {
+			DependencyFacet deps = project.getFacet(DependencyFacet.class);
+			if (!deps.hasDependency(dep)) {
+				deps.addDependency(dep);
+			}
 
-         installUtils();
+			installUtils();
 
-      }
-      project.registerFacet(this);
-      return this;
-   }
+		}
+		project.registerFacet(this);
+		return isInstalled();
+	}
 
-   private void installUtils()
-   {
-      ClassLoader loader = Thread.currentThread().getContextClassLoader();
-      JavaClass util = JavaParser.parse(JavaClass.class, loader.getResourceAsStream("org/jboss/seam/forge/jpa/PersistenceUtil.jtpl"));
-      JavaClass producer = JavaParser.parse(JavaClass.class,
-               loader.getResourceAsStream("org/jboss/seam/forge/jpa/DatasourceProducer.jtpl"));
+	private void installUtils() {
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		JavaClass util = JavaParser
+				.parse(JavaClass.class,
+						loader.getResourceAsStream("org/jboss/seam/forge/jpa/PersistenceUtil.jtpl"));
+		JavaClass producer = JavaParser
+				.parse(JavaClass.class,
+						loader.getResourceAsStream("org/jboss/seam/forge/jpa/DatasourceProducer.jtpl"));
 
-      JavaSourceFacet java = project.getFacet(JavaSourceFacet.class);
+		JavaSourceFacet java = project.getFacet(JavaSourceFacet.class);
 
-      try
-      {
-         java.saveJavaClass(producer);
-         java.saveJavaClass(util);
-      }
-      catch (FileNotFoundException e)
-      {
-         throw new RuntimeException(e);
-      }
-   }
+		try {
+			java.saveJavaSource(producer);
+			java.saveJavaSource(util);
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException(e);
+		}
+	}
 
-   @Override
-   public boolean isInstalled()
-   {
-      DependencyFacet deps = project.getFacet(DependencyFacet.class);
-      boolean hasDependency = deps.hasDependency(dep);
-      return hasDependency;
-   }
-   @Override
-   public Project getProject()
-   {
-      return project;
-   }
+	@Override
+	public boolean isInstalled() {
+		DependencyFacet deps = project.getFacet(DependencyFacet.class);
+		boolean hasDependency = deps.hasDependency(dep);
+		return hasDependency;
+	}
 
-   @Override
-   public void setProject(final Project project)
-   {
-      this.project = project;
-   }
+	@Override
+	public Project getProject() {
+		return project;
+	}
+
+	@Override
+	public void setProject(final Project project) {
+		this.project = project;
+	}
+
+	@Override
+	public boolean uninstall() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

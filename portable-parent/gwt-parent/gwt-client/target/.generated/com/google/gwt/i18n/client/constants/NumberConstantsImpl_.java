@@ -1,6 +1,7 @@
 package com.google.gwt.i18n.client.constants;
 
 public class NumberConstantsImpl_ implements com.google.gwt.i18n.client.constants.NumberConstantsImpl {
+  
   public java.lang.String percentPattern() {
     return "#,##0%";
   }
@@ -68,5 +69,4 @@ public class NumberConstantsImpl_ implements com.google.gwt.i18n.client.constant
   public java.lang.String defCurrencyCode() {
     return "USD";
   }
-  
-  }
+}

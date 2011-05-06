@@ -6,6 +6,22 @@
         <pathsSet class="linked-hash-set">
           <string>META-INF/MANIFEST.MF</string>
           <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/Ball.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/BallGroup.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo$1.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo$2.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo$3.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo$4.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo$5.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo$6.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/GwtCanvasDemo.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/Lens.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/Logo.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/LogoGroup$1.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/LogoGroup.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/SpringObject.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/client/Vector.class</string>
+          <string>WEB-INF/classes/com/google/gwt/gwtcanvasdemo/GwtCanvasDemo.gwt.xml</string>
           <string>WEB-INF/classes/net/flowas/projectunit/gwt/client/CustomTreeModel$1.class</string>
           <string>WEB-INF/classes/net/flowas/projectunit/gwt/client/CustomTreeModel$2.class</string>
           <string>WEB-INF/classes/net/flowas/projectunit/gwt/client/CustomTreeModel.class</string>
@@ -25,7 +41,7 @@
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-servlet</artifactId>
-        <version>2.1.1</version>
+        <version>2.2.0</version>
         <type>jar</type>
         <scope>provided</scope>
         <exclusions/>
@@ -80,7 +96,7 @@
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-user</artifactId>
-        <version>2.1.1</version>
+        <version>2.2.0</version>
         <type>jar</type>
         <scope>provided</scope>
         <exclusions/>
@@ -132,7 +148,7 @@
       <dependency>
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-dev</artifactId>
-        <version>2.1.1</version>
+        <version>2.2.0</version>
         <type>jar</type>
         <scope>provided</scope>
         <exclusions/>

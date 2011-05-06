@@ -26,9 +26,9 @@ import net.flowas.codegen.model.OperationUtils.UnzipFilter;
 import org.apache.maven.model.Dependency;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.io.DefaultModelReader;
-import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
-import org.jboss.seam.forge.project.facets.DependencyFacet;
+import org.jboss.forge.project.Project;
+import org.jboss.forge.project.dependencies.DependencyBuilder;
+import org.jboss.forge.project.facets.DependencyFacet;
 
 
 public class MavenFilter implements UnzipFilter {
@@ -54,7 +54,7 @@ public class MavenFilter implements UnzipFilter {
 				Model model = r.read(new ByteArrayInputStream(data), null);
 				List<Dependency> deps = model.getDependencies();
 				for (Dependency dep : deps) {
-					org.jboss.seam.forge.project.dependencies.Dependency dependency = DependencyBuilder
+					org.jboss.forge.project.dependencies.Dependency dependency = DependencyBuilder
 							.create(dep.getGroupId() + ":"
 									+ dep.getArtifactId() + ":"
 									+ dep.getVersion() + ":" + dep.getScope());

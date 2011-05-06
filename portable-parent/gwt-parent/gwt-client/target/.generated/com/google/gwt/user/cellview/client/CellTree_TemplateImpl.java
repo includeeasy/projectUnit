@@ -1,6 +1,7 @@
 package com.google.gwt.user.cellview.client;
 
 public class CellTree_TemplateImpl implements com.google.gwt.user.cellview.client.CellTree.Template {
+  
   public com.google.gwt.safehtml.shared.SafeHtml imageWrapper(java.lang.String arg0,java.lang.String arg1,int arg2,int arg3,com.google.gwt.safehtml.shared.SafeHtml arg4) {
     StringBuilder sb = new java.lang.StringBuilder()
         .append("<div class=\"")
@@ -17,5 +18,4 @@ public class CellTree_TemplateImpl implements com.google.gwt.user.cellview.clien
         ;
     return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
   }
-  
-  }
+}

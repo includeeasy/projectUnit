@@ -35,14 +35,16 @@ import net.flowas.codegen.model.event.TechEvent;
 import net.flowas.codegen.model.framework.TestFramework;
 import net.flowas.codegen.resource.Settings;
 
-import org.jboss.seam.forge.parser.JavaParser;
-import org.jboss.seam.forge.parser.java.JavaClass;
-import org.jboss.seam.forge.parser.java.JavaSource;
-import org.jboss.seam.forge.project.facets.FacetNotFoundException;
-import org.jboss.seam.forge.project.facets.JavaSourceFacet;
-import org.jboss.seam.forge.project.resources.builtin.JavaResource;
-import org.jboss.seam.forge.project.util.Packages;
-import org.jboss.seam.forge.shell.Shell;
+import org.jboss.forge.parser.JavaParser;
+import org.jboss.forge.parser.java.JavaClass;
+import org.jboss.forge.parser.java.JavaSource;
+import org.jboss.forge.project.facets.FacetNotFoundException;
+import org.jboss.forge.project.facets.JavaSourceFacet;
+//import org.jboss.forge.project.resources.builtin.java.JavaResource;
+//import org.jboss.forge.project.util.Packages;
+import org.jboss.forge.resources.java.JavaResource;
+import org.jboss.forge.shell.Shell;
+import org.jboss.forge.shell.util.Packages;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -160,7 +162,7 @@ public class TestGenImpl implements TestGen {
 		techEvent.fire(tech);
 		JavaSourceFacet java = shell.getCurrentProject().getFacet(JavaSourceFacet.class);
 		try {
-			java.saveTestJavaClass(cl);
+			java.saveTestJavaSource(cl);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

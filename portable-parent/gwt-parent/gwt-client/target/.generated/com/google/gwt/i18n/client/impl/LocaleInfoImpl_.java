@@ -14,6 +14,11 @@ public class LocaleInfoImpl_ extends LocaleInfoImpl_shared {
   }
   
   @Override
+  public String getLocaleQueryParam() {
+    return "locale";
+  }
+  
+  @Override
   public DateTimeFormatInfo getDateTimeFormatInfo() {
     return GWT.create(com.google.gwt.i18n.client.impl.cldr.DateTimeFormatInfoImpl.class);
   }

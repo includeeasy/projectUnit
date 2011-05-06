@@ -1,6 +1,7 @@
 package com.google.gwt.user.cellview.client;
 
 public class CellTreeNodeView_TemplateImpl implements com.google.gwt.user.cellview.client.CellTreeNodeView.Template {
+  
   public com.google.gwt.safehtml.shared.SafeHtml outerDiv(java.lang.String arg0,int arg1,java.lang.String arg2,com.google.gwt.safehtml.shared.SafeHtml arg3) {
     StringBuilder sb = new java.lang.StringBuilder()
         .append("<div><div style=\"padding-")
@@ -34,5 +35,4 @@ public class CellTreeNodeView_TemplateImpl implements com.google.gwt.user.cellvi
         ;
     return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
   }
-  
-  }
+}

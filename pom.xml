@@ -18,8 +18,11 @@
 	</prerequisites>
 
 	<modules>
-		<module>forge-mock</module>		
+		<module>forge-mock</module>
 		<module>mock-parent</module>
+		<module>reference-guide</module>
+		<module>forge-projectunit</module>
+		<module>maven-projectunit</module>
 	</modules>
 
 	<dependencies>
@@ -30,6 +33,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<repositories>
 		<repository>
 			<id>jboss-snapshots-repository-group</id>
@@ -81,7 +85,7 @@
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-project-info-reports-plugin</artifactId>
-							<version>2.2</version>
+							<version>2.3.1</version>
 							<configuration>
 								<dependencyDetailsEnabled>true</dependencyDetailsEnabled>
 								<dependencyLocationsEnabled>true</dependencyLocationsEnabled>
@@ -91,7 +95,7 @@
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-javadoc-plugin</artifactId>
-							<version>2.6.1</version>
+							<version>2.7</version>
 						</plugin>
 						<plugin>
 							<groupId>org.codehaus.mojo</groupId>
@@ -108,13 +112,21 @@
 								</instrumentation>
 							</configuration>
 						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-report-plugin</artifactId>
+							<version>2.7.2</version>
+							<configuration>
+								<!-- your example configuration here -->
+							</configuration>
+						</plugin>
 					</reportPlugins>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>com.mycila.maven-license-plugin</groupId>
 				<artifactId>maven-license-plugin</artifactId>
-				<version>1.9.0-SNAPSHOT</version>
+				<version>1.9.0</version>
 				<configuration>
 					<strictChecking>true</strictChecking>
 					<basedir>${basedir}</basedir>
@@ -123,7 +135,7 @@
 				</configuration>
 				<!-- <executions> <execution> <phase>test</phase> <goals> <goal>format</goal> 
 					</goals> </execution> </executions> -->
-			</plugin>			
+			</plugin>
 		</plugins>
 	</build>
 </project>

@@ -11,9 +11,10 @@
      <h:form>
         <c:forEach var="link" items="#{siteManager.links}">        
             <h:commandLink action="#{link.getAttribute('href')}" value="#{link.getAttribute('name')}"/>
-        </c:forEach>  
+        </c:forEach>         
     </h:form> 
-    ---#{link.getAttribute('href')}=
+    ---#{link.getAttribute('href')}=   
+    #{application.contextPath}
     </h:body>
 </html>
 

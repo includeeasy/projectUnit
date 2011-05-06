@@ -6,8 +6,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.List;
 
-import org.jboss.seam.forge.parser.java.Annotation;
-import org.jboss.seam.forge.parser.java.JavaClass;
+import org.jboss.forge.parser.java.Annotation;
+import org.jboss.forge.parser.java.JavaClass;
 public class MockUtils {
 	public static void main(String[] args) {
 		System.out.println(getConstructorText(getFirstConstructor(File.class)));

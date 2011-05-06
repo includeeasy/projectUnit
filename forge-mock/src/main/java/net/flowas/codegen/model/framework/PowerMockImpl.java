@@ -31,14 +31,14 @@ import net.flowas.codegen.model.event.DocEvent;
 import net.flowas.codegen.model.event.TechEvent;
 import net.flowas.codegen.resource.GenEnum;
 
-import org.jboss.seam.forge.parser.JavaParser;
-import org.jboss.seam.forge.parser.java.JavaClass;
-import org.jboss.seam.forge.parser.java.JavaSource;
-import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.project.facets.FacetNotFoundException;
-import org.jboss.seam.forge.project.facets.JavaSourceFacet;
-import org.jboss.seam.forge.project.resources.builtin.JavaResource;
-import org.jboss.seam.forge.project.util.Packages;
+import org.jboss.forge.parser.JavaParser;
+import org.jboss.forge.parser.java.JavaClass;
+import org.jboss.forge.parser.java.JavaSource;
+import org.jboss.forge.project.Project;
+import org.jboss.forge.project.facets.FacetNotFoundException;
+import org.jboss.forge.project.facets.JavaSourceFacet;
+//import org.jboss.forge.project.resources.builtin.java.JavaResource;
+//import org.jboss.forge.project.util.Packages;
 
 
 @Default

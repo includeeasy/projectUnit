@@ -9,15 +9,16 @@
 		<c:forEach var="link" items="#{siteManager.links}">
 			<c:if test="#{link.getAttribute('alt')=='jsf'}">
 				<h:commandLink action="#{link.getAttribute('href')}"
-					value="#{link.getAttribute('name')}" />
+					value="#{link.getAttribute('name')}" /><br/>
 			</c:if>
 			<c:if test="#{link.getAttribute('alt')=='html'}">
-				<a href=" #{application.contextPath}/#{link.getAttribute('href')}">#{link.getAttribute('name')}</a>
+				<a href=" #{application.contextPath}/#{link.getAttribute('href')}">#{link.getAttribute('name')}</a><br/>
 			</c:if>
+			<!-- 
 			<c:otherwise>
 				<h:commandLink action="#{link.getAttribute('href')}"
 					value="#{link.getAttribute('name')}" />
-			</c:otherwise>
+			</c:otherwise> -->
 		</c:forEach>
 	</h:form>
 </ui:composition>

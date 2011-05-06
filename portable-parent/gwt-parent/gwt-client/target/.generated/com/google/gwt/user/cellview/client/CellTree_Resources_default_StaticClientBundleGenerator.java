@@ -54,46 +54,46 @@ public class CellTree_Resources_default_StaticClientBundleGenerator implements c
       return "cellTreeStyle";
     }
     public String getText() {
-      return com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL() ? ((".GL0PBETBGE{padding-right:" + ("16px")  + ";font-style:" + ("italic")  + ";}.GL0PBETBHE{padding-top:" + ("4px")  + ";padding-bottom:" + ("4px")  + ";cursor:" + ("hand")  + ";cursor:" + ("pointer")  + ";zoom:" + ("1")  + ";}.GL0PBETBJE{zoom:" + ("1")  + ";}.GL0PBETBKE{padding-right:" + ("3px")  + ";padding-left:" + ("3px")  + ";outline:") + (("none")  + ";}.GL0PBETBPE{font-weight:" + ("bold")  + ";color:" + ("#4b4a4a")  + ";margin-top:" + ("20px")  + ";padding:" + ("3px"+ " " +"10px"+ " " +"3px"+ " " +"13px")  + " !important;}.GL0PBETBBF{border-bottom:" + ("1px"+ " " +"solid"+ " " +"#6f7277")  + ";padding-bottom:" + ("1px")  + ";}.GL0PBETBLE{background-color:" + ("#ffc")  + ";outline:" + ("none")  + ";}.GL0PBETBNE{height:" + ((CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getHeight() + "px")  + ";overflow:" + ("hidden") ) + (";background:" + ("url(\"" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getURL() + "\") -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getLeft() + "px -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getTop() + "px  repeat-x")  + ";background-color:" + ("#628cd5")  + ";color:" + ("white")  + ";height:" + ("auto")  + ";overflow:" + ("visible")  + ";}.GL0PBETBOE{padding-right:" + ("16px")  + ";outline:" + ("none")  + ";}")) : ((".GL0PBETBGE{padding-left:" + ("16px")  + ";font-style:" + ("italic")  + ";}.GL0PBETBHE{padding-top:" + ("4px")  + ";padding-bottom:" + ("4px")  + ";cursor:" + ("hand")  + ";cursor:" + ("pointer")  + ";zoom:" + ("1")  + ";}.GL0PBETBJE{zoom:" + ("1")  + ";}.GL0PBETBKE{padding-left:" + ("3px")  + ";padding-right:" + ("3px")  + ";outline:") + (("none")  + ";}.GL0PBETBPE{font-weight:" + ("bold")  + ";color:" + ("#4b4a4a")  + ";margin-top:" + ("20px")  + ";padding:" + ("3px"+ " " +"13px"+ " " +"3px"+ " " +"10px")  + " !important;}.GL0PBETBBF{border-bottom:" + ("1px"+ " " +"solid"+ " " +"#6f7277")  + ";padding-bottom:" + ("1px")  + ";}.GL0PBETBLE{background-color:" + ("#ffc")  + ";outline:" + ("none")  + ";}.GL0PBETBNE{height:" + ((CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getHeight() + "px")  + ";overflow:" + ("hidden") ) + (";background:" + ("url(\"" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getURL() + "\") -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getLeft() + "px -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getTop() + "px  repeat-x")  + ";background-color:" + ("#628cd5")  + ";color:" + ("white")  + ";height:" + ("auto")  + ";overflow:" + ("visible")  + ";}.GL0PBETBOE{padding-left:" + ("16px")  + ";outline:" + ("none")  + ";}"));
+      return com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL() ? ((".GALD-WONE{padding-right:" + ("16px")  + ";font-style:" + ("italic")  + ";}.GALD-WOOE{padding-top:" + ("4px")  + ";padding-bottom:" + ("4px")  + ";cursor:" + ("hand")  + ";cursor:" + ("pointer")  + ";zoom:" + ("1")  + ";}.GALD-WOAF{zoom:" + ("1")  + ";}.GALD-WOBF{padding-right:" + ("3px")  + ";padding-left:" + ("3px")  + ";outline:") + (("none")  + ";}.GALD-WOGF{font-weight:" + ("bold")  + ";color:" + ("#4b4a4a")  + ";margin-top:" + ("20px")  + ";padding:" + ("3px"+ " " +"10px"+ " " +"3px"+ " " +"13px")  + " !important;}.GALD-WOIF{border-bottom:" + ("1px"+ " " +"solid"+ " " +"#6f7277")  + ";padding-bottom:" + ("1px")  + ";}.GALD-WOCF{background-color:" + ("#ffc")  + ";outline:" + ("none")  + ";}.GALD-WOEF{height:" + ((CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getHeight() + "px")  + ";overflow:" + ("hidden") ) + (";background:" + ("url(\"" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getURL() + "\") -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getLeft() + "px -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getTop() + "px  repeat-x")  + ";background-color:" + ("#628cd5")  + ";color:" + ("white")  + ";height:" + ("auto")  + ";overflow:" + ("visible")  + ";}.GALD-WOFF{padding-right:" + ("16px")  + ";outline:" + ("none")  + ";}")) : ((".GALD-WONE{padding-left:" + ("16px")  + ";font-style:" + ("italic")  + ";}.GALD-WOOE{padding-top:" + ("4px")  + ";padding-bottom:" + ("4px")  + ";cursor:" + ("hand")  + ";cursor:" + ("pointer")  + ";zoom:" + ("1")  + ";}.GALD-WOAF{zoom:" + ("1")  + ";}.GALD-WOBF{padding-left:" + ("3px")  + ";padding-right:" + ("3px")  + ";outline:") + (("none")  + ";}.GALD-WOGF{font-weight:" + ("bold")  + ";color:" + ("#4b4a4a")  + ";margin-top:" + ("20px")  + ";padding:" + ("3px"+ " " +"13px"+ " " +"3px"+ " " +"10px")  + " !important;}.GALD-WOIF{border-bottom:" + ("1px"+ " " +"solid"+ " " +"#6f7277")  + ";padding-bottom:" + ("1px")  + ";}.GALD-WOCF{background-color:" + ("#ffc")  + ";outline:" + ("none")  + ";}.GALD-WOEF{height:" + ((CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getHeight() + "px")  + ";overflow:" + ("hidden") ) + (";background:" + ("url(\"" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getURL() + "\") -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getLeft() + "px -" + (CellTree_Resources_default_StaticClientBundleGenerator.this.cellTreeSelectedBackground()).getTop() + "px  repeat-x")  + ";background-color:" + ("#628cd5")  + ";color:" + ("white")  + ";height:" + ("auto")  + ";overflow:" + ("visible")  + ";}.GALD-WOFF{padding-left:" + ("16px")  + ";outline:" + ("none")  + ";}"));
     }
     public java.lang.String cellTreeEmptyMessage(){
-      return "GL0PBETBGE";
+      return "GALD-WONE";
     }
     public java.lang.String cellTreeItem(){
-      return "GL0PBETBHE";
+      return "GALD-WOOE";
     }
     public java.lang.String cellTreeItemImage(){
-      return "GL0PBETBIE";
+      return "GALD-WOPE";
     }
     public java.lang.String cellTreeItemImageValue(){
-      return "GL0PBETBJE";
+      return "GALD-WOAF";
     }
     public java.lang.String cellTreeItemValue(){
-      return "GL0PBETBKE";
+      return "GALD-WOBF";
     }
     public java.lang.String cellTreeKeyboardSelectedItem(){
-      return "GL0PBETBLE";
+      return "GALD-WOCF";
     }
     public java.lang.String cellTreeOpenItem(){
-      return "GL0PBETBME";
+      return "GALD-WODF";
     }
     public java.lang.String cellTreeSelectedItem(){
-      return "GL0PBETBNE";
+      return "GALD-WOEF";
     }
     public java.lang.String cellTreeShowMoreButton(){
-      return "GL0PBETBOE";
+      return "GALD-WOFF";
     }
     public java.lang.String cellTreeTopItem(){
-      return "GL0PBETBPE";
+      return "GALD-WOGF";
     }
     public java.lang.String cellTreeTopItemImage(){
-      return "GL0PBETBAF";
+      return "GALD-WOHF";
     }
     public java.lang.String cellTreeTopItemImageValue(){
-      return "GL0PBETBBF";
+      return "GALD-WOIF";
     }
     public java.lang.String cellTreeWidget(){
-      return "GL0PBETBCF";
+      return "GALD-WOJF";
     }
   }
   ;

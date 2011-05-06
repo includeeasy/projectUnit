@@ -12,3 +12,4 @@ peer stateType
 drbd0 resource
 drbd1 resource
 drbd2 resource
+drbd3 resource

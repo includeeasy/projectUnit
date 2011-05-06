@@ -4,5 +4,8 @@
   <copy todir="../unit-gwt/src/main/resources/META-INF/resources/gwtunit">
     <fileset dir="target/gwt-client-1.0-SNAPSHOT/gwtunit"/>
   </copy>
+  <copy todir="../unit-gwt/src/main/resources/META-INF/resources/gwtcanvasdemo">
+    <fileset dir="target/gwt-client-1.0-SNAPSHOT/gwtcanvasdemo"/>
+  </copy>
 </target>
 </project>

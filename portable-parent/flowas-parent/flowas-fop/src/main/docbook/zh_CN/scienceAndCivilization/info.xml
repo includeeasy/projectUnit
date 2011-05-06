@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <info xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_cn"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd ">
 	<title>科学与文明</title>
 	<authorgroup>
@@ -19,10 +20,10 @@
 			</affiliation>
 		</author>
 		<author>
-		    <personname>
-		     <surname>刘</surname>
-		     <firstname>建宏</firstname>
-		    </personname>			
+			<personname>
+				<surname>刘</surname>
+				<firstname>建宏</firstname>
+			</personname>
 			<address>
 				<city>西安</city>
 				<street>科技路</street>
@@ -37,10 +38,11 @@
 		<holder>生活实验室</holder>
 	</copyright>
 	<pubdate>2010</pubdate>
-	<cover><mediaobject>
+	<cover>	
+		<mediaobject role="cover">
 			<imageobject>
 				<imagedata fileref="resources/images/sci_lit.jpg"></imagedata>
 			</imageobject>
-</mediaobject>
+		</mediaobject>
 	</cover>
 </info>

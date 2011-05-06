@@ -5,8 +5,6 @@
 
 package loganalyzer;
 
-import loganalyzer.lingpipe.StateMachineJFrame;
-
 /**
  *
  * @author Administrator

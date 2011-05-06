@@ -22,7 +22,6 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 import javax.xml.parsers.DocumentBuilder;
@@ -33,17 +32,21 @@ import net.flowas.codegen.model.ExcuteEngine;
 import net.flowas.codegen.model.TestGen;
 import net.flowas.codegen.resource.ResourceRepository;
 
-import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.shell.Shell;
-import org.jboss.seam.forge.shell.plugins.DefaultCommand;
-import org.jboss.seam.forge.shell.plugins.Help;
-import org.jboss.seam.forge.shell.plugins.Option;
-import org.jboss.seam.forge.shell.plugins.Plugin;
+import org.jboss.forge.project.Project;
+import org.jboss.forge.shell.Shell;
+import org.jboss.forge.shell.plugins.Alias;
+import org.jboss.forge.shell.plugins.Command;
+import org.jboss.forge.shell.plugins.DefaultCommand;
+import org.jboss.forge.shell.plugins.Help;
+import org.jboss.forge.shell.plugins.Option;
+import org.jboss.forge.shell.plugins.Plugin;
+import org.jboss.forge.shell.plugins.RequiresFacet;
 import org.w3c.dom.Element;
 
 
-@Named("mock")
+@Alias("mock")
 @Help("Manage project's archive and some cinfigureration")
+@RequiresFacet(MockFacet.class)
 public class MockPlugin implements Plugin {
 	ResourceBundle i18n = ResourceBundle
 			.getBundle("net/flowas/codegen/resource/i18n");
@@ -59,14 +62,9 @@ public class MockPlugin implements Plugin {
 	@DefaultCommand
 	public void run(@Option final String command,
 			@Option(name = "ui") String useUI,
-			@Option(name = "file") String file,
-			@Option(name = "name") String name,
-			@Option(name = "value") String value,
+			@Option(name = "file") String file,			
 			@Option(name = "class") String clasz) {
-
-		if ("config".equals(command)) {
-			// Settings.config(name, value);
-		} else if ("generateFor".equals(command)) {
+		if ("generateFor".equals(command)) {
 			File testFile = getFile(useUI, file);
 			if (null != testFile) {
 				codeGen.generateFor(testFile);
@@ -78,16 +76,7 @@ public class MockPlugin implements Plugin {
 				codeGen.isolateDOC(testFile);
 			}
 			return;
-		} else if ("fromXML".equals(command)) {			
-			File testFile = getFile(useUI, file);
-			if (null != testFile) {
-				codeGen.fromXML(testFile);
-			}
-			return;
-		} else if ("editXML".equals(command)) {			
-			shell.println("Not implemented yet!");
-			return;
-		} else if (clasz != null) {
+		}else if (clasz != null) {
 			DocumentBuilder bu;
 			try {
 				bu = DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -115,7 +104,28 @@ public class MockPlugin implements Plugin {
 			}
 		}
 	}
-
+	/**
+	 * 
+	 * @param useUI
+	 * @param file
+	 */
+    @Command("fromXML")
+    public void fromXML(@Option(name = "ui") String useUI,
+			@Option(name = "file") String file){
+    	File testFile = getFile(useUI, file);
+		if (null != testFile) {
+			codeGen.fromXML(testFile);
+		}		
+    }
+    @Command("editXML")
+    public void editXML(){
+    	shell.println("Not implemented yet!");		
+    }
+    @Command("config")
+    public void config(@Option(name = "name") String name,
+			@Option(name = "value") String value){
+    	shell.println("Not implemented yet!");		
+    }
 	public File getFile(String ui, String fileName) {
 		if (fileName == null || null != ui) {
 			return openFile();
@@ -140,8 +150,7 @@ public class MockPlugin implements Plugin {
 				return false;
 			}
 			@Override
-			public String getDescription() {
-				// TODO Auto-generated method stub
+			public String getDescription() {				
 				return i18n.getString("fileExtention");
 			}
 		});

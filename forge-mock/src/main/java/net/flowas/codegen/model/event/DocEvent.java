@@ -19,7 +19,7 @@ package net.flowas.codegen.model.event;
 
 import java.util.Set;
 
-import org.jboss.seam.forge.parser.java.JavaClass;
+import org.jboss.forge.parser.java.JavaClass;
 
 
 public  class DocEvent {

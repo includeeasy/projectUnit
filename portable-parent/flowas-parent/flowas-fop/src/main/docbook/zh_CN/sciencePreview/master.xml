@@ -14,7 +14,8 @@
 	<xi:include href="idea2manufacture.xml" />
 	<xi:include href="persistenceEvolution.xml" />
 	<xi:include href="bigsystem.xml" />	
-	<xi:include href="computerCanDo.xml" />	
+	<xi:include href="computerCanDo.xml" />
+	<xi:include href="love_source.xml" />	
 	<xi:include href="gamma_function.xml" />
 	<xi:include href="carbon_nanotube.xml" />		
 </book>

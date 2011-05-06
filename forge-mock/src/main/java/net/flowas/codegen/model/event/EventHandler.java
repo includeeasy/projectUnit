@@ -36,11 +36,11 @@ import net.flowas.codegen.model.MockUtils;
 import net.flowas.codegen.resource.GenEnum;
 import net.flowas.codegen.resource.ResourceRepository;
 
-import org.jboss.seam.forge.parser.java.JavaClass;
-import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.project.dependencies.Dependency;
-import org.jboss.seam.forge.project.dependencies.DependencyBuilder;
-import org.jboss.seam.forge.project.facets.DependencyFacet;
+import org.jboss.forge.parser.java.JavaClass;
+import org.jboss.forge.project.Project;
+import org.jboss.forge.project.dependencies.Dependency;
+import org.jboss.forge.project.dependencies.DependencyBuilder;
+import org.jboss.forge.project.facets.DependencyFacet;
 import org.w3c.dom.Element;
 
 
@@ -129,9 +129,9 @@ public class EventHandler {
 				}
 			}
 			for (String imp : importList) {
-				cl.addImports(imp);
+				cl.addImport(imp);
 			}
-			for (org.jboss.seam.forge.parser.java.Method<JavaClass> m : cl
+			for (org.jboss.forge.parser.java.Method<JavaClass> m : cl
 					.getMethods()) {
 				if (m.hasAnnotation("org.junit.Before")) {
 					if (!(m.getBody().contains(clasz.getSimpleName()) && m

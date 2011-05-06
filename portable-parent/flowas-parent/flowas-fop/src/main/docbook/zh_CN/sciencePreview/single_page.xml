@@ -4,9 +4,8 @@
 	<title>原理展现</title>
 	<authorgroup>		
 		<author>
-		    <personname>
-		     <surname>刘</surname>
-		     <firstname>建宏</firstname>
+		    <personname>		    
+		     <firstname>刘建宏</firstname>
 		    </personname>			
 			<address>
 				<city>西安</city>
@@ -21,7 +20,7 @@
 		<year>2010</year>
 		<holder>生活实验室</holder>
 	</copyright>
-	<pubdate>2010</pubdate>	
+	<pubdate>2011</pubdate>	
 </info>
 	<glossary version="5.0" xml:lang="zh_cn" xml:base="glossary.xml">
 	<glossentry>
@@ -121,6 +120,37 @@
 	<section>
 		<title>定义</title>
 		<para>幂塔[1]运算的定义为</para>
+		<para>求解函数方程x^h(x)=h(x)可以得到如下的解：</para>
+		<para>h(x)=-lambertw(0,-log(x))/log(x)</para>
+		<figure>
+				<title>h(x)在定义域0&gt;x上的图像</title>				
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/h_small_value.jpg" depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>					
+				</mediaobject>
+				<para>图像在x=0.0660附近出现了分支</para>
+			</figure>
+			<figure>
+				<title>h(x)的图像</title>				
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/h_all.jpg" depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>					
+				</mediaobject>
+				<para>图像在x=1.444处出现虚数部分（红色）</para>
+			</figure>
+			<figure>
+				<title>当x趋于无穷大时，实数部分和虚数部分都趋于零</title>				
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/h_big_value.jpg" depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>					
+				</mediaobject>				
+			</figure>
 	</section>
 	<section>
 		<title>检索信息的动机</title>
@@ -310,17 +340,16 @@ An asymptotic expansion for the even Bernoulli numbers is
 	</section>
 </chapter>
 	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="idea2manufacture.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<title>Gamma Function</title>
+	<title>从构思设计到工业生产</title>
 	<info>
 		<abstract>
-			<para>当一个善于发问的学生了解了第一、二、三级运算以后，他可能很快去思考第四级运（the forth leval of operation - power tower 幂塔）的形式。事实上，幂塔可与另外一函数 建立转化关系，从而求出它的解析式.。</para>
+			<para>随着CAD（计算机辅助设计）技术的飞速发展，在电脑上设计出的各种部件，都可以通过先进的LAD软件直接用数控机床加工出来。无怪乎美国人可以自个儿在家里加工、制造出游艇、帆船和载人气球，而用散件自行组装小飞机、汽车、摩托车，同样不足为奇。</para>
 		</abstract>
 		<keywordset>
-		 <keyword>幂塔</keyword>
-		 <keyword>函数变换</keyword>
-		 <keyword>解析式</keyword>
-		</keywordset>
-		<issuenum>O0174.6</issuenum>
+		 <keyword>CAD</keyword>
+		 <keyword>计算机辅助设计</keyword>
+		 <keyword>SolidWorks</keyword>
+		</keywordset>		
 	</info>
 	<section>
 		<title>定义</title>
@@ -564,18 +593,43 @@ An asymptotic expansion for the even Bernoulli numbers is
   <section>
    <title>写不错英语的写作输入器</title>
   </section>
-</chapter>	
-	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="gamma_function.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<title>从构思设计到工业生产</title>
+</chapter>
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="love_source.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>缘分从何而来？商机如何创造？</title>
 	<info>
 		<abstract>
-			<para>随着CAD（计算机辅助设计）技术的飞速发展，在电脑上设计出的各种部件，都可以通过先进的LAD软件直接用数控机床加工出来。无怪乎美国人可以自个儿在家里加工、制造出游艇、帆船和载人气球，而用散件自行组装小飞机、汽车、摩托车，同样不足为奇。</para>
+			<para>
+				你把他的电话告诉我，我帮你搞定。				
+			</para>
+		</abstract>
+	</info>
+	<section>
+		<title>引言</title>
+		<para>			
+			<figure>
+				<title>寻爱流程图</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="resources/images/lovesource2.jpg" depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>
+				</mediaobject>
+			</figure>
+		</para>
+	</section>
+</chapter>	
+	<chapter xsi:schemaLocation="http://docbook.org/ns/docbook ../../xsd/docbook.xsd " xml:base="gamma_function.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<title>Gamma Function</title>
+	<info>
+		<abstract>
+			<para>当一个善于发问的学生了解了第一、二、三级运算以后，他可能很快去思考第四级运（the forth leval of operation - power tower 幂塔）的形式。事实上，幂塔可与另外一函数 建立转化关系，从而求出它的解析式.。</para>
 		</abstract>
 		<keywordset>
-		 <keyword>CAD</keyword>
-		 <keyword>计算机辅助设计</keyword>
-		 <keyword>SolidWorks</keyword>
-		</keywordset>		
+		 <keyword>幂塔</keyword>
+		 <keyword>函数变换</keyword>
+		 <keyword>解析式</keyword>
+		</keywordset>
+		<issuenum>O0174.6</issuenum>
 	</info>
 	<section>
 		<title>定义</title>

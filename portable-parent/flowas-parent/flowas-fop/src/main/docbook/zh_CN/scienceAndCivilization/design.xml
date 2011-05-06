@@ -16,15 +16,15 @@
 	</partintro>
 	<glossary>
 		<title>词汇表</title>
-		<info />		
+		<info />
 		<bibliography>
 			<bibliodiv>
-			    <title>网页</title>
-				<biblioentry>					
+				<title>网页</title>
+				<biblioentry>
 					<publisher>
-						<publishername>百度百科</publishername>						
+						<publishername>百度百科</publishername>
 					</publisher>
-					<title>科学小说</title>					
+					<title>科学小说</title>
 				</biblioentry>
 			</bibliodiv>
 		</bibliography>
@@ -36,7 +36,7 @@
 				<para>走出塑造人物形象的小圈子，给文学注入科学内涵、艺术因素和先进思想，使读者能从多种角度欣赏科学美，理解科学原理，重用艺术成果，参考高明之举。文体中涉及的知识、智慧、思想、艺术、广告应具有可欣赏的艺术性，娱乐的趣味性、引用的必要性、语言的简明性、可参考的真实模仿性、可发展和利用的科学性和实践指导性。您可以在文中加入一些有趣的好玩的科学知识，使人回味无穷的艺术图画，具有挑战性的先进思想，生动有趣的探索过程描写等。
 				</para>
 			</abstract>
-		</info>		
+		</info>
 		<section>
 			<title>概念</title>
 			<para>以表达科学内容为目的小说称为科普小说。</para>
@@ -81,5 +81,20 @@
 			<title>情感线索</title>
 			<para>邻居11岁定亲——>逼婚——>紧急觅知音——>巧遇才子——>初恋——>再寻知己</para>
 		</section>
+	</chapter>
+	<chapter>
+		<title>故事描述</title>
+		<para>
+			通过北京咏春电子城学习单片机等技术
+	 </para>
+	 <para>
+	  《加工厂》
+	 </para>
+		<para>
+			将美国的车库文化引入中国，建立网络设计，集中制造的基地系统，帮助广大人民群准实现思想转化为生产力。
+	 </para>
+		<para>
+			大西线调水实现无人施工，大大降低成本和杜绝偷工减料。
+	 </para>
 	</chapter>
 </part>

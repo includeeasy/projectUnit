@@ -34,7 +34,7 @@
             <type  condition="stateType=peer" position="last" alias="peer">role</type> 
             <type>cstate</type>
             <type  condition="stateType=disk" position="last">dstate</type>
-            <type  condition="stateType=pdsk" position="last">dstate</type>            
+            <type  condition="stateType=pdsk" position="last"  alias="pdsk">dstate</type>            
         </column>
         <row>
             <phrase type="resource">drbd0</phrase> 

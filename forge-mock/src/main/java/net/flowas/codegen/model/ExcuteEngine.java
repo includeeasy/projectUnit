@@ -28,7 +28,7 @@ import javax.inject.Named;
 
 import net.flowas.codegen.model.OperationUtils.UnzipFilter;
 
-import org.jboss.seam.forge.project.Project;
+import org.jboss.forge.project.Project;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

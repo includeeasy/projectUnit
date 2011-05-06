@@ -38,7 +38,7 @@
 					<execution>
 						<id>single-pdf</id>
 						<goals>
-							<goal>generate-pdf</goal>
+							<goal>generate-html</goal>
 						</goals>
 						<phase>install</phase>
 					</execution>

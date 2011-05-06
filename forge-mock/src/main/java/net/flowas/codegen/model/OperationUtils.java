@@ -30,8 +30,8 @@ import javax.inject.Named;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 
-import org.jboss.seam.forge.project.Project;
-import org.jboss.seam.forge.shell.Shell;
+import org.jboss.forge.project.Project;
+import org.jboss.forge.shell.Shell;
 
 @Named
 // @ApplicationScoped

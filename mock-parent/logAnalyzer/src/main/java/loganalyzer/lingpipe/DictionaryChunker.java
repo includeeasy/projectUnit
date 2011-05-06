@@ -1,5 +1,6 @@
 package loganalyzer.lingpipe;
 
+import loganalyzer.TablePayload;
 import java.io.IOException;
 import com.aliasi.chunk.Chunk;
 import com.aliasi.chunk.Chunking;
@@ -21,7 +22,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import loganalyzer.LogAnalyzer;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -29,30 +29,16 @@ public class DictionaryChunker {
 
     static final double CHUNK_SCORE = 1.0;
     static MapDictionary<String> dictionary = new MapDictionary<String>();
+    static ExactDictionaryChunker chunker;
 
-    static ExactDictionaryChunker chunker ;
-
-    public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
-        args = new String[]{"drbd2 role(Primary->Secondary) disk(Inconsistance->Diskless)"};
-
-
-        System.out.println("\nDICTIONARY\n" + dictionary);
-
-        for (int i = 0; i < args.length; ++i) {
-            String text = args[i];
-            System.out.println("\n\nTEXT=" + text);
-            extract(text);
-        }
-    }
-
-    static List<TablePayload> extract( String text) throws ParserConfigurationException, SAXException, IOException {
-        if(chunker==null){
+    public static List<TablePayload> extract(String text) throws ParserConfigurationException, SAXException, IOException {
+        if (chunker == null) {
             init();
         }
         Chunking chunking = chunker.chunk(text);
-        System.out.println("\nChunker."
-                + " All matches=" + chunker.returnAllMatches()
-                + " Case sensitive=" + chunker.caseSensitive());
+		// System.out.println("\nChunker."
+		// + " All matches=" + chunker.returnAllMatches()
+		// + " Case sensitive=" + chunker.caseSensitive());
         List<Map<String, String>> results = new ArrayList<Map<String, String>>();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setIgnoringComments(true);
@@ -75,10 +61,12 @@ public class DictionaryChunker {
         }
         List<TablePayload> rsl = new ArrayList<TablePayload>();
         NodeList displaies = doc.getDocumentElement().getElementsByTagName("display");
-        for (int i = 0; i < displaies.getLength(); i++) {
-            Element display = (Element) displaies.item(i);
-            List<TablePayload> dis = TablePayload.parse(results.get(0), display);
-            rsl.addAll(dis);
+        for (Map<String, String> result : results) {
+            for (int i = 0; i < displaies.getLength(); i++) {
+                Element display = (Element) displaies.item(i);
+                List<TablePayload> dis = TablePayload.parse(result, display);
+                rsl.addAll(dis);
+            }
         }
         return rsl;
     }
@@ -165,7 +153,8 @@ public class DictionaryChunker {
         }
         return false;
     }
-     private static void init(){
+
+    private static void init() {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(DictionaryChunker.class.getResourceAsStream("/dictionary.txt")));
             String line;
@@ -180,7 +169,7 @@ public class DictionaryChunker {
             Logger.getLogger(DictionaryChunker.class.getName()).log(Level.SEVERE, null, ex);
         }
         chunker = new ExactDictionaryChunker(dictionary,
-            IndoEuropeanTokenizerFactory.INSTANCE,
-            true, true);
+                IndoEuropeanTokenizerFactory.INSTANCE,
+                true, true);
     }
 }

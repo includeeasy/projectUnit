@@ -27,6 +27,40 @@
 	<section>
 		<title>定义</title>
 		<para>幂塔[1]运算的定义为</para>
+		<para>求解函数方程x^h(x)=h(x)可以得到如下的解：</para>
+		<para>h(x)=-lambertw(0,-log(x))/log(x)</para>
+		<figure>
+				<title>h(x)在定义域0&gt;x上的图像</title>				
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/h_small_value.jpg"
+							depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>					
+				</mediaobject>
+				<para>图像在x=0.0660附近出现了分支</para>
+			</figure>
+			<figure>
+				<title>h(x)的图像</title>				
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/h_all.jpg"
+							depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>					
+				</mediaobject>
+				<para>图像在x=1.444处出现虚数部分（红色）</para>
+			</figure>
+			<figure>
+				<title>当x趋于无穷大时，实数部分和虚数部分都趋于零</title>				
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/powertower/h_big_value.jpg"
+							depth="9.4cm" width="14.5cm">
+						</imagedata>
+					</imageobject>					
+				</mediaobject>				
+			</figure>
 	</section>
 	<section>
 		<title>检索信息的动机</title>

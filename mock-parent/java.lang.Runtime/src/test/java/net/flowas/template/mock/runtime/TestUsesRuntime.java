@@ -48,13 +48,21 @@ public class TestUsesRuntime {
 
 	@Test
 	public void testRun() throws Exception {
+		final CommandFilter filter=new CommandFilter(){
+			@Override
+			public String[] exec(String command) {
+				if(command.equals("ifconfig")){
+					return new String[]{"stand out","error out"};
+				}
+				return null;
+			}};
 		PowerMockito.mockStatic(Runtime.class);
 		Runtime mockedRuntime = PowerMockito.mock(Runtime.class);
 		PowerMockito.when(Runtime.getRuntime()).thenReturn(mockedRuntime);
 		Answer<Process> answer = new Answer<Process>() {
 			@Override
 			public Process answer(InvocationOnMock invocation) throws Throwable {
-				return new ProcessMock((String) invocation.getArguments()[0]);
+				return new ProcessMock((String) invocation.getArguments()[0],filter);
 			}
 		};
 		PowerMockito.when(mockedRuntime.exec(Mockito.anyString())).thenAnswer(

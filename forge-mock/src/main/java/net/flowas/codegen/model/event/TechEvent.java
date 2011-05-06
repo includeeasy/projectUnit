@@ -2,7 +2,7 @@ package net.flowas.codegen.model.event;
 
 import java.util.Map;
 
-import org.jboss.seam.forge.parser.java.JavaClass;
+import org.jboss.forge.parser.java.JavaClass;
 
 import net.flowas.codegen.resource.GenEnum;
 

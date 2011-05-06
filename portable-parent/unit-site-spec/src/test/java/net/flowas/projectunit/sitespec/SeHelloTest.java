@@ -26,7 +26,7 @@ public class SeHelloTest {
 		WeldContainer weld = new Weld().initialize();
 		AlignHelper alignHelper=weld.instance().select(AlignHelper.class).get();
 		try {
-			System.out.println(alignHelper.loadContext("//body/links/item"));
+			System.out.println(alignHelper.loadContext("//body/links/item").getChildNodes());
 			System.out.println("-----");
 			Assert.assertNotNull(alignHelper.loadContext("//body/links/item"));
 		} catch (XPathExpressionException e) {

@@ -1,6 +1,7 @@
 package com.google.gwt.user.cellview.client;
 
 public class CellTable_TemplateImpl implements com.google.gwt.user.cellview.client.CellTable.Template {
+  
   public com.google.gwt.safehtml.shared.SafeHtml thead(com.google.gwt.safehtml.shared.SafeHtml arg0) {
     StringBuilder sb = new java.lang.StringBuilder()
         .append("<table><thead>")
@@ -117,7 +118,7 @@ public class CellTable_TemplateImpl implements com.google.gwt.user.cellview.clie
     StringBuilder sb = new java.lang.StringBuilder()
         .append("<div style=\"outline:none;\" tabindex=\"")
         .append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(String.valueOf(arg0)))
-        .append("\" accesskey=\"")
+        .append("\" accessKey=\"")
         .append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(String.valueOf(arg1)))
         .append("\">")
         .append(arg2.asString())
@@ -145,5 +146,4 @@ public class CellTable_TemplateImpl implements com.google.gwt.user.cellview.clie
         ;
     return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
   }
-  
-  }
+}

@@ -12,5 +12,9 @@
   <modules>
   	<module>java.lang.Runtime</module>
   	<module>javax.persistence.Persistence</module>
+  	<module>singleton</module>
+  	<module>logAnalyzer</module>
+  	<module>webservice</module>
+  	<module>ldap</module>
   </modules>
 </project>
